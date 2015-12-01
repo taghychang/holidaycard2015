@@ -1,0 +1,1 @@
+var preGame=function(e){};preGame.prototype={preload:function(){},create:function(){var e="- phaser -\n with a sprinkle of \n pixi dust.",a={font:"65px Arial",fill:"#ff0044",align:"center"},n=game.add.text(game.world.centerX-300,0,e,a)}};

@@ -1,26 +1,36 @@
 <!doctype html>
 <html lang="en">
 
-<head>
+  <head>
     <meta charset="UTF-8" />
     <title>Burrrista</title>
     <script type="text/javascript" src="code/phaser.min.js"></script>
     <script type="text/javascript" src="code/script-min.js"></script>
+    <script type="text/javascript" src="code/pregame-min.js"></script>
     <style type="text/css">
-    body {
-        background: #cccccc;
-        padding: 0px;
-        margin: 0px;
-    }
+body {
+  background: #cccccc;
+  padding: 0px;
+  margin: 0px;
+}
 
     </style>
-</head>
+  </head>
 
-<body>
-<div id="container">
-    <div id="game"></div>
-</div>
+  <body>
+    <script type="text/javascript">
+     var game;
+     game = new Phaser.Game(580, 880, Phaser.AUTO, "game");
+     //game.state.add("Menu", menu);
+     game.state.add("PreGame", preGame);
+     game.state.add("PlayGame", playGame);
+     game.state.start("PreGame");
 
-</body>
+    </script>
+    <div id="container">
+      <div id="game"></div>
+    </div>
+
+  </body>
 
 </html>

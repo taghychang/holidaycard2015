@@ -1,6 +1,5 @@
-/*globals console: true, Phaser: true */
+/*globals console: true, Phaser: true, game*/
 
- var game;
  var player;
  var playerPosition;
  var playerPositions;
@@ -9,13 +8,6 @@
  var cursor;
  var startX;
  var endX;
-
-
- window.onload = function() {
-     game = new Phaser.Game(580, 880, Phaser.AUTO, "game");
-     game.state.add("PlayGame", playGame);
-     game.state.start("PlayGame");
- };
 
  var playGame = function(game) {};
 
