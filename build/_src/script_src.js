@@ -18,7 +18,10 @@ function processHandler(player, coffee) {
 function collisionHandler(player, coffee) {
     if (coffee.frame === 17) {
         coffee.kill();
-        console.log("hot coffee");
+        console.log("hot");
+    } else {
+        coffee.kill();
+        console.log("ice");
     }
 }
 
@@ -50,10 +53,36 @@ var movePlayer = {
     }
 };
 
+function checkPos(cup) {
+
+    if (cup.y > 880) {
+        cup.y = -100;
+    }
+
+}
+
+function generateCup() {
+    cups = game.add.physicsGroup();
+
+    var y = 0;
+
+    for (var i = 0; i < 10; i++) {
+        var hotcCoffee = cups.create(game.world.randomX, game.world.randomY, 'coffee', 17);
+        var cup = cups.create(game.world.randomX, game.world.randomY, 'coffee', game.rnd.between(0, 3));
+        cup.body.velocity.y = game.rnd.between(100, 300);
+        hotcCoffee.body.velocity.y = game.rnd.between(100, 300);
+        
+//        game.add.tween(hotcCoffee).to( { angle: 45 }, 2000, Phaser.Easing.Linear.None, true);
+//        game.add.tween(hotcCoffee.scale).to( { x: 10, y: 10 }, 2000, Phaser.Easing.Linear.None, true);
+    }
+
+
+}
+
 
 playGame.prototype = {
     preload: function() {
-        
+
         game.load.image("player", "images/player.png");
         game.load.spritesheet('coffee', 'images/fruitnveg32wh37.png', 32, 32);
         game.load.image("table", "images/table.png");
@@ -62,10 +91,12 @@ playGame.prototype = {
     create: function() {
 
         game.physics.startSystem(Phaser.Physics.ARCADE);
-        
-        table = game.add.sprite(game.world.centerX, game.world.height-150, 'table');
-        table.anchor.set(0.5,1);
 
+
+        table = game.add.sprite(game.world.centerX, game.world.height - 150, 'table');
+        table.anchor.set(0.5, 1);
+
+        generateCup();
 
         playerPosition = 1;
         playerPositions = [game.width / 4, game.width / 2, game.width / 2 + game.width / 4];
@@ -73,18 +104,6 @@ playGame.prototype = {
         player.anchor.set(0.5);
         game.physics.arcade.enable(player);
 
-        cups = game.add.physicsGroup();
-
-        //Group of coffee
-        for (var i = 0; i < 50; i++) {
-            var c = cups.create(game.rnd.between(0, 600), game.rnd.between(500, 870), 'coffee', game.rnd.between(0, 35));
-            c.body.mass = -100;
-        }
-
-        for (var i = 0; i < 20; i++) {
-            var c = cups.create(game.rnd.between(0, 600), game.rnd.between(500, 870), 'coffee', 17);
-        }
-        
         cursor = game.input.keyboard.createCursorKeys();
 
         //Game Controls
@@ -94,9 +113,11 @@ playGame.prototype = {
     },
     update: function() {
 
-        if (game.physics.arcade.overlap(player, cups, collisionHandler, processHandler, this)) {
-        }
+        cups.forEach(checkPos, this);
 
+        if (game.physics.arcade.overlap(player, cups, collisionHandler, processHandler, this)) {
+            
+        }
     }
 
 };
