@@ -79,6 +79,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/images\/cup.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6906,
+		"inputAbbreviatedPath": "\/images\/cup.png",
+		"outputAbbreviatedPath": "\/images\/cup.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/fruitnveg32wh37.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -123,6 +134,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/table.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 38888,
+		"inputAbbreviatedPath": "\/images\/table.png",
+		"outputAbbreviatedPath": "\/images\/table.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -135,7 +157,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Marach Treekunprapa",
+"lastSavedByUser": "Hao Ying Chang",
 "manualImportLinks": {
 	},
 "projectAttributes": {

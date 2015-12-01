@@ -53,13 +53,19 @@ var movePlayer = {
 
 playGame.prototype = {
     preload: function() {
+        
         game.load.image("player", "images/player.png");
         game.load.spritesheet('coffee', 'images/fruitnveg32wh37.png', 32, 32);
+        game.load.image("table", "images/table.png");
 
     },
     create: function() {
 
         game.physics.startSystem(Phaser.Physics.ARCADE);
+        
+        table = game.add.sprite(game.world.centerX, game.world.height-150, 'table');
+        table.anchor.set(0.5,1);
+
 
         playerPosition = 1;
         playerPositions = [game.width / 4, game.width / 2, game.width / 2 + game.width / 4];
@@ -78,7 +84,7 @@ playGame.prototype = {
         for (var i = 0; i < 20; i++) {
             var c = cups.create(game.rnd.between(0, 600), game.rnd.between(500, 870), 'coffee', 17);
         }
-
+        
         cursor = game.input.keyboard.createCursorKeys();
 
         //Game Controls
