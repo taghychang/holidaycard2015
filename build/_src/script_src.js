@@ -95,7 +95,6 @@ playGame.prototype = {
     update: function() {
 
         if (game.physics.arcade.overlap(player, cups, collisionHandler, processHandler, this)) {
-            console.log('overlapped');
         }
 
     }
