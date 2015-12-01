@@ -1,5 +1,7 @@
-/* globals game */
-var endGame = function(game) {};
+/* globals game, console*/
+var endGame = function(game) {
+  console.log(game);
+};
 
 endGame.prototype = {
   preload: function() {

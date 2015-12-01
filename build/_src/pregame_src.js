@@ -1,5 +1,7 @@
-/* globals game */
-var preGame = function(game) {};
+/* globals game, console*/
+var preGame = function(game) {
+  console.log(game);
+};
 
 preGame.prototype = {
   preload: function() {
