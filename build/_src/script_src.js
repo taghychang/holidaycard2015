@@ -132,7 +132,7 @@ playGame.prototype = {
         // game.load.image("player", "images/player.png");
         // game.load.spritesheet('coffee', 'images/fruitnveg32wh37.png', 32, 32);
         game.load.spritesheet('coffee', 'images/cups.png', 334, 342);
-        game.load.spritesheet('player', 'images/playerSprite.png', 252, 269);
+        game.load.spritesheet('player', 'images/playerSprite.png', 325, 347);
 
     },
     create: function() {
@@ -146,14 +146,15 @@ playGame.prototype = {
 
         generateCup();
 
-        var lane0X = game.width / 2 - 220;
+
+        var lane0X = game.width / 2 - 260;
         var lane1X = game.width / 2;
-        var lane2X = game.width / 2 + 220;
+        var lane2X = game.width / 2 + 260;
         lanesX = [lane0X, lane1X, lane2X];
 
         playerPosition = 1;
         playerPositions = [lanesX[0], lanesX[1], lanesX[2]];
-        player = game.add.sprite(playerPositions[playerPosition], game.height - 130, "player");
+        player = game.add.sprite(playerPositions[playerPosition], game.height - 160, "player");
         player.anchor.set(0.5);
         game.physics.arcade.enable(player);
 
