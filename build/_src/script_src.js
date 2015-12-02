@@ -6,10 +6,7 @@ var playerPositions;
 var playerSpeed = 300;
 var cups;
 var cursor;
-var lane0X;
-var lane1X;
-var lane2X;
-var lanesXl;
+
 
 
 var playGame = function(game) {};
@@ -149,9 +146,9 @@ playGame.prototype = {
 
         generateCup();
 
-        var lane0X = game.width / 4 - 70;
+        var lane0X = game.width / 2 - 220;
         var lane1X = game.width / 2;
-        var lane2X = game.width / 4 + 70;
+        var lane2X = game.width / 2 + 220;
         lanesX = [lane0X, lane1X, lane2X];
 
         playerPosition = 1;
