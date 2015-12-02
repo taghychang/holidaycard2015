@@ -7,12 +7,28 @@ var playerSpeed = 300;
 var cups;
 var cursor;
 
-
+// SCORE VARS
+var score;
 
 var playGame = function(game) {};
 
 function processHandler(player, coffee) {
     return true;
+}
+
+function scoreHandler(coffee){
+
+    if (coffee.frame === 2) {
+        score += 1;
+    } else {
+        score -= 1;
+    } 
+    stageFreeze.frame = score;
+    
+    if(score == 8 || score == 4 ) {
+        //game.state.start("EndGame");
+        console.log("GAME OVER .. MOVE ON");
+    }
 }
 
 function collisionHandler(player, coffee) {
@@ -23,6 +39,8 @@ function collisionHandler(player, coffee) {
         coffee.kill();
         console.log("ice");
     }
+
+    scoreHandler(coffee);
 }
 
 function moveOver() {
@@ -134,6 +152,9 @@ playGame.prototype = {
         game.load.spritesheet('coffee', 'images/cups.png', 334, 342);
         game.load.spritesheet('player', 'images/playerSprite.png', 252, 269);
 
+        // ADD STAGEFREEZE SPRITESHEET
+        game.load.atlas("stageFreeze", "images/stageFreeze/stageFreeze.png", "images/stageFreeze/stageFreeze.json");
+
     },
     create: function() {
         game.physics.startSystem(Phaser.Physics.ARCADE);
@@ -143,6 +164,11 @@ playGame.prototype = {
 
         // table = game.add.sprite(game.world.centerX, game.world.height - 50, 'table');
         // table.anchor.set(0.5, 1);
+
+        // PLACE STAGE FREEZE ON STAGE & DECLARE INITIAL SCORE 
+        score = 5;  // out of 10 
+        stageFreeze = game.add.sprite(0, 0, "stageFreeze");
+        stageFreeze.frame = score;
 
         generateCup();
 
