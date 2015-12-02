@@ -156,6 +156,149 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/stageFreeze\/stageFreeze.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/images\/stageFreeze\/stageFreeze.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 264010,
+		"inputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze.png",
+		"outputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/stageFreeze\/stageFreeze_00.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 194,
+		"inputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_00.png",
+		"outputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_00.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/stageFreeze\/stageFreeze_01.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 11358,
+		"inputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_01.png",
+		"outputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_01.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/stageFreeze\/stageFreeze_02.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 16677,
+		"inputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_02.png",
+		"outputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_02.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/stageFreeze\/stageFreeze_03.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 13856,
+		"inputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_03.png",
+		"outputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_03.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/stageFreeze\/stageFreeze_04.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 23732,
+		"inputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_04.png",
+		"outputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_04.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/stageFreeze\/stageFreeze_05.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 21565,
+		"inputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_05.png",
+		"outputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_05.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/stageFreeze\/stageFreeze_06.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 29431,
+		"inputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_06.png",
+		"outputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_06.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/stageFreeze\/stageFreeze_07.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 25420,
+		"inputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_07.png",
+		"outputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_07.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/stageFreeze\/stageFreeze_08.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 31139,
+		"inputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_08.png",
+		"outputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_08.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/stageFreeze\/stageFreeze_09.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 28348,
+		"inputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_09.png",
+		"outputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_09.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/stageFreeze\/stageFreeze_10.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 37842,
+		"inputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_10.png",
+		"outputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_10.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/start_button.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -186,6 +329,116 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/Sprite\/min\/StageFreeze-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Sprite\/min\/StageFreeze-min.js",
+		"outputAbbreviatedPath": "\/Sprite\/min\/min\/StageFreeze-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Sprite\/StageFreeze.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Sprite\/StageFreeze.js",
+		"outputAbbreviatedPath": "\/Sprite\/min\/StageFreeze-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Sprite\/stageFreeze\/stageFreeze.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Sprite\/stageFreeze\/stageFreeze.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/Sprite\/stageFreeze\/stageFreeze-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/Sprite\/stageFreeze\/stageFreeze.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 171280,
+		"inputAbbreviatedPath": "\/Sprite\/stageFreeze\/stageFreeze.png",
+		"outputAbbreviatedPath": "\/Sprite\/stageFreeze\/stageFreeze.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Sprite\/stageFreeze\/stagefreeze_00.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1918,
+		"inputAbbreviatedPath": "\/Sprite\/stageFreeze\/stagefreeze_00.png",
+		"outputAbbreviatedPath": "\/Sprite\/stageFreeze\/stagefreeze_00.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Sprite\/stageFreeze\/stagefreeze_01.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 32145,
+		"inputAbbreviatedPath": "\/Sprite\/stageFreeze\/stagefreeze_01.png",
+		"outputAbbreviatedPath": "\/Sprite\/stageFreeze\/stagefreeze_01.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Sprite\/stageFreeze\/stagefreeze_02.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 32564,
+		"inputAbbreviatedPath": "\/Sprite\/stageFreeze\/stagefreeze_02.png",
+		"outputAbbreviatedPath": "\/Sprite\/stageFreeze\/stagefreeze_02.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Sprite\/stageFreeze\/stagefreeze_03.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 32492,
+		"inputAbbreviatedPath": "\/Sprite\/stageFreeze\/stagefreeze_03.png",
+		"outputAbbreviatedPath": "\/Sprite\/stageFreeze\/stagefreeze_03.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Sprite\/stageFreeze\/stagefreeze_04.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 32727,
+		"inputAbbreviatedPath": "\/Sprite\/stageFreeze\/stagefreeze_04.png",
+		"outputAbbreviatedPath": "\/Sprite\/stageFreeze\/stagefreeze_04.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Sprite\/stageFreeze\/stagefreeze_05.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 28972,
+		"inputAbbreviatedPath": "\/Sprite\/stageFreeze\/stagefreeze_05.png",
+		"outputAbbreviatedPath": "\/Sprite\/stageFreeze\/stagefreeze_05.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		}
 	},
 "hooks": [
