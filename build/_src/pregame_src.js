@@ -21,7 +21,11 @@ preGame.prototype = {
     gameTitle.anchor.set(0.5,0.5);
 
     // Start button
+<<<<<<< HEAD
     var startButton = game.add.button(game.world.centerX, game.world.centerY, "startButton",nextState);
+=======
+    var startButton= game.add.button(game.world.centerX, game.world.centerY, "startButton",nextState);
+>>>>>>> c0e4736794997bf295d9657ca59b399006a3007e
     startButton.anchor.set(0.5,0.5);
 
   }
