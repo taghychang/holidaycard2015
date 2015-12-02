@@ -129,6 +129,7 @@ playGame.prototype = {
     preload: function() {
         game.load.image("shop", "images/shop.jpg");
         game.load.image("table", "images/table.png");
+        game.load.image("cup_move", "images/cup.png");
         // game.load.image("player", "images/player.png");
         // game.load.spritesheet('coffee', 'images/fruitnveg32wh37.png', 32, 32);
         game.load.spritesheet('coffee', 'images/cups.png', 334, 342);
@@ -172,6 +173,60 @@ playGame.prototype = {
 
         cursor.left.onDown.add(movePlayer.left);
         cursor.right.onDown.add(movePlayer.right);
+            // Marach's move cups ==================================
+
+    var cups_on_table = game.add.group();
+
+    function ServeCup() {
+
+      // Setting
+      var start_position = 395;
+      var cup_speed = 3000;
+      var end_position = 782;
+      // Position to start the cup
+      if (this.lane=='left'){
+        var cup_move = cups_on_table.create(game.rnd.between(240, 265), start_position, 'cup_move');
+      }
+      else if (this.lane=='mid'){
+        var cup_move = cups_on_table.create(game.rnd.between(290, 285), start_position, 'cup_move');
+      }
+      else if (this.lane=='right'){
+        var cup_move = cups_on_table.create(game.rnd.between(345, 370), start_position, 'cup_move');
+      }
+
+      // Scale the cup up
+      cup_move.scale.setTo(0.17,0.17);
+      cup_move.anchor.set(0.5,0.9);
+      tween_size = game.add.tween(cup_move.scale);
+      tween_size.to({x:0.5, y:0.5}, cup_speed, 'Linear', true, 0);
+
+      // Position to stop the cup
+      tween_position = game.add.tween(cup_move);
+      if (this.lane=='left'){
+        tween_position.to({x:game.rnd.between(0, 108), y:end_position}, cup_speed, 'Linear', true, 0);
+      }
+      else if (this.lane=='mid'){
+        tween_position.to({x:game.rnd.between(240, 360), y:end_position}, cup_speed, 'Linear', true, 0);
+      }
+      else if (this.lane=='right'){
+        tween_position.to({x:game.rnd.between(472, 580), y:end_position}, cup_speed, 'Linear', true, 0);
+      }
+      tween_position.onComplete.addOnce(fallDown);
+      tween_position.start();
+      function fallDown() {
+        tween_position = game.add.tween(cup_move);
+        tween_position.to({y:1200}, 1000, 'Linear', true, 0);
+        tween_position.start();
+      }
+    cups_on_table.sort('y', Phaser.Group.SORT_ASCENDING);
+    }
+
+    // Using Serve Cup
+    cursor.left.onDown.add(ServeCup, {lane: 'left'});
+    cursor.right.onDown.add(ServeCup, {lane: 'right'});
+    cursor.down.onDown.add(ServeCup, {lane: 'mid'});
+
+    // End Marach's move cups ================================================
     },
     update: function() {
 
