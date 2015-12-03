@@ -79,46 +79,68 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/images\/cup.png": {
+	"\/images\/cups\/cups.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/images\/cups\/cups.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/images\/cups\/cups-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/images\/cups\/cups.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 6906,
-		"inputAbbreviatedPath": "\/images\/cup.png",
-		"outputAbbreviatedPath": "\/images\/cup.png",
+		"initialSize": 32294,
+		"inputAbbreviatedPath": "\/images\/cups\/cups.png",
+		"outputAbbreviatedPath": "\/images\/cups\/cups.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/cups.png": {
+	"\/images\/cups\/cups_01.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 167578,
-		"inputAbbreviatedPath": "\/images\/cups.png",
-		"outputAbbreviatedPath": "\/images\/cups.png",
+		"initialSize": 7627,
+		"inputAbbreviatedPath": "\/images\/cups\/cups_01.png",
+		"outputAbbreviatedPath": "\/images\/cups\/cups_01.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/fruitnveg32wh37.png": {
+	"\/images\/cups\/cups_02.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 21287,
-		"inputAbbreviatedPath": "\/images\/fruitnveg32wh37.png",
-		"outputAbbreviatedPath": "\/images\/fruitnveg32wh37.png",
+		"initialSize": 9820,
+		"inputAbbreviatedPath": "\/images\/cups\/cups_02.png",
+		"outputAbbreviatedPath": "\/images\/cups\/cups_02.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/player.png": {
+	"\/images\/cups\/cups_03.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 46865,
-		"inputAbbreviatedPath": "\/images\/player.png",
-		"outputAbbreviatedPath": "\/images\/player.png",
+		"initialSize": 10072,
+		"inputAbbreviatedPath": "\/images\/cups\/cups_03.png",
+		"outputAbbreviatedPath": "\/images\/cups\/cups_03.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/cups\/cups_04.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7959,
+		"inputAbbreviatedPath": "\/images\/cups\/cups_04.png",
+		"outputAbbreviatedPath": "\/images\/cups\/cups_04.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -443,7 +465,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Marach Treekunprapa",
+"lastSavedByUser": "Hao Ying Chang",
 "manualImportLinks": {
 	},
 "projectAttributes": {
