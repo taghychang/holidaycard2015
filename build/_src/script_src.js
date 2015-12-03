@@ -18,43 +18,47 @@ var tweenL, tweenR;
 // CUP VARS
 var tween_position,
     tween_size,
-    cups_on_table;
+    cups_on_table,
+    cup_move;
 
 // SCORE VARS
 var stageFreeze,
     score;
 
-var playGame = function(game) { if (game){ } };
+var playGame = function(game) {
+    if (game) {}
+};
 
-function processHandler(player, coffee) {
+function processHandler(player, cupHit) {
     return true;
 }
 
-function scoreHandler(coffee){
+function scoreHandler(cupHit) {
 
-    if (coffee.frame === 2) {
+    if (cupHit.frame === 0 || cupHit.frame === 1) {
         score += 1;
+        console.log(score);
     } else {
         score -= 1;
-    } 
-    stageFreeze.frame = score;
-    
-    if(score === 8 || score === 4 ) {
-        //game.state.start('EndGame');
-        console.log('GAME OVER .. MOVE ON');
+        console.log("--"+score);
     }
+    stageFreeze.frame = score;
+
+    // if (score === 8 || score === 4) {
+    //     //game.state.start('EndGame');
+    //     console.log('GAME OVER .. MOVE ON');
+    // }
 }
 
-function collisionHandler(player, coffee) {
-    if (coffee.frame === 2) {
-        coffee.kill();
+function collisionHandler(player, cupHit) {
+    if (cupHit.frame === 0 || cupHit.frame === 1) {
+        cupHit.kill();
         console.log('hot');
     } else {
-        coffee.kill();
+        cupHit.kill();
         console.log('ice');
     }
-
-    scoreHandler(coffee);
+    scoreHandler(cupHit);
 }
 
 function moveOver() {
@@ -102,7 +106,7 @@ var movePlayer = {
             }, playerSpeed, Phaser.Easing.Linear.None, true);
             player.animations.play('left', false);
             playerPosition--;
-            console.log(playerPosition);
+            console.log("lane: "+ playerPosition);
         } else {
             //Play half animation left
             player.animations.play('halfLeft', false);
@@ -116,7 +120,7 @@ var movePlayer = {
             }, playerSpeed, Phaser.Easing.Linear.None, true);
             player.animations.play('right', false);
             playerPosition++;
-            console.log(playerPosition);
+            console.log("lane: "+ playerPosition);
         } else {
             // //Play half animation right
             player.animations.play('halfRight', false);
@@ -127,17 +131,62 @@ var movePlayer = {
 
 function checkPos(cup) {
 
-    if (cup.y > game.height*3) {
+    if (cup.y > game.height * 3) {
         cup.y = -1000;
     }
 
+}
+
+// Marach's move cups ==================================
+function ServeCup() {
+    // Setting
+    var start_position = 395;
+    var cup_speed = 1000;
+    var end_position = 782;
+
+    // Position to start the cup
+    if (this.lane === 'left') {
+        cup_move = cups_on_table.create(game.rnd.between(240, 265), start_position, 'cup_move');
+    } else if (this.lane === 'mid') {
+        cup_move = cups_on_table.create(game.rnd.between(295, 280), start_position, 'cup_move');
+    } else if (this.lane === 'right') {
+        cup_move = cups_on_table.create(game.rnd.between(345, 370), start_position, 'cup_move');
+    }
+
+    cup_move.frame = game.rnd.between(0, 3);
+
+    // Scale the cup up
+    cup_move.scale.setTo(0.17, 0.17);
+    cup_move.anchor.set(0.5, 0.9);
+    tween_size = game.add.tween(cup_move.scale);
+    tween_size.to({ x: 0.5, y: 0.5 }, cup_speed, 'Linear', true, 0);
+
+    // Position to stop the cup
+    tween_position = game.add.tween(cup_move);
+    if (this.lane === 'left') {
+        tween_position.to({ x: game.rnd.between(0, 108),y: end_position }, cup_speed, 'Linear', true, 0);
+    } else if (this.lane === 'mid') {
+        tween_position.to({ x: game.rnd.between(240, 360),y: end_position }, cup_speed, 'Linear', true, 0);
+    } else if (this.lane === 'right') {
+        tween_position.to({ x: game.rnd.between(472, 580),y: end_position }, cup_speed, 'Linear', true, 0);
+    }
+
+    function fallDown() {
+        tween_position = game.add.tween(cup_move);
+        tween_position.to({ y: 1200}, 1000, 'Linear', true, 0);
+        tween_position.start();
+    }
+
+    tween_position.onComplete.addOnce(fallDown);
+    tween_position.start();
+    cups_on_table.sort('y', Phaser.Group.SORT_ASCENDING);
 }
 
 playGame.prototype = {
     preload: function() {
         game.load.image('shop', 'images/shop.jpg');
         game.load.image('table', 'images/table.png');
-        
+
         // game.load.image('player', 'images/player.png');
         game.load.atlas('cup_move', 'images/cups/cups.png', 'images/cups/cups.json');
         game.load.spritesheet('player', 'images/playerSprite.png', 325, 347);
@@ -148,6 +197,9 @@ playGame.prototype = {
     },
     create: function() {
         game.physics.startSystem(Phaser.Physics.ARCADE);
+        
+        // DEBUG
+        game.add.plugin(Phaser.Plugin.Debug);
 
         shop = game.add.sprite(0, 0, 'shop');
         shop.anchor.set(0);
@@ -156,7 +208,7 @@ playGame.prototype = {
         // table.anchor.set(0.5, 1);
 
         // PLACE STAGE FREEZE ON STAGE & DECLARE INITIAL SCORE 
-        score = 5;  // out of 10 
+        score = 5; // out of 10 
         stageFreeze = game.add.sprite(0, 0, 'stageFreeze');
         stageFreeze.frame = score;
 
@@ -178,78 +230,35 @@ playGame.prototype = {
 
         cursor = game.input.keyboard.createCursorKeys();
 
-        // // //Game Controls
+        //Game Controls
         game.input.onDown.add(moveOver);
         game.input.onDown.add(beginSwipe, this);
 
         cursor.left.onDown.add(movePlayer.left);
         cursor.right.onDown.add(movePlayer.right);
-            // Marach's move cups ==================================
 
-    cups_on_table = game.add.group();
+        cups_on_table = game.add.physicsGroup();
+        player.body.setSize(200, 100, 0, 110);
 
-    var ServeCup = function(cup_move) {
 
-      // Setting
-      var start_position = 395;
-      var cup_speed = 3000;
-      var end_position = 782;
+        game.physics.enable([player,cups_on_table], Phaser.Physics.ARCADE);
 
-      // Position to start the cup
-      if (this.lane === 'left'){
-        cup_move = cups_on_table.create(game.rnd.between(240, 265), start_position, 'cup_move');
-      }
-      else if (this.lane === 'mid'){
-        cup_move = cups_on_table.create(game.rnd.between(295, 280), start_position, 'cup_move');
-      }
-      else if (this.lane === 'right'){
-        cup_move = cups_on_table.create(game.rnd.between(345, 370), start_position, 'cup_move');
-      }
+    
+        // Keyboard control to generate serving cups
+        cursor.left.onDown.add(ServeCup, { lane: 'left' });
+        cursor.right.onDown.add(ServeCup, { lane: 'right' });
+        cursor.down.onDown.add(ServeCup, { lane: 'mid' });
 
-      cup_move.frame = game.rnd.between(0, 3);
-
-      // Scale the cup up
-      cup_move.scale.setTo(0.17,0.17);
-      cup_move.anchor.set(0.5,0.9);
-      tween_size = game.add.tween(cup_move.scale);
-      tween_size.to({x:0.5, y:0.5}, cup_speed, 'Linear', true, 0);
-
-      // Position to stop the cup
-      tween_position = game.add.tween(cup_move);
-      if (this.lane === 'left'){
-        tween_position.to({x:game.rnd.between(0, 108), y:end_position}, cup_speed, 'Linear', true, 0);
-      }
-      else if (this.lane === 'mid'){
-        tween_position.to({x:game.rnd.between(240, 360), y:end_position}, cup_speed, 'Linear', true, 0);
-      }
-      else if (this.lane === 'right'){
-        tween_position.to({x:game.rnd.between(472, 580), y:end_position}, cup_speed, 'Linear', true, 0);
-      }
-      
-      function fallDown() {
-        tween_position = game.add.tween(cup_move);
-        tween_position.to({y:1200}, 1000, 'Linear', true, 0);
-        tween_position.start();
-      }
-
-      tween_position.onComplete.addOnce(fallDown);
-      tween_position.start();
-        cups_on_table.sort('y', Phaser.Group.SORT_ASCENDING);
-    };
-
-    // Using Serve Cup
-    cursor.left.onDown.add(ServeCup, {lane: 'left'});
-    cursor.right.onDown.add(ServeCup, {lane: 'right'});
-    cursor.down.onDown.add(ServeCup, {lane: 'mid'});
-
-    // End Marach's move cups ================================================
+        // End Marach's move cups ================================================
     },
     update: function() {
 
         if (game.physics.arcade.overlap(player, cups_on_table, collisionHandler, processHandler, this)) {
-
         }
+    }, 
+    render: function(){
+        game.debug.body(player);
+        game.debug.body(cups_on_table);
     }
 
 };
-
