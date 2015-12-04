@@ -18,7 +18,8 @@ var tweenL, tweenR;
 // CUP VARS
 var tween_position,
     tween_size,
-    cups_on_table;
+    cups_on_table,
+    cup_speed;
 
 // SCORE VARS
 var stageFreeze,
@@ -42,6 +43,9 @@ function scoreHandler(cupHit) {
         console.log("--"+score);
     }
     stageFreeze.frame = score;
+    checkEnd();
+    adjustDifficulty();
+    console.log('time on table(speed) ='+ cup_speed)
 
     // if (score === 8 || score === 4) {
     //     //game.state.start('EndGame');
@@ -136,11 +140,27 @@ function checkPos(cup) {
 
 }
 
+// make cup come faster if the player is doing good
+function adjustDifficulty() {
+  cup_speed = 2300-score*250;
+}
+
+// make cup come faster if the player is doing good
+function checkEnd() {
+  if (score==10) {
+      console.log("YOU WIN");
+      game.state.start("EndGame");
+  }
+  else if (score==0) {
+      console.log("YOU LOSE");
+      game.state.start("EndGame");
+  }
+}
+
 // Marach's move cups ==================================
 function ServeCup() {
     // Setting
     var start_position = 395;
-    var cup_speed = 1000;
     var end_position = 782;
     var cup_move;
 
