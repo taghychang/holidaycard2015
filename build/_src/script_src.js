@@ -18,8 +18,7 @@ var tweenL, tweenR;
 // CUP VARS
 var tween_position,
     tween_size,
-    cups_on_table,
-    cup_move;
+    cups_on_table;
 
 // SCORE VARS
 var stageFreeze,
@@ -143,6 +142,7 @@ function ServeCup() {
     var start_position = 395;
     var cup_speed = 1000;
     var end_position = 782;
+    var cup_move;
 
     // Position to start the cup
     if (this.lane === 'left') {
@@ -250,6 +250,13 @@ playGame.prototype = {
         cursor.down.onDown.add(ServeCup, { lane: 'mid' });
 
         // End Marach's move cups ================================================
+        
+        // To position player on the top ================================================
+        var player_layer = game.add.group();
+        var freeze_layer = game.add.group();
+        player_layer.add(player);
+        freeze_layer.add(stageFreeze);
+        game.world.bringToTop(freeze_layer);
     },
     update: function() {
 
