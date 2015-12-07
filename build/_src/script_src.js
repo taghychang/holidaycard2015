@@ -3,26 +3,80 @@
 var player;
 var playerPosition;
 var playerPositions;
-var playerSpeed = 300;
-var cups;
+var playerSpeed;
+var cupSpeed;
 var cursor;
+var cupGeneratorSpeed;
 
+//Cup group
+var CupGroup;
 
+// ENVIRONMENT
+var shop;
 
-var playGame = function(game) {};
+// SWIPE DETECTIONS VARS
+var endX, startX;
 
-function processHandler(player, coffee) {
+// CHARACTER MOVE VARS 
+var tweenL, tweenR;
+
+// CUP VARS
+var tween_position,
+    tween_size,
+    cup_speed;
+
+// SCORE VARS
+var stageFreeze,
+    score;
+
+var playGame = function(game) {
+    if (game) {}
+};
+
+function processHandler(player, cupHit) {
     return true;
 }
 
-function collisionHandler(player, coffee) {
-    if (coffee.frame === 2) {
-        coffee.kill();
-        console.log("hot");
+function scoreHandler(cupHit) {
+
+    if (cupHit.frame === 0) {
+        score += 3;
+        cupGeneratorSpeed -= 0.4;
+        console.log(score);
+        console.log("cupG =" + cupGeneratorSpeed);
+    } else if (cupHit.frame === 1)  {
+        score += 1;
+        // cupGeneratorSpeed -= .4;
+    } else if (cupHit.frame === 2) {
+        score -= 2;
+        cupGeneratorSpeed += 0.2;
+        console.log("--"+score);
     } else {
-        coffee.kill();
-        console.log("ice");
+        score -= 1;
+        cupGeneratorSpeed += 0.2;
+        console.log("--"+score);
     }
+
+    stageFreeze.frame = score;
+    // checkEnd();
+    // adjustDifficulty();
+    console.log('time on table(speed) ='+ cup_speed)
+
+    if (score >= 10 || score === 0) {
+        game.state.start('EndGame');
+        console.log('GAME OVER .. MOVE ON');
+    }
+}
+
+function collisionHandler(player, cupHit) {
+    if (cupHit.frame === 0 || cupHit.frame === 1) {
+        cupHit.kill();
+        console.log('hot');
+    } else {
+        cupHit.kill();
+        console.log('ice');
+    }
+    scoreHandler(cupHit);
 }
 
 function moveOver() {
@@ -52,9 +106,9 @@ function endSwipe() {
 
     if (Math.abs(distX) > 10) {
         if (distX > 0) {
-            movePlayer.left();
-        } else {
             movePlayer.right();
+        } else {
+            movePlayer.left();
         }
     }
     game.input.onDown.add(beginSwipe);
@@ -63,30 +117,28 @@ function endSwipe() {
 
 var movePlayer = {
 
-
     left: function() {
         if (playerPosition > 0) {
-            var tweenL = game.add.tween(player).to({
+            tweenL = game.add.tween(player).to({
                 x: playerPositions[playerPosition - 1]
             }, playerSpeed, Phaser.Easing.Linear.None, true);
             player.animations.play('left', false);
             playerPosition--;
-            console.log(playerPosition);
+            console.log("lane: "+ playerPosition);
         } else {
             //Play half animation left
             player.animations.play('halfLeft', false);
-
         }
     },
 
     right: function() {
         if (playerPosition < 2) {
-            var tweenR = game.add.tween(player).to({
+            tweenR = game.add.tween(player).to({
                 x: playerPositions[playerPosition + 1]
             }, playerSpeed, Phaser.Easing.Linear.None, true);
             player.animations.play('right', false);
             playerPosition++;
-            console.log(playerPosition);
+            console.log("lane: "+ playerPosition);
         } else {
             // //Play half animation right
             player.animations.play('halfRight', false);
@@ -95,69 +147,51 @@ var movePlayer = {
     }
 };
 
-function checkPos(cup) {
-
-    if (cup.y > game.height*3) {
-        cup.y = -1000;
-    }
-
-}
-
-function generateCup() {
-    cups = game.add.physicsGroup();
-    cups.scale.setTo(.35);
-    var y = 0;
-    // game.rnd.between(lanesX[0], lanesX[1]
-
-    for (var i = 0; i < 10; i++) {
-        var hotPlus1 = cups.create(game.world.randomX, game.world.randomY, 'coffee', 2);
-        // var hotPlus3 = cups.create(game.world.randomX, game.world.randomY, 'coffee', 3);
-        // var hotPlus5 = cups.create(game.world.randomX, game.world.randomY, 'coffee', 4);
-        var cup = cups.create(game.world.randomX, game.world.randomY, 'coffee', game.rnd.between(3, 6));
-        cup.body.velocity.y = game.rnd.between(100, 300);
-        hotPlus1.body.velocity.y = game.rnd.between(400, 800);
-
-        game.add.tween(hotPlus1).to( { y : game.height}, 2000, Phaser.Easing.Linear.None, true);
-        //        game.add.tween(hotcCoffee.scale).to( { x: 10, y: 10 }, 2000, Phaser.Easing.Linear.None, true);
-        cup.anchor.set(0.5);
-    }
-
-
-}
-
 playGame.prototype = {
     preload: function() {
-        game.load.image("shop", "images/shop.jpg");
-        game.load.image("table", "images/table.png");
-        // game.load.image("player", "images/player.png");
-        // game.load.spritesheet('coffee', 'images/fruitnveg32wh37.png', 32, 32);
-        game.load.spritesheet('coffee', 'images/cups.png', 334, 342);
+        game.load.image('shop', 'images/shop.jpg');
+        game.load.image('table', 'images/table.png');
+
+        // game.load.image('player', 'images/player.png');
+        game.load.atlasXML('cup', 'images/cups/sprites.png', 'images/cups/sprites.xml');
         game.load.spritesheet('player', 'images/playerSprite.png', 325, 347);
+
+        // ADD STAGEFREEZE SPRITESHEET
+        game.load.atlas('stageFreeze', 'images/stageFreeze/stageFreeze.png', 'images/stageFreeze/stageFreeze.json');
 
     },
     create: function() {
         game.physics.startSystem(Phaser.Physics.ARCADE);
 
+        cupGeneratorSpeed = 0.5;
+        playerSpeed = 200;
+        cupSpeed = 1000;
+        
+        // DEBUG
+        // game.add.plugin(Phaser.Plugin.Debug);
+
         shop = game.add.sprite(0, 0, 'shop');
         shop.anchor.set(0);
 
-        // table = game.add.sprite(game.world.centerX, game.world.height - 50, 'table');
-        // table.anchor.set(0.5, 1);
+        // PLACE STAGE FREEZE ON STAGE & DECLARE INITIAL SCORE 
+        score = 5; // out of 10 
+        stageFreeze = game.add.sprite(0, 0, 'stageFreeze');
+        stageFreeze.frame = score;
 
-        generateCup();
 
-
+        // PLAYER POSITIONS TO SLIDE INTO
         var lane0X = game.width / 2 - 260;
         var lane1X = game.width / 2;
         var lane2X = game.width / 2 + 260;
-        lanesX = [lane0X, lane1X, lane2X];
+        var lanesX = [lane0X, lane1X, lane2X];
 
         playerPosition = 1;
         playerPositions = [lanesX[0], lanesX[1], lanesX[2]];
-        player = game.add.sprite(playerPositions[playerPosition], game.height - 160, "player");
+        player = game.add.sprite(playerPositions[playerPosition], game.height - 160, 'player');
         player.anchor.set(0.5);
         game.physics.arcade.enable(player);
 
+        // PLAYER SPRTE ANIMATIONS
         player.animations.add('left', [0, 1, 2, 3, 4], 10, false);
         player.animations.add('right', [5, 6, 7, 8, 4], 10, false);
         player.animations.add('halfLeft', [0, 4], 10, false);
@@ -165,22 +199,96 @@ playGame.prototype = {
 
         cursor = game.input.keyboard.createCursorKeys();
 
-        // // //Game Controls
+        // GAME CONTROLS
         game.input.onDown.add(moveOver);
         game.input.onDown.add(beginSwipe, this);
 
-
         cursor.left.onDown.add(movePlayer.left);
         cursor.right.onDown.add(movePlayer.right);
+
+        this.cups = this.game.add.group();
+
+        game.physics.enable(player, Phaser.Physics.ARCADE);
+
+        // SET HIT AREA ON PLAYER
+        player.body.setSize(10, 10, 0, 30);
+
+        game.physics.enable(player, Phaser.Physics.ARCADE);
+
+        
+        // To position player on the top ================================================
+        var player_layer = game.add.group();
+        var freeze_layer = game.add.group();
+        player_layer.add(player);
+        freeze_layer.add(stageFreeze);
+        game.world.bringToTop(freeze_layer);
+
+        // SETUP TIMER FOR CUP GENERATOR AND START
+        this.cupGenerator = this.game.time.events.loop(Phaser.Timer.SECOND * cupGeneratorSpeed, this.generateCups, this);
+        this.cupGenerator.timer.start();
     },
     update: function() {
 
-        cups.forEach(checkPos, this);
+        this.cups.forEach(function(cupGroup) {
+            this.game.physics.arcade.overlap(player, cupGroup,  collisionHandler, processHandler, this);
+        }, this);
+    }, 
 
-        if (game.physics.arcade.overlap(player, cups, collisionHandler, processHandler, this)) {
+    generateCups: function() { 
 
+        var tableEnd = 782;
+        var lanesYstart = 395;
+
+        var leftXend = (game.rnd.between(0, 108));
+        var midXend = (game.rnd.between(240, 360));
+        var rightXend = (game.rnd.between(472, 580));
+
+        var leftXstart = (game.rnd.between(240, 265));
+        var midXstart = (game.rnd.between(290, 285));
+        var rightXstart = (game.rnd.between(345, 370));
+
+        var lanesXstart = [leftXstart, midXstart, rightXstart];
+
+        var lanesXend = [leftXend, midXend, rightXend];
+
+        var cupGroup = this.cups.getFirstExists(false);
+            if(!cupGroup) {
+            cupGroup = new CupGroup(this.game, this.cups);  
         }
+
+        cupGroup.reset(lanesXstart[game.rnd.integerInRange(0,2)], lanesYstart);
+
+        console.log(cupGroup.x);
+
+
+        tween_size = game.add.tween(cupGroup.scale);
+        tween_size.to({ x: 0.5, y: 0.5 }, cupSpeed, 'Linear', true, 0);
+
+
+        tween_position = game.add.tween(cupGroup);
+
+        if (cupGroup.x === lanesXstart[0]){
+            tween_position.to({ x: lanesXend[0], y: tableEnd }, cupSpeed, 'Linear', true, 0);
+        } else if (cupGroup.x === lanesXstart[1]) {
+            tween_position.to({ x: lanesXend[1], y: tableEnd }, cupSpeed, 'Linear', true, 0);
+        } else {
+            tween_position.to({ x: lanesXend[2], y: tableEnd }, cupSpeed, 'Linear', true, 0);
+        }
+
+        function fallDown() {
+            tween_position = game.add.tween(cupGroup);
+            tween_position.to({ y: 1200}, 500, 'Linear', true, 0);
+            tween_position.start();
+        }
+
+        tween_position.onComplete.addOnce(fallDown);
+        cupGroup.sort('y', Phaser.Group.SORT_ASCENDING);
+       
+    },
+
+    render: function(){
+        game.debug.body(player);
+        // game.debug.body();
     }
 
 };
-

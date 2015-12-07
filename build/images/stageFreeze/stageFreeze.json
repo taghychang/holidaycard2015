@@ -1,0 +1,111 @@
+{"frames": [
+
+{
+	"filename": "stageFreeze_10.png",
+	"frame": {"x":0,"y":0,"w":580,"h":880},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":580,"h":880},
+	"sourceSize": {"w":580,"h":880},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "stageFreeze_09.png",
+	"frame": {"x":580,"y":0,"w":580,"h":880},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":580,"h":880},
+	"sourceSize": {"w":580,"h":880},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "stageFreeze_08.png",
+	"frame": {"x":1160,"y":0,"w":580,"h":880},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":580,"h":880},
+	"sourceSize": {"w":580,"h":880},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "stageFreeze_07.png",
+	"frame": {"x":0,"y":880,"w":580,"h":880},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":580,"h":880},
+	"sourceSize": {"w":580,"h":880},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "stageFreeze_06.png",
+	"frame": {"x":580,"y":880,"w":580,"h":880},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":580,"h":880},
+	"sourceSize": {"w":580,"h":880},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "stageFreeze_05.png",
+	"frame": {"x":1160,"y":880,"w":580,"h":880},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":580,"h":880},
+	"sourceSize": {"w":580,"h":880},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "stageFreeze_04.png",
+	"frame": {"x":0,"y":1760,"w":580,"h":880},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":580,"h":880},
+	"sourceSize": {"w":580,"h":880},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "stageFreeze_03.png",
+	"frame": {"x":580,"y":1760,"w":580,"h":880},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":580,"h":880},
+	"sourceSize": {"w":580,"h":880},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "stageFreeze_02.png",
+	"frame": {"x":1160,"y":1760,"w":580,"h":880},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":580,"h":880},
+	"sourceSize": {"w":580,"h":880},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "stageFreeze_01.png",
+	"frame": {"x":0,"y":2640,"w":580,"h":880},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":580,"h":880},
+	"sourceSize": {"w":580,"h":880},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "stageFreeze_00.png",
+	"frame": {"x":580,"y":2640,"w":580,"h":880},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":580,"h":880},
+	"sourceSize": {"w":580,"h":880},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "stageFreeze.png",
+	"format": "RGBA8888",
+	"size": {"w":2048,"h":4096},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:f3abd892b7b3402ac8a80fe87058b7c3:82526c9e68f49657675b02ec1302370c:a1b8d4ba006814aa1b22d01f32cb6032$"
+}
+}
