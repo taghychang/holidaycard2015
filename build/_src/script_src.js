@@ -40,7 +40,7 @@ function processHandler(player, cupHit) {
 function scoreHandler(cupHit) {
 
     if (cupHit.frame === 0) {
-        score += 3;
+        score += 2;
         cupGeneratorSpeed -= 0.4;
         console.log(score);
         console.log("cupG =" + cupGeneratorSpeed);
@@ -97,22 +97,22 @@ function beginSwipe() {
     startX = game.input.worldX;
     game.input.onDown.remove(beginSwipe);
     game.input.onUp.add(endSwipe);
-}
 
-function endSwipe() {
+    function endSwipe() {
 
-    endX = game.input.worldX;
-    var distX = startX - endX;
+        endX = game.input.worldX;
+        var distX = startX - endX;
 
-    if (Math.abs(distX) > 10) {
-        if (distX > 0) {
-            movePlayer.right();
-        } else {
-            movePlayer.left();
+        if (Math.abs(distX) > 10) {
+            if (distX > 0) {
+                movePlayer.left();
+            } else {
+                movePlayer.right();
+            }
         }
+        game.input.onDown.add(beginSwipe);
+        game.input.onUp.remove(endSwipe);
     }
-    game.input.onDown.add(beginSwipe);
-    game.input.onUp.remove(endSwipe);
 }
 
 var movePlayer = {
@@ -163,6 +163,17 @@ playGame.prototype = {
     create: function() {
         game.physics.startSystem(Phaser.Physics.ARCADE);
 
+
+        game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+        game.scale.minWidth = 320;
+        game.scale.minHeight = 480;
+        game.scale.maxWidth = 1080;
+        game.scale.maxHeight = 1639;
+        // game.scale.forcePortait(true);
+
+        game.scale.refresh();
+
+
         cupGeneratorSpeed = 0.5;
         playerSpeed = 200;
         cupSpeed = 1000;
@@ -200,7 +211,7 @@ playGame.prototype = {
         cursor = game.input.keyboard.createCursorKeys();
 
         // GAME CONTROLS
-        game.input.onDown.add(moveOver);
+        // game.input.onDown.add(moveOver);
         game.input.onDown.add(beginSwipe, this);
 
         cursor.left.onDown.add(movePlayer.left);

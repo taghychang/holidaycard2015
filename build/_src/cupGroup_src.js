@@ -29,10 +29,10 @@ var CupGroup = function(game, parent) {
 
   // Adjust Difficulty
   // Choose the cups to generate based on the score
-  if (score < 3) {
+  if (score <= 3) {
     this.add(this.cupsPlus[game.rnd.integerInRange(0,1)]);
-  } else if (score > 7) {
-    this.add(this.cupsPlus[game.rnd.integerInRange(1,3)]);
+  } else if (score >= 6) {
+    this.add(this.cupsPlus[game.rnd.integerInRange(2,3)]);
   } else {
     this.add(this.cupsPlus[game.rnd.integerInRange(0,3)]);
   }
