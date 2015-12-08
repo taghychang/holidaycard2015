@@ -60,7 +60,7 @@ function scoreHandler(cupHit) {
     stageFreeze.frame = score;
     // checkEnd();
     // adjustDifficulty();
-    console.log('time on table(speed) ='+ cup_speed)
+    console.log('time on table(speed) ='+ cup_speed);
 
     if (score >= 10 || score === 0) {
         game.state.start('EndGame');
@@ -147,30 +147,22 @@ var movePlayer = {
     }
 };
 
+
 playGame.prototype = {
     preload: function() {
-        game.load.image('shop', 'images/shop.jpg');
-        game.load.image('table', 'images/table.png');
+        // game.load.image('shop', 'images/shop.jpg');
+        // game.load.image('table', 'images/table.png');
 
-        // game.load.image('player', 'images/player.png');
-        game.load.atlasXML('cup', 'images/cups/sprites.png', 'images/cups/sprites.xml');
-        game.load.spritesheet('player', 'images/playerSprite.png', 325, 347);
+        // // game.load.image('player', 'images/player.png');
+        // game.load.atlasXML('cup', 'images/cups/sprites.png', 'images/cups/sprites.xml');
+        // game.load.spritesheet('player', 'images/playerSprite.png', 325, 347);
 
-        // ADD STAGEFREEZE SPRITESHEET
-        game.load.atlas('stageFreeze', 'images/stageFreeze/stageFreeze.png', 'images/stageFreeze/stageFreeze.json');
+        // // ADD STAGEFREEZE SPRITESHEET
+        // game.load.atlas('stageFreeze', 'images/stageFreeze/stageFreeze.png', 'images/stageFreeze/stageFreeze.json');
 
     },
     create: function() {
         game.physics.startSystem(Phaser.Physics.ARCADE);
-
-
-        game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
-        game.scale.minWidth = 320;
-        game.scale.minHeight = 480;
-        game.scale.maxWidth = 1080;
-        game.scale.maxHeight = 1639;
-        // game.scale.forcePortait(true);
-
         game.scale.refresh();
 
 

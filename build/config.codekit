@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "19076",
+"creatorBuild": "19102",
 "files": {
 	"\/_src\/cupGroup_src.js": {
 		"fileType": 64,
@@ -30,6 +30,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_src\/pregame_src.js",
 		"outputAbbreviatedPath": "\/code\/pregame-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_src\/preloader_src.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_src\/preloader_src.js",
+		"outputAbbreviatedPath": "\/code\/preloader-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 1,
@@ -96,6 +107,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/code\/pregame-min.js",
 		"outputAbbreviatedPath": "\/code\/min\/pregame-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/code\/preloader-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/code\/preloader-min.js",
+		"outputAbbreviatedPath": "\/code\/min\/preloader-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -189,6 +211,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 83597,
+		"inputAbbreviatedPath": "\/images\/logo.png",
+		"outputAbbreviatedPath": "\/images\/logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/playerSprite.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -237,7 +270,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 694465,
+		"initialSize": 264010,
 		"inputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze.png",
 		"outputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze.png",
 		"outputPathIsOutsideProject": 0,
@@ -248,7 +281,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 200,
+		"initialSize": 194,
 		"inputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_00.png",
 		"outputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_00.png",
 		"outputPathIsOutsideProject": 0,
@@ -259,7 +292,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 12710,
+		"initialSize": 11358,
 		"inputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_01.png",
 		"outputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_01.png",
 		"outputPathIsOutsideProject": 0,
@@ -270,7 +303,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 15436,
+		"initialSize": 16677,
 		"inputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_02.png",
 		"outputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_02.png",
 		"outputPathIsOutsideProject": 0,
@@ -281,7 +314,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 18443,
+		"initialSize": 13856,
 		"inputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_03.png",
 		"outputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_03.png",
 		"outputPathIsOutsideProject": 0,
@@ -292,7 +325,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 23758,
+		"initialSize": 23732,
 		"inputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_04.png",
 		"outputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_04.png",
 		"outputPathIsOutsideProject": 0,
@@ -303,7 +336,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 26005,
+		"initialSize": 21565,
 		"inputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_05.png",
 		"outputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_05.png",
 		"outputPathIsOutsideProject": 0,
@@ -314,7 +347,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 27665,
+		"initialSize": 29431,
 		"inputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_06.png",
 		"outputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_06.png",
 		"outputPathIsOutsideProject": 0,
@@ -325,7 +358,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 32095,
+		"initialSize": 25420,
 		"inputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_07.png",
 		"outputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_07.png",
 		"outputPathIsOutsideProject": 0,
@@ -336,7 +369,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 30669,
+		"initialSize": 31139,
 		"inputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_08.png",
 		"outputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_08.png",
 		"outputPathIsOutsideProject": 0,
@@ -347,7 +380,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 33418,
+		"initialSize": 28348,
 		"inputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_09.png",
 		"outputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_09.png",
 		"outputPathIsOutsideProject": 0,
@@ -358,7 +391,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 40769,
+		"initialSize": 37842,
 		"inputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_10.png",
 		"outputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_10.png",
 		"outputPathIsOutsideProject": 0,
@@ -399,7 +432,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Rafael Diaz",
+"lastSavedByUser": "Hao Ying Chang",
 "manualImportLinks": {
 	},
 "projectAttributes": {
@@ -499,8 +532,16 @@
 			"active": 0,
 			"flagValue": -1
 			},
+		"no_nested_string_interpolation": {
+			"active": 1,
+			"flagValue": -1
+			},
 		"no_plusplus": {
 			"active": 0,
+			"flagValue": -1
+			},
+		"no_private_function_fat_arrows": {
+			"active": 1,
 			"flagValue": -1
 			},
 		"no_stand_alone_at": {
@@ -509,6 +550,10 @@
 			},
 		"no_tabs": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"no_this": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"no_throwing_strings": {
