@@ -57,14 +57,21 @@ function scoreHandler(cupHit) {
         console.log("--"+score);
     }
 
-    stageFreeze.frame = score;
+    //stageFreeze.frame = score;
     // checkEnd();
     // adjustDifficulty();
     console.log('time on table(speed) ='+ cup_speed);
 
-    if (score >= 10 || score === 0) {
-        game.state.start('EndGame');
-        console.log('GAME OVER .. MOVE ON');
+// Check for win or lose condition
+    if (score >= 10)  {
+        game.state.start('EndGameWin');
+        console.log('Win!');
+    } else if (score <= 0) {
+        console.log('Lose!');
+        game.animateFreeze.play('freeze', 5)
+        game.animateFreeze.events.onAnimationComplete.addOnce(function() {
+            game.state.start("EndGame");
+        });    
     }
 }
 
@@ -119,7 +126,10 @@ var movePlayer = {
 
     left: function() {
         if (playerPosition > 0) {
-            tweenL = game.add.tween(player).to({
+          // To test: Marach will remove this
+          score=-21;
+          // End Marach will remove this
+      tweenL = game.add.tween(player).to({
                 x: playerPositions[playerPosition - 1]
             }, playerSpeed, Phaser.Easing.Linear.None, true);
             player.animations.play('left', false);
@@ -132,7 +142,10 @@ var movePlayer = {
     },
 
     right: function() {
-        if (playerPosition < 2) {
+            //Marach will remove this
+            score=+21;
+            // End Marach will remove this
+      if (playerPosition < 2) {
             tweenR = game.add.tween(player).to({
                 x: playerPositions[playerPosition + 1]
             }, playerSpeed, Phaser.Easing.Linear.None, true);
@@ -179,7 +192,7 @@ playGame.prototype = {
         // PLACE STAGE FREEZE ON STAGE & DECLARE INITIAL SCORE 
         score = 5; // out of 10 
         stageFreeze = game.add.sprite(0, 0, 'stageFreeze');
-        stageFreeze.frame = score;
+        //stageFreeze.frame = score;
 
 
         // PLAYER POSITIONS TO SLIDE INTO
@@ -229,6 +242,11 @@ playGame.prototype = {
         // SETUP TIMER FOR CUP GENERATOR AND START
         this.cupGenerator = this.game.time.events.loop(Phaser.Timer.SECOND * cupGeneratorSpeed, this.generateCups, this);
         this.cupGenerator.timer.start();
+
+        // PREPARE FREEZE animation when player lose
+        game.animateFreeze = game.add.sprite(0,0, 'stageFreeze');
+        game.animateFreeze.animations.add('freeze');
+        game.animateFreeze.frame = 0;
     },
     update: function() {
 
