@@ -1,0 +1,84 @@
+{"frames": [
+
+{
+	"filename": "5268908_Barista_1-01-01.png",
+	"frame": {"x":1,"y":1,"w":342,"h":406},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":23,"y":0,"w":342,"h":406},
+	"sourceSize": {"w":475,"h":406}
+},
+{
+	"filename": "5268908_Barista_1-02-01.png",
+	"frame": {"x":345,"y":1,"w":331,"h":406},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":79,"y":0,"w":331,"h":406},
+	"sourceSize": {"w":475,"h":406}
+},
+{
+	"filename": "5268908_Barista_1-03-01.png",
+	"frame": {"x":678,"y":1,"w":475,"h":344},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":475,"h":344},
+	"sourceSize": {"w":475,"h":406}
+},
+{
+	"filename": "5268908_Barista_1-04-01.png",
+	"frame": {"x":1155,"y":1,"w":432,"h":385},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":43,"y":0,"w":432,"h":385},
+	"sourceSize": {"w":475,"h":406}
+},
+{
+	"filename": "5268908_Barista_1-05-01.png",
+	"frame": {"x":1,"y":409,"w":343,"h":406},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":48,"y":0,"w":343,"h":406},
+	"sourceSize": {"w":475,"h":406}
+},
+{
+	"filename": "5268908_Barista_1-06-01.png",
+	"frame": {"x":346,"y":409,"w":327,"h":405},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":85,"y":0,"w":327,"h":405},
+	"sourceSize": {"w":475,"h":406}
+},
+{
+	"filename": "5268908_Barista_1-07-01.png",
+	"frame": {"x":675,"y":409,"w":475,"h":343},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":475,"h":343},
+	"sourceSize": {"w":475,"h":406}
+},
+{
+	"filename": "5268908_Barista_1-08-01.png",
+	"frame": {"x":1152,"y":409,"w":372,"h":385},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":38,"y":0,"w":372,"h":385},
+	"sourceSize": {"w":475,"h":406}
+},
+{
+	"filename": "5268908_Barista_1-09-01.png",
+	"frame": {"x":1526,"y":409,"w":341,"h":406},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":17,"y":0,"w":341,"h":406},
+	"sourceSize": {"w":475,"h":406}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "player.png",
+	"format": "RGBA8888",
+	"size": {"w":1868,"h":816},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:64cc8badc42f770741a28abb38867e3d:14fa8f80a1039489a873914fe23f0ef5:86d5339b780aedd87b35e2b7c0a7e11b$"
+}
+}

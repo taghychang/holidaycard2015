@@ -174,8 +174,7 @@ var movePlayer = {
 
 playGame.prototype = {
     preload: function() {
-        // game.load.image('shop', 'images/shop.jpg');
-        // game.load.image('table', 'images/table.png');
+        game.load.atlas('barista', 'images/barista/barista.png', 'images/barista/barista.json');
 
         game.load.atlas('cup', 'images/cups/cups.png', 'images/cups/cups.json');
         game.load.spritesheet('player', 'images/playerSprite.png', 130, 238);
@@ -206,7 +205,7 @@ playGame.prototype = {
 
         cupGeneratorSpeed = 0.5;
         playerSpeed = 200;
-        cupSpeed = 1000;
+        cupSpeed = 750;
         
         // DEBUG
         // game.add.plugin(Phaser.Plugin.Debug);
@@ -225,7 +224,9 @@ playGame.prototype = {
 
 
   
-
+        barista = game.add.sprite(60, 49, 'barista');
+        barista.animations.add('youGotServed', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 12, true);
+        barista.animations.play('youGotServed', true);
         // PLAYER POSITIONS TO SLIDE INTO
         var lane0X = game.width / 2 - 200;
         var lane1X = game.width / 2;
