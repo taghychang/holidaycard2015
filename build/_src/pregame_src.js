@@ -22,7 +22,7 @@ preGame.prototype = {
 
         // Change to game stage
         function nextState() {
-          game.state.start("PlayGame");
+          game.state.start('Preloader');
         }
 
         // Title
@@ -61,7 +61,6 @@ preGame.prototype = {
         }
 
         game.scale.setScreenSize(true); 
-        this.state.start('Preloader');
 
     }
 
