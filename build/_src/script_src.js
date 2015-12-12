@@ -31,6 +31,10 @@ var stageFreeze,
 
 var shopLoop;
 
+//AUDIO
+var powerUpAudio,
+    powerDownAudio;
+
 var playGame = function(game) {
     if (game) {}
 };
@@ -82,9 +86,13 @@ function scoreHandler(cupHit) {
 function collisionHandler(player, cupHit) {
     if (cupHit.frame === 0 || cupHit.frame === 1) {
         cupHit.kill();
+
+        powerUpAudioFX();
         console.log('hot');
     } else {
         cupHit.kill();
+
+        powerDownAudioFX();
         console.log('ice');
     }
     scoreHandler(cupHit);
@@ -184,6 +192,9 @@ playGame.prototype = {
         game.load.atlas('stageFreeze', 'images/stageFreeze/stageFreeze.png', 'images/stageFreeze/stageFreeze.json');
         game.load.atlas('scoreGauge', 'images/scoreGauge/scoreGauge.png', 'images/scoreGauge/scoreGauge.json');
 
+        // Audio Files for PowerUp/PowerDown
+        game.load.audio('powerUpFX', ['sounds/powerUpAudio.mp3', 'sound/powerUpAudio.ogg']);
+        game.load.audio('powerDownFX', ['sounds/powerDownAudio.mp3', 'sound/powerDownAudio.ogg']);
 
     },
     create: function() {
@@ -224,7 +235,6 @@ playGame.prototype = {
         //stageFreeze.frame = score;
 
 
-  
 
         // PLAYER POSITIONS TO SLIDE INTO
         var lane0X = game.width / 2 - 200;
