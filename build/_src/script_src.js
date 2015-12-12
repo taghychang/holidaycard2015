@@ -29,6 +29,14 @@ var tween_position,
 var stageFreeze,
     score;
 
+//POWER_PARTICLES
+var powerDown,
+    powerUp;
+
+var snowflakes_frames = 7;
+//RANDOMLY SELECT FROM AN ARRAY FOR SNOWFLAKE RANDOMIZATION WHEN PARTICLES ARE EMITTED
+var snowflakeArray = Array.apply(null, {length: snowflakes_frames}).map(Number.call, Number);
+
 var shopLoop;
 
 var playGame = function(game) {
@@ -82,9 +90,11 @@ function scoreHandler(cupHit) {
 function collisionHandler(player, cupHit) {
     if (cupHit.frame === 0 || cupHit.frame === 1) {
         cupHit.kill();
+        powerUpParticles();
         console.log('hot');
     } else {
         cupHit.kill();
+        powerDownParticles();
         console.log('ice');
     }
     scoreHandler(cupHit);
@@ -184,6 +194,9 @@ playGame.prototype = {
         game.load.atlas('stageFreeze', 'images/stageFreeze/stageFreeze.png', 'images/stageFreeze/stageFreeze.json');
         game.load.atlas('scoreGauge', 'images/scoreGauge/scoreGauge.png', 'images/scoreGauge/scoreGauge.json');
 
+        //ADD POWERDOWN POWERUP SPRITESHEET
+        game.load.atlas('snowflakes', 'images/powerDown/powerDown_snowflake_spriteSheet.png', 'images/powerDown/powerDown_snowflake_spriteSheet.json');
+        game.load.atlas('steam', 'images/powerUp/powerUp_steam_spriteSheet.png', 'images/powerUp/powerUp_steam_spriteSheet.json');
 
     },
     create: function() {
