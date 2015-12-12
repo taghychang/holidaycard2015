@@ -6,7 +6,7 @@
         <key>texturePackerVersion</key>
         <string>4.0.1</string>
         <key>fileName</key>
-        <string>/Users/jlopez/Desktop/HolidayCard/holidaycard2015/build/images/stageFreeze/StageFreeze.tps</string>
+        <string>/Users/mtreekunprapa/Desktop/TEMP/holidaycard2015/build/images/stageFreeze/StageFreeze.tps</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -123,7 +123,7 @@
                 <key>sortBy</key>
                 <enum type="AlgorithmBasicSettings::SortBy">Best</enum>
                 <key>order</key>
-                <enum type="AlgorithmBasicSettings::Order">Ascending</enum>
+                <enum type="AlgorithmBasicSettings::Order">Descending</enum>
             </struct>
         </struct>
         <key>andEngine</key>

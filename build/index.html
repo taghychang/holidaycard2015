@@ -3,10 +3,11 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Burrrista</title>
+    <title>Brrr-ista</title>
     <script type="text/javascript" src="code/phaser.min.js"></script>
     <script type="text/javascript" src="code/script-min.js"></script>
     <script type="text/javascript" src="code/pregame-min.js"></script>
+    <script type="text/javascript" src="code/preloader-min.js"></script>
     <script type="text/javascript" src="code/endgame-min.js"></script>
     <script type="text/javascript" src="code/phaser-debug.js"></script>
     <script type="text/javascript" src="code/cupGroup-min.js"></script>
@@ -32,6 +33,7 @@
         right: 0;
         margin: auto;
     }
+
     #stageFreezeDesk {
       position: absolute;
       width: 1500px;
@@ -42,12 +44,14 @@
 
     }
 
+
     </style>
 </head>
 
 <body>
     <script type="text/javascript">
     // Create Game Canvas
+
     var game;
     game = new Phaser.Game(640, 960, Phaser.AUTO, "game", null, true);
     game.state.add("PreGame", preGame);
@@ -61,6 +65,7 @@
     //     stageFreezeDesk.style.opacity = '1';
 
     // };
+
 
 
 

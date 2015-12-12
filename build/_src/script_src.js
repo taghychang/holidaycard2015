@@ -59,13 +59,23 @@ function scoreHandler(cupHit) {
         console.log("--"+score);
     }
 
+
     scoreGauge.frame = score;
 
-    // console.log('time on table(speed) ='+ cup_speed)
 
-    if (score >= 10 || score <= 0) {
-        game.state.start('EndGame');
-        console.log('GAME OVER .. MOVE ON');
+    console.log('time on table(speed) ='+ cup_speed);
+
+// Check for win or lose condition
+    if (score >= 10)  {
+        game.state.start('EndGameWin');
+        console.log('Win!');
+    } else if (score <= 0) {
+        console.log('Lose!');
+        game.animateFreeze.play('freeze', 5)
+        game.animateFreeze.events.onAnimationComplete.addOnce(function() {
+            game.state.start("EndGame");
+        });    
+
     }
 }
 
@@ -120,7 +130,10 @@ var movePlayer = {
 
     left: function() {
         if (playerPosition > 0) {
-            tweenL = game.add.tween(player).to({
+          // To test: Marach will remove this
+          score=-21;
+          // End Marach will remove this
+      tweenL = game.add.tween(player).to({
                 x: playerPositions[playerPosition - 1]
             }, playerSpeed, Phaser.Easing.Linear.None, true);
             player.animations.play('left', false);
@@ -133,7 +146,10 @@ var movePlayer = {
     },
 
     right: function() {
-        if (playerPosition < 2) {
+            //Marach will remove this
+            score=+21;
+            // End Marach will remove this
+      if (playerPosition < 2) {
             tweenR = game.add.tween(player).to({
                 x: playerPositions[playerPosition + 1]
             }, playerSpeed, Phaser.Easing.Linear.None, true);
@@ -148,16 +164,19 @@ var movePlayer = {
     }
 };
 
+
 // function startTunes() {
 //     console.log('shopTUNESSSS');
 
 //     shopLoop.fadeIn(1000);
 // }
 
+
 playGame.prototype = {
     preload: function() {
-        game.load.image('shop', 'images/shop.jpg');
-        game.load.image('table', 'images/table.png');
+        // game.load.image('shop', 'images/shop.jpg');
+        // game.load.image('table', 'images/table.png');
+
 
         game.load.atlas('cup', 'images/cups/cups.png', 'images/cups/cups.json');
         game.load.spritesheet('player', 'images/playerSprite.png', 130, 238);
@@ -166,12 +185,12 @@ playGame.prototype = {
         game.load.atlas('stageFreeze', 'images/stageFreeze/stageFreeze.png', 'images/stageFreeze/stageFreeze.json');
         game.load.atlas('scoreGauge', 'images/scoreGauge/scoreGauge.png', 'images/scoreGauge/scoreGauge.json');
 
-    
 
     },
     create: function() {
 
         game.physics.startSystem(Phaser.Physics.ARCADE);
+
 
 
         // game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
@@ -182,6 +201,8 @@ playGame.prototype = {
         // // game.scale.forcePortait(true);
 
         // game.scale.refresh();
+
+       
 
 
         cupGeneratorSpeed = 0.5;
@@ -196,8 +217,13 @@ playGame.prototype = {
 
         // PLACE STAGE FREEZE ON STAGE & DECLARE INITIAL SCORE 
         score = 5; // out of 10 
+
         scoreGauge = game.add.sprite(game.width -180, 0, 'scoreGauge');
         scoreGauge.frame = score;
+
+        stageFreeze = game.add.sprite(0, 0, 'stageFreeze');
+        //stageFreeze.frame = score;
+
 
   
 
@@ -248,6 +274,11 @@ playGame.prototype = {
         // SETUP TIMER FOR CUP GENERATOR AND START
         this.cupGenerator = this.game.time.events.loop(Phaser.Timer.SECOND * cupGeneratorSpeed, this.generateCups, this);
         this.cupGenerator.timer.start();
+
+        // PREPARE FREEZE animation when player lose
+        game.animateFreeze = game.add.sprite(0,0, 'stageFreeze');
+        game.animateFreeze.animations.add('freeze');
+        game.animateFreeze.frame = 0;
     },
     update: function() {
 

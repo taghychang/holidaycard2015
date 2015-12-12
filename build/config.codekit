@@ -29,9 +29,20 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_src\/pregame_src.js",
-		"outputAbbreviatedPath": "\/code\/pregame-min.js",
+		"outputAbbreviatedPath": "\/_src\/min\/pregame_src-min.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_src\/preloader_src.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_src\/preloader_src.js",
+		"outputAbbreviatedPath": "\/_src\/min\/preloader_src-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
@@ -40,9 +51,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_src\/script_src.js",
-		"outputAbbreviatedPath": "\/code\/script-min.js",
+		"outputAbbreviatedPath": "\/_src\/min\/script_src-min.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1,
+		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
@@ -92,7 +103,7 @@
 		},
 	"\/code\/pregame-min.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/code\/pregame-min.js",
 		"outputAbbreviatedPath": "\/code\/min\/pregame-min-min.js",
@@ -101,9 +112,20 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/code\/preloader-min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/code\/preloader-min.js",
+		"outputAbbreviatedPath": "\/code\/min\/preloader-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/code\/script-min.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/code\/script-min.js",
 		"outputAbbreviatedPath": "\/code\/min\/script-min-min.js",
@@ -130,6 +152,17 @@
 		"initialSize": 126799,
 		"inputAbbreviatedPath": "\/images\/cups\/cups.png",
 		"outputAbbreviatedPath": "\/images\/cups\/cups.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 83597,
+		"inputAbbreviatedPath": "\/images\/logo.png",
+		"outputAbbreviatedPath": "\/images\/logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -204,7 +237,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 694465,
+		"initialSize": 698555,
 		"inputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze.png",
 		"outputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze.png",
 		"outputPathIsOutsideProject": 0,
