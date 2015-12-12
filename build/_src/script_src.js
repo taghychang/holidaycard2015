@@ -7,6 +7,13 @@ var playerSpeed;
 var cupSpeed;
 var cursor;
 var cupGeneratorSpeed;
+var blackbox;
+
+// Check player win or lose stage
+var player_condition = {
+  isWin: false,
+  isLose: false
+};
 
 //Cup group
 var CupGroup;
@@ -37,6 +44,19 @@ function processHandler(player, cupHit) {
     return true;
 }
 
+
+function fadein() {
+  game.add.tween(blackbox).to( { alpha: 0}, 2000, "Linear", true);
+}
+
+function winScene() {
+  game.state.start("EndGameWin");
+}
+
+function loseScene() {
+  game.state.start("EndGameLose");
+}
+
 function scoreHandler(cupHit) {
 
     if (cupHit.frame === 0) {
@@ -63,15 +83,29 @@ function scoreHandler(cupHit) {
     console.log('time on table(speed) ='+ cup_speed);
 
 // Check for win or lose condition
+
     if (score >= 10)  {
-        game.state.start('EndGameWin');
-        console.log('Win!');
+      if (player_condition.isWin == false) {
+        game.add.tween(game.blackbox).to( { alpha: 1 }, 2000, "Linear");
+        game.animateSteam.play('steam', 15);
+        game.animateSteam.events.onAnimationComplete.addOnce(function() {
+          console.log("ENDDDDFUNC");
+          fadeout = game.add.tween(blackbox).to( {alpha: 1}, 2000, "Linear", true);
+          fadeout.onComplete.add(winScene, this);
+          player_condition.isWin = true;
+        });
+      }
     } else if (score <= 0) {
-        console.log('Lose!');
-        game.animateFreeze.play('freeze', 5)
+      if (player_condition.isLose == false) {
+        game.add.tween(game.blackbox).to( { alpha: 1 }, 2000, "Linear");
+        game.animateFreeze.play('freeze', 15);
         game.animateFreeze.events.onAnimationComplete.addOnce(function() {
-            game.state.start("EndGame");
-        });    
+          console.log("ENDDDDFUNC");
+          fadeout = game.add.tween(blackbox).to( {alpha: 1}, 2000, "Linear", true);
+          fadeout.onComplete.add(loseScene, this);
+          player_condition.isLose = true;
+        });
+      }
     }
 }
 
@@ -143,7 +177,7 @@ var movePlayer = {
 
     right: function() {
             //Marach will remove this
-            score=+21;
+            score=21;
             // End Marach will remove this
       if (playerPosition < 2) {
             tweenR = game.add.tween(player).to({
@@ -173,6 +207,8 @@ playGame.prototype = {
         // // ADD STAGEFREEZE SPRITESHEET
         // game.load.atlas('stageFreeze', 'images/stageFreeze/stageFreeze.png', 'images/stageFreeze/stageFreeze.json');
 
+        // ADD STEAM SPRITESHEET
+        game.load.atlas('stageSteam', 'images/stageSteam/stageSteam.png', 'images/stageSteam/stageSteam.json'); 
     },
     create: function() {
         game.physics.startSystem(Phaser.Physics.ARCADE);
@@ -192,6 +228,7 @@ playGame.prototype = {
         // PLACE STAGE FREEZE ON STAGE & DECLARE INITIAL SCORE 
         score = 5; // out of 10 
         stageFreeze = game.add.sprite(0, 0, 'stageFreeze');
+        stageFreeze = game.add.sprite(0, 0, 'stageSteam');
         //stageFreeze.frame = score;
 
 
@@ -247,6 +284,28 @@ playGame.prototype = {
         game.animateFreeze = game.add.sprite(0,0, 'stageFreeze');
         game.animateFreeze.animations.add('freeze');
         game.animateFreeze.frame = 0;
+
+        // PREPARE STEAM animation when player win
+        game.animateSteam = game.add.sprite(0,0, 'stageSteam');
+        game.animateSteam.animations.add('steam');
+        game.animateSteam.frame = 0;
+
+        // Draw solid black screen for fading
+        var width = game.world.width // example;
+        var height = game.world.height // example;
+        var bmd = game.add.bitmapData(width, height);
+
+        bmd.ctx.beginPath();
+        bmd.ctx.rect(0, 0, width, height);
+        bmd.ctx.fillStyle = '#000000';
+        bmd.ctx.fill();
+        blackbox= game.add.sprite(game.world.centerX, game.world.centerY, bmd);
+        blackbox.anchor.setTo(0.5, 0.5);
+        fadein();
+
+        // reset win and lose condition
+        player_condition.isWin = false;
+        player_condition.isLose = false;
     },
     update: function() {
 
