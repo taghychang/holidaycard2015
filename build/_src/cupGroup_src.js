@@ -17,13 +17,13 @@ var CupGroup = function(game, parent) {
 
   Phaser.Group.call(this, game, parent);
   // Scale cups down to initial size
-  this.scale.setTo(0.20, 0.20);
+  this.scale.setTo(0.35, 0.35);
 
   // Setup cups to add to array
-  this.cupPlus1 = new Cup(this.game, 0, 0, 0);
-  this.cupPlus3 = new Cup(this.game, 0, 0, 1);
-  this.cupMinus1 = new Cup(this.game, 0, 0, 2);
-  this.cupMinus2 = new Cup(this.game, 0,0, 3);
+  this.cupMinus1 = new Cup(this.game, 0, 0, game.rnd.integerInRange(0,1));
+  this.cupMinus2 = new Cup(this.game, 0, 0, game.rnd.integerInRange(2,3));
+  this.cupPlus1 = new Cup(this.game, 0, 0, game.rnd.integerInRange(4,5));
+  this.cupPlus3 = new Cup(this.game, 0,0, game.rnd.integerInRange(6,7));
 
   this.cupsPlus = [this.cupPlus1, this.cupPlus3, this.cupMinus1, this.cupMinus2];
 
@@ -58,7 +58,7 @@ CupGroup.prototype.reset = function(x, y) {
   this.x = x;
   this.y = y;
 
-  this.scale.setTo(0.20, 0.20);
+  this.scale.setTo(0.35, 0.35);
 
   this.hasScored = false;
   this.exists = true;

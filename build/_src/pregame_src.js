@@ -6,8 +6,18 @@ var preGame = function(game) {
 preGame.prototype = {
   preload: function() {
     game.load.image("startButton", "images/start_button.jpg");
+    //ADD AUDIO
+    game.load.audio('shopLoop', ['sounds/shopLoop.mp3', 'sounds/shopLoop.ogg']);
   },
   create: function() {
+    //AUDIO
+    var shopLoop = game.add.audio('shopLoop');
+        
+    shopLoop.onDecoded.add(function(){
+      shopLoop.fadeIn(1000);
+    });
+
+
 
     // Change to game stage
     function nextState() {

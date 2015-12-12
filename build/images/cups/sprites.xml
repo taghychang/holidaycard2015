@@ -1,7 +1,0 @@
-<TextureAtlas imagePath="sprites.png">
-	<SubTexture name="cups_02.png" x="0" y="0" width="302" height="266"/>
-	<SubTexture name="cups_01.png" x="304" y="0" width="194" height="328"/>
-
-	<SubTexture name="cups_03.png" x="690" y="0" width="168" height="327"/>
-	<SubTexture name="cups_04.png" x="500" y="0" width="188" height="302"/>
-</TextureAtlas>
