@@ -46,8 +46,8 @@ preGame.prototype = {
 
             game.scale.minWidth = 320;
             game.scale.minHeight = 480;
-            game.scale.maxWidth = 580;
-            game.scale.maxHeight = 880;
+            game.scale.maxWidth = 640;
+            game.scale.maxHeight = 960;
             
 
         } else {

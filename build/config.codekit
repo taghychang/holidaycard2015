@@ -29,9 +29,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_src\/pregame_src.js",
-		"outputAbbreviatedPath": "\/_src\/min\/pregame_src-min.js",
+		"outputAbbreviatedPath": "\/code\/pregame-min.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
@@ -40,9 +40,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_src\/preloader_src.js",
-		"outputAbbreviatedPath": "\/_src\/min\/preloader_src-min.js",
+		"outputAbbreviatedPath": "\/code\/preloader-min.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
@@ -51,9 +51,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_src\/script_src.js",
-		"outputAbbreviatedPath": "\/_src\/min\/script_src-min.js",
+		"outputAbbreviatedPath": "\/code\/script-min.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
@@ -103,7 +103,7 @@
 		},
 	"\/code\/pregame-min.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/code\/pregame-min.js",
 		"outputAbbreviatedPath": "\/code\/min\/pregame-min-min.js",
@@ -114,7 +114,7 @@
 		},
 	"\/code\/preloader-min.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/code\/preloader-min.js",
 		"outputAbbreviatedPath": "\/code\/min\/preloader-min-min.js",
@@ -125,7 +125,7 @@
 		},
 	"\/code\/script-min.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/code\/script-min.js",
 		"outputAbbreviatedPath": "\/code\/min\/script-min-min.js",

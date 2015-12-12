@@ -71,7 +71,7 @@ function scoreHandler(cupHit) {
         console.log('Win!');
     } else if (score <= 0) {
         console.log('Lose!');
-        game.animateFreeze.play('freeze', 5)
+        game.animateFreeze.play('freeze', 5);
         game.animateFreeze.events.onAnimationComplete.addOnce(function() {
             game.state.start("EndGame");
         });    
@@ -176,7 +176,6 @@ playGame.prototype = {
     preload: function() {
         // game.load.image('shop', 'images/shop.jpg');
         // game.load.image('table', 'images/table.png');
-
 
         game.load.atlas('cup', 'images/cups/cups.png', 'images/cups/cups.json');
         game.load.spritesheet('player', 'images/playerSprite.png', 130, 238);
