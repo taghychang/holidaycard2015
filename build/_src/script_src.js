@@ -36,6 +36,8 @@ var tween_position,
 var stageFreeze,
     score;
 
+var shopLoop;
+
 var playGame = function(game) {
     if (game) {}
 };
@@ -59,27 +61,28 @@ function loseScene() {
 
 function scoreHandler(cupHit) {
 
-    if (cupHit.frame === 0) {
-        score += 2;
+    if (cupHit.frame === 0 || 1) {
+        score -= 2;
         cupGeneratorSpeed -= 0.4;
         console.log(score);
         console.log("cupG =" + cupGeneratorSpeed);
-    } else if (cupHit.frame === 1)  {
-        score += 1;
+    } else if (cupHit.frame === 2 || 3)  {
+        score -= 1;
         // cupGeneratorSpeed -= .4;
-    } else if (cupHit.frame === 2) {
-        score -= 2;
+    } else if (cupHit.frame === 4 || 5) {
+        score += 2;
         cupGeneratorSpeed += 0.2;
         console.log("--"+score);
     } else {
-        score -= 1;
+        score += 1;
         cupGeneratorSpeed += 0.2;
         console.log("--"+score);
     }
 
-    //stageFreeze.frame = score;
-    // checkEnd();
-    // adjustDifficulty();
+
+    scoreGauge.frame = score;
+
+
     console.log('time on table(speed) ='+ cup_speed);
 
 // Check for win or lose condition
@@ -195,24 +198,45 @@ var movePlayer = {
 };
 
 
+// function startTunes() {
+//     console.log('shopTUNESSSS');
+
+//     shopLoop.fadeIn(1000);
+// }
+
+
 playGame.prototype = {
     preload: function() {
         // game.load.image('shop', 'images/shop.jpg');
         // game.load.image('table', 'images/table.png');
 
-        // // game.load.image('player', 'images/player.png');
-        // game.load.atlasXML('cup', 'images/cups/sprites.png', 'images/cups/sprites.xml');
-        // game.load.spritesheet('player', 'images/playerSprite.png', 325, 347);
+        game.load.atlas('cup', 'images/cups/cups.png', 'images/cups/cups.json');
+        game.load.spritesheet('player', 'images/playerSprite.png', 130, 238);
 
-        // // ADD STAGEFREEZE SPRITESHEET
-        // game.load.atlas('stageFreeze', 'images/stageFreeze/stageFreeze.png', 'images/stageFreeze/stageFreeze.json');
+        // ADD STAGEFREEZE SPRITESHEET
+        game.load.atlas('stageFreeze', 'images/stageFreeze/stageFreeze.png', 'images/stageFreeze/stageFreeze.json');
+        game.load.atlas('scoreGauge', 'images/scoreGauge/scoreGauge.png', 'images/scoreGauge/scoreGauge.json');
+
 
         // ADD STEAM SPRITESHEET
         game.load.atlas('stageSteam', 'images/stageSteam/stageSteam.png', 'images/stageSteam/stageSteam.json'); 
     },
     create: function() {
+
         game.physics.startSystem(Phaser.Physics.ARCADE);
-        game.scale.refresh();
+
+
+
+        // game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+        // game.scale.minWidth = 320;
+        // game.scale.minHeight = 480;
+        // game.scale.maxWidth = 1080;
+        // game.scale.maxHeight = 1639;
+        // // game.scale.forcePortait(true);
+
+        // game.scale.refresh();
+
+       
 
 
         cupGeneratorSpeed = 0.5;
@@ -222,25 +246,31 @@ playGame.prototype = {
         // DEBUG
         // game.add.plugin(Phaser.Plugin.Debug);
 
-        shop = game.add.sprite(0, 0, 'shop');
-        shop.anchor.set(0);
+        // shop = game.add.sprite(-430, 0, 'shop');
+        // shop.anchor.set(0);
 
         // PLACE STAGE FREEZE ON STAGE & DECLARE INITIAL SCORE 
         score = 5; // out of 10 
+
+        scoreGauge = game.add.sprite(game.width -180, 0, 'scoreGauge');
+        scoreGauge.frame = score;
+
         stageFreeze = game.add.sprite(0, 0, 'stageFreeze');
         stageFreeze = game.add.sprite(0, 0, 'stageSteam');
         //stageFreeze.frame = score;
 
 
+  
+
         // PLAYER POSITIONS TO SLIDE INTO
-        var lane0X = game.width / 2 - 260;
+        var lane0X = game.width / 2 - 200;
         var lane1X = game.width / 2;
-        var lane2X = game.width / 2 + 260;
+        var lane2X = game.width / 2 + 200;
         var lanesX = [lane0X, lane1X, lane2X];
 
         playerPosition = 1;
         playerPositions = [lanesX[0], lanesX[1], lanesX[2]];
-        player = game.add.sprite(playerPositions[playerPosition], game.height - 160, 'player');
+        player = game.add.sprite(playerPositions[playerPosition], game.height - 110, 'player');
         player.anchor.set(0.5);
         game.physics.arcade.enable(player);
 
@@ -264,17 +294,17 @@ playGame.prototype = {
         game.physics.enable(player, Phaser.Physics.ARCADE);
 
         // SET HIT AREA ON PLAYER
-        player.body.setSize(10, 10, 0, 30);
+        player.body.setSize(10, 10, 0, -20);
 
         game.physics.enable(player, Phaser.Physics.ARCADE);
 
         
         // To position player on the top ================================================
         var player_layer = game.add.group();
-        var freeze_layer = game.add.group();
+        // var freeze_layer = game.add.group();
         player_layer.add(player);
-        freeze_layer.add(stageFreeze);
-        game.world.bringToTop(freeze_layer);
+        // freeze_layer.add(stageFreeze);
+        // game.world.bringToTop(freeze_layer);
 
         // SETUP TIMER FOR CUP GENERATOR AND START
         this.cupGenerator = this.game.time.events.loop(Phaser.Timer.SECOND * cupGeneratorSpeed, this.generateCups, this);
@@ -319,13 +349,13 @@ playGame.prototype = {
         var tableEnd = 782;
         var lanesYstart = 395;
 
-        var leftXend = (game.rnd.between(0, 108));
-        var midXend = (game.rnd.between(240, 360));
-        var rightXend = (game.rnd.between(472, 580));
+        var leftXend = (game.rnd.between(100, 110));
+        var midXend = (game.rnd.between(280, 300));
+        var rightXend = (game.rnd.between(472, 500));
 
-        var leftXstart = (game.rnd.between(240, 265));
-        var midXstart = (game.rnd.between(290, 285));
-        var rightXstart = (game.rnd.between(345, 370));
+        var leftXstart = (game.rnd.between(240, 250));
+        var midXstart = (game.rnd.between(290, 300));
+        var rightXstart = (game.rnd.between(380, 390));
 
         var lanesXstart = [leftXstart, midXstart, rightXstart];
 
@@ -342,7 +372,7 @@ playGame.prototype = {
 
 
         tween_size = game.add.tween(cupGroup.scale);
-        tween_size.to({ x: 0.5, y: 0.5 }, cupSpeed, 'Linear', true, 0);
+        tween_size.to({ x: 0.7, y: 0.7 }, cupSpeed, 'Linear', true, 0);
 
 
         tween_position = game.add.tween(cupGroup);
@@ -357,7 +387,7 @@ playGame.prototype = {
 
         function fallDown() {
             tween_position = game.add.tween(cupGroup);
-            tween_position.to({ y: 1200}, 500, 'Linear', true, 0);
+            tween_position.to({ y: 1250}, 500, 'Linear', true, 0);
             tween_position.start();
         }
 

@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <title>Brrr-ista</title>
     <script type="text/javascript" src="code/phaser.min.js"></script>
@@ -13,34 +14,59 @@
     <script type="text/javascript" src="code/cupGroup-min.js"></script>
     <style type="text/css">
     body {
-      background: #cccccc;
-      padding: 0px;
-      margin: 0px;
+        background: #cccccc;
+        padding: 0px;
+        margin: 0px;
+    }
+    #container {
+        position: relative;
+        width: 1500px;
+        height: 960px;
+        background-color: #000000;
+        background-image: url('images/shop.jpg');
+    }
+    #game {
+        width: 640px;
+        position: absolute;
+        height: 960px;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
     }
 
-    #game{
-      width:580px;
-      height:880px;
-      position:absolute;
-      bottom:0px;
-      left:0;
-      right:0;
-      margin-left:auto;
-      margin-right:auto;
+    #stageFreezeDesk {
+      position: absolute;
+      width: 1500px;
+      height: 960px;
+      background-image: url('images/stageFreeze/stageFreezeDesk.png');
+   /*   z-index: 999;*/
+      opacity: 0;
+
     }
+
+
     </style>
-  </head>
+</head>
 
-  <body>
+<body>
     <script type="text/javascript">
     // Create Game Canvas
-     var game;
-     game = new Phaser.Game(580, 880, Phaser.AUTO, "game");
+
+    var game;
+    game = new Phaser.Game(640, 960, Phaser.AUTO, "game", null, true);
      game.state.add("PreGame", preGame);
      game.state.add('Preloader', preloader);
      game.state.add("PlayGame", playGame);
      game.state.add("EndGameWin", endGameWin);
      game.state.add("EndGameLose", endGameLose);
+
+    // var stageFreezeDesk;
+    // stageFreezeDesk = document.getElementById('stageFreezeDesk');
+    //   if (EndGame){ 
+    //     stageFreezeDesk.style.opacity = '1';
+
+    // };
 
      game.state.start("Preloader");
 
@@ -51,9 +77,9 @@
      }
     </script>
     <div id="container">
+      <div id="stageFreezeDesk"></div>>
         <div id="game"></div>
     </div>
 </body>
-
 
 </html>

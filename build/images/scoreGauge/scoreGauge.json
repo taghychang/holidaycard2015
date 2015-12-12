@@ -1,0 +1,100 @@
+{"frames": [
+
+{
+	"filename": "01_THERMO.png",
+	"frame": {"x":1,"y":1,"w":45,"h":147},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":45,"h":147},
+	"sourceSize": {"w":45,"h":147}
+},
+{
+	"filename": "02_THERMO.png",
+	"frame": {"x":1,"y":1078,"w":35,"h":129},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":18,"w":35,"h":129},
+	"sourceSize": {"w":45,"h":147}
+},
+{
+	"filename": "03_THERMO.png",
+	"frame": {"x":1,"y":1209,"w":35,"h":129},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":18,"w":35,"h":129},
+	"sourceSize": {"w":45,"h":147}
+},
+{
+	"filename": "04_THERMO.png",
+	"frame": {"x":1,"y":1340,"w":35,"h":129},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":18,"w":35,"h":129},
+	"sourceSize": {"w":45,"h":147}
+},
+{
+	"filename": "05_THERMO.png",
+	"frame": {"x":1,"y":286,"w":35,"h":130},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":17,"w":35,"h":130},
+	"sourceSize": {"w":45,"h":147}
+},
+{
+	"filename": "06_THERMO.png",
+	"frame": {"x":1,"y":418,"w":35,"h":130},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":17,"w":35,"h":130},
+	"sourceSize": {"w":45,"h":147}
+},
+{
+	"filename": "07_THERMO.png",
+	"frame": {"x":1,"y":550,"w":35,"h":130},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":17,"w":35,"h":130},
+	"sourceSize": {"w":45,"h":147}
+},
+{
+	"filename": "08_THERMO.png",
+	"frame": {"x":1,"y":682,"w":35,"h":130},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":17,"w":35,"h":130},
+	"sourceSize": {"w":45,"h":147}
+},
+{
+	"filename": "09_THERMO.png",
+	"frame": {"x":1,"y":814,"w":35,"h":130},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":17,"w":35,"h":130},
+	"sourceSize": {"w":45,"h":147}
+},
+{
+	"filename": "10_THERMO.png",
+	"frame": {"x":1,"y":946,"w":35,"h":130},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":17,"w":35,"h":130},
+	"sourceSize": {"w":45,"h":147}
+},
+{
+	"filename": "11_THERMO.png",
+	"frame": {"x":1,"y":150,"w":39,"h":134},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":13,"w":39,"h":134},
+	"sourceSize": {"w":45,"h":147}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "scoreGauge.png",
+	"format": "RGBA8888",
+	"size": {"w":47,"h":1470},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:c86ec2f3e01834431b0804510b28f2bf:42c5642d010e87a4b779f1607a5abc91:bffb8f0f5309cf756f97badfcc4cdd90$"
+}
+}
