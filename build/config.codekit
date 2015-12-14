@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "19076",
+"creatorBuild": "19102",
 "files": {
 	"\/_src\/boot_src.js": {
 		"fileType": 64,
@@ -35,6 +35,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_src\/cupGroup_src.js",
 		"outputAbbreviatedPath": "\/code\/cupGroup-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_src\/demo_src.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_src\/demo_src.js",
+		"outputAbbreviatedPath": "\/code\/demo-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 1,
@@ -156,6 +167,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/code\/cupGroup-min.js",
 		"outputAbbreviatedPath": "\/code\/min\/cupGroup-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/code\/demo-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/code\/demo-min.js",
+		"outputAbbreviatedPath": "\/code\/min\/demo-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -375,6 +397,17 @@
 		"initialSize": 6560,
 		"inputAbbreviatedPath": "\/images\/cups\/splash.png",
 		"outputAbbreviatedPath": "\/images\/cups\/splash.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/demoPlaceholder.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 103730,
+		"inputAbbreviatedPath": "\/images\/demoPlaceholder.png",
+		"outputAbbreviatedPath": "\/images\/demoPlaceholder.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -985,7 +1018,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Rafael Diaz",
+"lastSavedByUser": "Marach Treekunprapa",
 "manualImportLinks": {
 	},
 "projectAttributes": {
@@ -1085,8 +1118,16 @@
 			"active": 0,
 			"flagValue": -1
 			},
+		"no_nested_string_interpolation": {
+			"active": 1,
+			"flagValue": -1
+			},
 		"no_plusplus": {
 			"active": 0,
+			"flagValue": -1
+			},
+		"no_private_function_fat_arrows": {
+			"active": 1,
 			"flagValue": -1
 			},
 		"no_stand_alone_at": {
@@ -1095,6 +1136,10 @@
 			},
 		"no_tabs": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"no_this": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"no_throwing_strings": {

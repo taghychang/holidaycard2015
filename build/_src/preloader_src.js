@@ -23,6 +23,7 @@ preloader.prototype = {
         game.load.atlas('stageFreeze', 'images/stageFreeze/stageFreeze.png', 'images/stageFreeze/stageFreeze.json');
 
         game.load.image("startButtonMobile", "images/startButtonMobile.jpg");
+        game.load.image("demoPlaceholder", "images/demoPlaceholder.png");
         game.load.image('logo', 'images/logo.png');
 
            // Audio Files for PowerUp/PowerDown
