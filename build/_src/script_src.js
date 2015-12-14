@@ -251,7 +251,7 @@ playGame.prototype = {
         // PLACE STAGE FREEZE ON STAGE & DECLARE INITIAL SCORE 
         score = 5; // out of 10 
 
-        scoreGauge = game.add.sprite(game.width -180, 0, 'scoreGauge');
+        scoreGauge = game.add.sprite(game.width -70, 0, 'scoreGauge');
         scoreGauge.frame = score;
 
         stageFreeze = game.add.sprite(0, 0, 'stageFreeze');
