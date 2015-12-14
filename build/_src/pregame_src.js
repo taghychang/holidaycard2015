@@ -17,7 +17,6 @@ preGame.prototype = {
 
     },
     create: function() {
-        game.stage.backgroundColor = '#000000';
         var shopLoop = game.add.audio('shopLoop');
 
         shopLoop.onDecoded.add(function() {
@@ -31,7 +30,7 @@ preGame.prototype = {
         }
 
         // Title
-        var text = "";
+        var text = "test";
         var style = {
             font: "65px Arial",
             fill: "#FFFFFF",
@@ -42,10 +41,10 @@ preGame.prototype = {
 
         // Start button
 
-        var startButton = game.add.button(game.world.centerX, game.world.centerY, "startButton", nextState);
+        var startButtonMobile = game.add.button(game.world.centerX, game.world.centerY, "startButtonMobile", nextState);
 
 
-        startButton.anchor.set(0.5, 0.5);
+        startButtonMobile.anchor.set(0.5, 0.5);
 
 
 

@@ -22,7 +22,7 @@ preloader.prototype = {
         game.load.spritesheet('player', 'images/playerSprite.png', 130, 238);
         game.load.atlas('stageFreeze', 'images/stageFreeze/stageFreeze.png', 'images/stageFreeze/stageFreeze.json');
 
-        game.load.image("startButton", "images/start_button.png");
+        game.load.image("startButtonMobile", "images/startButtonMobile.jpg");
         game.load.image('logo', 'images/logo.png');
 
            // Audio Files for PowerUp/PowerDown
@@ -32,6 +32,7 @@ preloader.prototype = {
        
     },
     create: function() {
+        
 
           // DESKTOP SETTING
         if (game.device.desktop) {
