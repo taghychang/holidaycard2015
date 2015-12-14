@@ -21,11 +21,10 @@ var CupGroup = function(game, parent) {
 
   // Setup cups to add to array
   this.cupMinus1 = new Cup(this.game, 0, 0, game.rnd.integerInRange(0,1));
-  this.cupMinus2 = new Cup(this.game, 0, 0, game.rnd.integerInRange(2,3));
-  this.cupPlus1 = new Cup(this.game, 0, 0, game.rnd.integerInRange(4,5));
-  this.cupPlus3 = new Cup(this.game, 0,0, game.rnd.integerInRange(6,7));
+  this.cupPlus1 = new Cup(this.game, 0, 0, game.rnd.integerInRange(2,3));
+
  
-  this.cupsPlus = [this.cupMinus1, this.cupMinus2, this.cupPlus1, this.cupPlus3];
+  this.cupsPlus = [this.cupMinus1, this.cupPlus1];
 
   // Adjust Difficulty
   // Choose the cups to generate based on the score
@@ -36,7 +35,7 @@ var CupGroup = function(game, parent) {
   // } else {
   //   this.add(this.cupsPlus[game.rnd.integerInRange(0,3)]);
   // }
-  this.add(this.cupsPlus[game.rnd.integerInRange(0,3)]);
+  this.add(this.cupsPlus[game.rnd.integerInRange(0,1)]);
   this.hasScored = false;
 };
 
@@ -50,9 +49,7 @@ CupGroup.prototype.update = function() {
 CupGroup.prototype.reset = function(x, y) {
   //Reset cup positions and scale after Recycle
   this.cupPlus1.reset(0,0);
-  this.cupPlus3.reset(0,0); 
   this.cupMinus1.reset(0,0);
-  this.cupMinus2.reset(0,0);
 
   this.x = x;
   this.y = y;

@@ -28,6 +28,15 @@ preloader.prototype = {
            // Audio Files for PowerUp/PowerDown
         game.load.audio('powerUpFX', ['sounds/powerUpAudio.mp3', 'sound/powerUpAudio.ogg']);
         game.load.audio('powerDownFX', ['sounds/powerDownAudio.mp3', 'sound/powerDownAudio.ogg']);
+        game.load.image('shopMobile', 'images/shopMobile.jpg');
+        game.load.atlas('barista', 'images/barista/barista.png', 'images/barista/barista.json');
+        // ADD CUPS SPRITESHEET
+        game.load.atlas('cup', 'images/cups/cups.png', 'images/cups/cups.json');
+        // ADD STAGEFREEZE SPRITESHEET
+        game.load.atlas('stageFreeze', 'images/stageFreeze/stageFreeze.png', 'images/stageFreeze/stageFreeze.json');
+        game.load.atlas('scoreGauge', 'images/scoreGauge/scoreGauge.png', 'images/scoreGauge/scoreGauge.json');
+        // ADD STEAM SPRITESHEET
+        game.load.atlas('stageSteam', 'images/stageSteam/stageSteam.png', 'images/stageSteam/stageSteam.json'); 
 
        
     },

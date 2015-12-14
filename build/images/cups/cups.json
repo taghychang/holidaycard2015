@@ -9,24 +9,8 @@
 	"sourceSize": {"w":145,"h":259}
 },
 {
-	"filename": "2.png",
-	"frame": {"x":1,"y":262,"w":143,"h":257},
-	"rotated": false,
-	"trimmed": true,
-	"spriteSourceSize": {"x":1,"y":0,"w":143,"h":257},
-	"sourceSize": {"w":144,"h":258}
-},
-{
-	"filename": "3.png",
-	"frame": {"x":1,"y":521,"w":132,"h":222},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":132,"h":222},
-	"sourceSize": {"w":132,"h":222}
-},
-{
 	"filename": "4.png",
-	"frame": {"x":1,"y":745,"w":157,"h":254},
+	"frame": {"x":1,"y":262,"w":157,"h":254},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":157,"h":254},
@@ -34,7 +18,7 @@
 },
 {
 	"filename": "5.png",
-	"frame": {"x":1,"y":1001,"w":129,"h":220},
+	"frame": {"x":1,"y":518,"w":129,"h":220},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":129,"h":220},
@@ -42,35 +26,19 @@
 },
 {
 	"filename": "6.png",
-	"frame": {"x":1,"y":1223,"w":181,"h":147},
+	"frame": {"x":1,"y":740,"w":181,"h":147},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":181,"h":147},
 	"sourceSize": {"w":181,"h":147}
-},
-{
-	"filename": "7.png",
-	"frame": {"x":1,"y":1372,"w":184,"h":149},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":184,"h":149},
-	"sourceSize": {"w":184,"h":149}
-},
-{
-	"filename": "8.png",
-	"frame": {"x":1,"y":1523,"w":185,"h":243},
-	"rotated": false,
-	"trimmed": true,
-	"spriteSourceSize": {"x":1,"y":0,"w":185,"h":243},
-	"sourceSize": {"w":186,"h":243}
 }],
 "meta": {
 	"app": "http://www.codeandweb.com/texturepacker",
 	"version": "1.0",
 	"image": "cups.png",
 	"format": "RGBA8888",
-	"size": {"w":187,"h":1767},
+	"size": {"w":183,"h":888},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:65c9db5e913bb2e2989d8eac8511a0fd:44c9b6c4045b2ab219759cbddc335768:d1750d3af0d6b493997d08f6c6ce639e$"
+	"smartupdate": "$TexturePacker:SmartUpdate:f1b11c192422adb1e7313a919424ebc0:2510cf5a8e1d56acef5ad0c5c8526cc3:d1750d3af0d6b493997d08f6c6ce639e$"
 }
 }

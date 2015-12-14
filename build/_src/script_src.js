@@ -78,14 +78,7 @@ function scoreHandler(cupHit) {
         score -= 1;
         // cupGeneratorSpeed -= 0.4;
         console.log("--" +score);
-    } else if (cupHit.frame === 2 ||  cupHit.frame ===3)  {
-        score -= 1;
-         console.log("--" +score);
-    } else if (cupHit.frame === 4 || cupHit.frame === 5) {
-        score += 1;
-        cupGeneratorSpeed += 0.2;
-        console.log("--"+score);
-    } else {
+    }  else {
         score += 1;
         cupGeneratorSpeed += 0.2;
         console.log("--"+score);
@@ -129,7 +122,7 @@ function scoreHandler(cupHit) {
 }
 
 function collisionHandler(player, cupHit) {
-    if (cupHit.frame === 0 || cupHit.frame === 1 || cupHit.frame === 2 || cupHit.frame === 3) {
+    if (cupHit.frame === 0 || cupHit.frame === 1 ) {
         cupHit.kill();
         powerDownParticles();
         powerDownAudioFX();
@@ -187,7 +180,7 @@ var movePlayer = {
     left: function() {
         if (playerPosition > 0) {
            // To test: Marach will remove this
-           score=-21;
+           // score=-21;
            // End Marach will remove this
       tweenL = game.add.tween(player).to({
                 x: playerPositions[playerPosition - 1]
@@ -203,7 +196,7 @@ var movePlayer = {
 
     right: function() {
              //Marach will remove this
-             score=21;
+             // score=21;
              // End Marach will remove this
       if (playerPosition < 2) {
             tweenR = game.add.tween(player).to({
@@ -222,15 +215,15 @@ var movePlayer = {
 
 playGame.prototype = {
     preload: function() {
-        game.load.image('shopMobile', 'images/shopMobile.jpg');
-        game.load.atlas('barista', 'images/barista/barista.png', 'images/barista/barista.json');
-        // ADD CUPS SPRITESHEET
-        game.load.atlas('cup', 'images/cups/cups.png', 'images/cups/cups.json');
-        // ADD STAGEFREEZE SPRITESHEET
-        game.load.atlas('stageFreeze', 'images/stageFreeze/stageFreeze.png', 'images/stageFreeze/stageFreeze.json');
-        game.load.atlas('scoreGauge', 'images/scoreGauge/scoreGauge.png', 'images/scoreGauge/scoreGauge.json');
-        // ADD STEAM SPRITESHEET
-        game.load.atlas('stageSteam', 'images/stageSteam/stageSteam.png', 'images/stageSteam/stageSteam.json'); 
+        // game.load.image('shopMobile', 'images/shopMobile.jpg');
+        // game.load.atlas('barista', 'images/barista/barista.png', 'images/barista/barista.json');
+        // // ADD CUPS SPRITESHEET
+        // game.load.atlas('cup', 'images/cups/cups.png', 'images/cups/cups.json');
+        // // ADD STAGEFREEZE SPRITESHEET
+        // game.load.atlas('stageFreeze', 'images/stageFreeze/stageFreeze.png', 'images/stageFreeze/stageFreeze.json');
+        // game.load.atlas('scoreGauge', 'images/scoreGauge/scoreGauge.png', 'images/scoreGauge/scoreGauge.json');
+        // // ADD STEAM SPRITESHEET
+        // game.load.atlas('stageSteam', 'images/stageSteam/stageSteam.png', 'images/stageSteam/stageSteam.json'); 
     },
     create: function() {
 
@@ -238,7 +231,7 @@ playGame.prototype = {
 
         var shopMobile = game.add.image(0, 0, 'shopMobile');
 
-        cupGeneratorSpeed = 0.5;
+        cupGeneratorSpeed = 0.7;
         playerSpeed = 200;
         cupSpeed = 750;
         
