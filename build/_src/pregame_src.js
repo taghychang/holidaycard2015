@@ -26,7 +26,7 @@ preGame.prototype = {
 
         // Change to game stage
         function nextState() {
-            game.state.start('PlayGame');
+            game.state.start('Demo');
         }
 
         // Title
