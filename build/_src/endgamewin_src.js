@@ -41,16 +41,16 @@ endGameWin.prototype = {
     var shareFacebookButton = game.add.button(game.world.centerX, 700, 'shareFacebookButton', this.shareFacebook);
 
     // Draw solid black screen for fading
-    var width = game.world.width // example;
-    var height = game.world.height // example;
-    var bmd = game.add.bitmapData(width, height);
+    // var width = game.world.width // example;
+    // var height = game.world.height // example;
+    // var bmd = game.add.bitmapData(width, height);
 
-    bmd.ctx.beginPath();
-    bmd.ctx.rect(0, 0, width, height);
-    bmd.ctx.fillStyle = '#000000';
-    bmd.ctx.fill();
-    blackbox= game.add.sprite(game.world.centerX, game.world.centerY, bmd);
-    blackbox.anchor.setTo(0.5, 0.5);
-    fadein();
+    // bmd.ctx.beginPath();
+    // bmd.ctx.rect(0, 0, width, height);
+    // bmd.ctx.fillStyle = '#000000';
+    // bmd.ctx.fill();
+    // blackbox= game.add.sprite(game.world.centerX, game.world.centerY, bmd);
+    // blackbox.anchor.setTo(0.5, 0.5);
+    // fadein();
   }
 };

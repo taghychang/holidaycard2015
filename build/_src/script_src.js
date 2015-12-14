@@ -9,6 +9,7 @@ var cursor;
 var cupGeneratorSpeed;
 var blackbox;
 
+
 // Check player win or lose stage
 var player_condition = {
   isWin: false,
@@ -36,6 +37,18 @@ var tween_position,
 var stageFreeze,
     score;
 
+//POWER_PARTICLES
+var powerDown,
+    powerUp;
+
+var snowflakes_frames = 7;
+//RANDOMLY SELECT FROM AN ARRAY FOR SNOWFLAKE RANDOMIZATION WHEN PARTICLES ARE EMITTED
+var snowflakeArray = Array.apply(null, {length: snowflakes_frames}).map(Number.call, Number);
+
+//AUDIO
+var powerUpAudio,
+    powerDownAudio;
+
 var shopLoop;
 
 var playGame = function(game) {
@@ -47,9 +60,9 @@ function processHandler(player, cupHit) {
 }
 
 
-function fadein() {
-  game.add.tween(blackbox).to( { alpha: 0}, 2000, "Linear", true);
-}
+// function fadein() {
+//   game.add.tween(blackbox).to( { alpha: 0}, 2000, "Linear", true);
+// }
 
 function winScene() {
   game.state.start("EndGameWin");
@@ -61,16 +74,15 @@ function loseScene() {
 
 function scoreHandler(cupHit) {
 
-    if (cupHit.frame === 0 || 1) {
-        score -= 2;
-        cupGeneratorSpeed -= 0.4;
-        console.log(score);
-        console.log("cupG =" + cupGeneratorSpeed);
-    } else if (cupHit.frame === 2 || 3)  {
+    if (cupHit.frame === 0 || cupHit.frame === 1) {
         score -= 1;
-        // cupGeneratorSpeed -= .4;
-    } else if (cupHit.frame === 4 || 5) {
-        score += 2;
+        // cupGeneratorSpeed -= 0.4;
+        console.log("--" +score);
+    } else if (cupHit.frame === 2 ||  cupHit.frame ===3)  {
+        score -= 1;
+         console.log("--" +score);
+    } else if (cupHit.frame === 4 || cupHit.frame === 5) {
+        score += 1;
         cupGeneratorSpeed += 0.2;
         console.log("--"+score);
     } else {
@@ -89,23 +101,27 @@ function scoreHandler(cupHit) {
 
     if (score >= 10)  {
       if (player_condition.isWin == false) {
-        game.add.tween(game.blackbox).to( { alpha: 1 }, 2000, "Linear");
+        stageFreezeDesk.style.opacity = '1';
+        // game.add.tween(game.blackbox).to( { alpha: 1 }, 2000, "Linear");
         game.animateSteam.play('steam', 15);
         game.animateSteam.events.onAnimationComplete.addOnce(function() {
           console.log("ENDDDDFUNC");
-          fadeout = game.add.tween(blackbox).to( {alpha: 1}, 2000, "Linear", true);
-          fadeout.onComplete.add(winScene, this);
+          // fadeout = game.add.tween(blackbox).to( {alpha: 1}, 2000, "Linear", true);
+          // fadeout.onComplete.add(winScene, this);
+          winScene();
           player_condition.isWin = true;
         });
       }
     } else if (score <= 0) {
       if (player_condition.isLose == false) {
-        game.add.tween(game.blackbox).to( { alpha: 1 }, 2000, "Linear");
+        stageFreezeDesk.style.opacity = '1';
+        // game.add.tween(game.blackbox).to( { alpha: 1 }, 2000, "Linear");
         game.animateFreeze.play('freeze', 15);
         game.animateFreeze.events.onAnimationComplete.addOnce(function() {
           console.log("ENDDDDFUNC");
-          fadeout = game.add.tween(blackbox).to( {alpha: 1}, 2000, "Linear", true);
-          fadeout.onComplete.add(loseScene, this);
+          // fadeout = game.add.tween(blackbox).to( {alpha: 1}, 2000, "Linear", true);
+          // fadeout.onComplete.add(loseScene, this);
+          loseScene();
           player_condition.isLose = true;
         });
       }
@@ -113,15 +129,22 @@ function scoreHandler(cupHit) {
 }
 
 function collisionHandler(player, cupHit) {
-    if (cupHit.frame === 0 || cupHit.frame === 1) {
+    if (cupHit.frame === 0 || cupHit.frame === 1 || cupHit.frame === 2 || cupHit.frame === 3) {
         cupHit.kill();
-        console.log('hot');
+        powerDownParticles();
+        powerDownAudioFX();
+        
+        console.log('ice');
     } else {
         cupHit.kill();
-        console.log('ice');
+        powerUpParticles();
+        powerUpAudioFX();
+        
+        console.log('HOT');
     }
     scoreHandler(cupHit);
 }
+
 
 function moveOver() {
 
@@ -163,9 +186,9 @@ var movePlayer = {
 
     left: function() {
         if (playerPosition > 0) {
-          // To test: Marach will remove this
-          score=-21;
-          // End Marach will remove this
+          // // To test: Marach will remove this
+          // score=-21;
+          // // End Marach will remove this
       tweenL = game.add.tween(player).to({
                 x: playerPositions[playerPosition - 1]
             }, playerSpeed, Phaser.Easing.Linear.None, true);
@@ -179,9 +202,9 @@ var movePlayer = {
     },
 
     right: function() {
-            //Marach will remove this
-            score=21;
-            // End Marach will remove this
+            // //Marach will remove this
+            // score=21;
+            // // End Marach will remove this
       if (playerPosition < 2) {
             tweenR = game.add.tween(player).to({
                 x: playerPositions[playerPosition + 1]
@@ -197,26 +220,15 @@ var movePlayer = {
     }
 };
 
-
-// function startTunes() {
-//     console.log('shopTUNESSSS');
-
-//     shopLoop.fadeIn(1000);
-// }
-
-
 playGame.prototype = {
     preload: function() {
+        game.load.image('shopMobile', 'images/shopMobile.jpg');
         game.load.atlas('barista', 'images/barista/barista.png', 'images/barista/barista.json');
-
+        // ADD CUPS SPRITESHEET
         game.load.atlas('cup', 'images/cups/cups.png', 'images/cups/cups.json');
-        game.load.spritesheet('player', 'images/playerSprite.png', 130, 238);
-
         // ADD STAGEFREEZE SPRITESHEET
         game.load.atlas('stageFreeze', 'images/stageFreeze/stageFreeze.png', 'images/stageFreeze/stageFreeze.json');
         game.load.atlas('scoreGauge', 'images/scoreGauge/scoreGauge.png', 'images/scoreGauge/scoreGauge.json');
-
-
         // ADD STEAM SPRITESHEET
         game.load.atlas('stageSteam', 'images/stageSteam/stageSteam.png', 'images/stageSteam/stageSteam.json'); 
     },
@@ -224,19 +236,7 @@ playGame.prototype = {
 
         game.physics.startSystem(Phaser.Physics.ARCADE);
 
-
-
-        // game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
-        // game.scale.minWidth = 320;
-        // game.scale.minHeight = 480;
-        // game.scale.maxWidth = 1080;
-        // game.scale.maxHeight = 1639;
-        // // game.scale.forcePortait(true);
-
-        // game.scale.refresh();
-
-       
-
+        var shopMobile = game.add.image(0, 0, 'shopMobile');
 
         cupGeneratorSpeed = 0.5;
         playerSpeed = 200;
@@ -258,8 +258,12 @@ playGame.prototype = {
         stageFreeze = game.add.sprite(0, 0, 'stageSteam');
         //stageFreeze.frame = score;
 
+        powerDown = game.add.emitter(game.world.centerX, 200, 200);
+        powerDown.makeParticles('snowflakes', snowflakeArray);
 
-  
+        powerUp = game.add.emitter(game.world.centerX, 200, 200);
+        powerUp.makeParticles('steam', [snowflakeArray]);
+        // ADD BARISTA
         barista = game.add.sprite(60, 49, 'barista');
         barista.animations.add('youGotServed', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 12, true);
         barista.animations.play('youGotServed', true);
@@ -274,6 +278,7 @@ playGame.prototype = {
         player = game.add.sprite(playerPositions[playerPosition], game.height - 110, 'player');
         player.anchor.set(0.5);
         game.physics.arcade.enable(player);
+        game.physics.arcade.enable(powerDown);
 
         // PLAYER SPRTE ANIMATIONS
         player.animations.add('left', [0, 1, 2, 3, 4], 10, false);
@@ -292,20 +297,20 @@ playGame.prototype = {
 
         this.cups = this.game.add.group();
 
+
         game.physics.enable(player, Phaser.Physics.ARCADE);
 
         // SET HIT AREA ON PLAYER
         player.body.setSize(10, 10, 0, -20);
 
-        game.physics.enable(player, Phaser.Physics.ARCADE);
-
-        
         // To position player on the top ================================================
         var player_layer = game.add.group();
         // var freeze_layer = game.add.group();
+        // player_layer.create(0,0, 'bg');
         player_layer.add(player);
         // freeze_layer.add(stageFreeze);
-        // game.world.bringToTop(freeze_layer);
+        
+        game.world.bringToTop(player_layer);
 
         // SETUP TIMER FOR CUP GENERATOR AND START
         this.cupGenerator = this.game.time.events.loop(Phaser.Timer.SECOND * cupGeneratorSpeed, this.generateCups, this);
@@ -321,18 +326,6 @@ playGame.prototype = {
         game.animateSteam.animations.add('steam');
         game.animateSteam.frame = 0;
 
-        // Draw solid black screen for fading
-        var width = game.world.width // example;
-        var height = game.world.height // example;
-        var bmd = game.add.bitmapData(width, height);
-
-        bmd.ctx.beginPath();
-        bmd.ctx.rect(0, 0, width, height);
-        bmd.ctx.fillStyle = '#000000';
-        bmd.ctx.fill();
-        blackbox= game.add.sprite(game.world.centerX, game.world.centerY, bmd);
-        blackbox.anchor.setTo(0.5, 0.5);
-        fadein();
 
         // reset win and lose condition
         player_condition.isWin = false;
@@ -343,6 +336,7 @@ playGame.prototype = {
         this.cups.forEach(function(cupGroup) {
             this.game.physics.arcade.overlap(player, cupGroup,  collisionHandler, processHandler, this);
         }, this);
+
     }, 
 
     generateCups: function() { 

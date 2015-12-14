@@ -24,19 +24,19 @@ var CupGroup = function(game, parent) {
   this.cupMinus2 = new Cup(this.game, 0, 0, game.rnd.integerInRange(2,3));
   this.cupPlus1 = new Cup(this.game, 0, 0, game.rnd.integerInRange(4,5));
   this.cupPlus3 = new Cup(this.game, 0,0, game.rnd.integerInRange(6,7));
-
-  this.cupsPlus = [this.cupPlus1, this.cupPlus3, this.cupMinus1, this.cupMinus2];
+ 
+  this.cupsPlus = [this.cupMinus1, this.cupMinus2, this.cupPlus1, this.cupPlus3];
 
   // Adjust Difficulty
   // Choose the cups to generate based on the score
-  if (score <= 3) {
-    this.add(this.cupsPlus[game.rnd.integerInRange(0,1)]);
-  } else if (score >= 6) {
-    this.add(this.cupsPlus[game.rnd.integerInRange(2,3)]);
-  } else {
-    this.add(this.cupsPlus[game.rnd.integerInRange(0,3)]);
-  }
-
+  // if (score <= 3) {
+  //   this.add(this.cupsPlus[game.rnd.integerInRange(0,3)]);
+  // } else if (score >= 6) {
+  //   this.add(this.cupsPlus[game.rnd.integerInRange(0,3)]);
+  // } else {
+  //   this.add(this.cupsPlus[game.rnd.integerInRange(0,3)]);
+  // }
+  this.add(this.cupsPlus[game.rnd.integerInRange(0,3)]);
   this.hasScored = false;
  
 };

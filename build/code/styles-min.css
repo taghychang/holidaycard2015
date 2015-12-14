@@ -1,0 +1,48 @@
+body {
+  background: #cccccc;
+  padding: 0px;
+  margin: 0px; }
+
+#container {
+  position: relative;
+  width: 1500px;
+  height: 960px;
+  background-color: #000000;
+  background-image: url("../images/shop.jpg"); }
+
+#game {
+  width: 640px;
+  position: absolute;
+  height: 960px;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto; }
+
+#stageFreezeDesk {
+  position: absolute;
+  width: 1500px;
+  height: 960px;
+  background-image: url("../images/stageFreeze/stageFreezeDesk.png");
+  /*   z-index: 999;*/
+  opacity: 0; }
+
+@media only screen and (max-device-width: 640px) {
+  /* define mobile specific styles come here */
+  #container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #00000; }
+
+  #game {
+    width: auto;
+    height: auto;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0; }
+
+  #stageFreezeDesk {
+    display: none; } }

@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8" />
     <title>Brrr-ista</title>
+    <link href="code/styles-min.css" type="text/css" rel="stylesheet"/>
+  
     <script type="text/javascript" src="code/phaser.min.js"></script>
+    <script type="text/javascript" src="code/boot-min.js"></script>
+    <script type="text/javascript" src="code/powerUpDown-min.js"></script>
     <script type="text/javascript" src="code/script-min.js"></script>
     <script type="text/javascript" src="code/pregame-min.js"></script>
     <script type="text/javascript" src="code/preloader-min.js"></script>
@@ -12,41 +16,9 @@
     <script type="text/javascript" src="code/endgamelose-min.js"></script>
     <script type="text/javascript" src="code/phaser-debug.js"></script>
     <script type="text/javascript" src="code/cupGroup-min.js"></script>
-    <style type="text/css">
-    body {
-        background: #cccccc;
-        padding: 0px;
-        margin: 0px;
-    }
-    #container {
-        position: relative;
-        width: 1500px;
-        height: 960px;
-        background-color: #000000;
-        background-image: url('images/shop.jpg');
-    }
-    #game {
-        width: 640px;
-        position: absolute;
-        height: 960px;
-        top: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-    }
-
-    #stageFreezeDesk {
-      position: absolute;
-      width: 1500px;
-      height: 960px;
-      background-image: url('images/stageFreeze/stageFreezeDesk.png');
-   /*   z-index: 999;*/
-      opacity: 0;
-
-    }
-
-
-    </style>
+  
+    <script type="text/javascript" src="code/soundFX-min.js"></script>
+  
 </head>
 
 <body>
@@ -54,32 +26,41 @@
     // Create Game Canvas
 
     var game;
-    game = new Phaser.Game(640, 960, Phaser.AUTO, "game", null, true);
-     game.state.add("PreGame", preGame);
-     game.state.add('Preloader', preloader);
-     game.state.add("PlayGame", playGame);
-     game.state.add("EndGameWin", endGameWin);
-     game.state.add("EndGameLose", endGameLose);
+    var gameWidth;
+    var gameHeight;
 
-    // var stageFreezeDesk;
-    // stageFreezeDesk = document.getElementById('stageFreezeDesk');
-    //   if (EndGame){ 
+    gameWidth = 640;
+    gameHeight = 960;
+
+    game = new Phaser.Game(gameWidth, gameHeight, Phaser.AUTO, "game", null, true);
+    game.state.add('Boot', boot);
+    game.state.add('Preloader', preloader);
+    game.state.add("PreGame", preGame);
+    game.state.add("PlayGame", playGame);
+    game.state.add("EndGameWin", endGameWin);
+    game.state.add("EndGameLose", endGameLose);
+
+
+    game.state.start("Boot");
+
+
+    // For Sharing Buttons
+    function openDeviceBrowser(externalLinkToOpen) {
+        window.open(externalLinkToOpen, '_system', 'location=no');
+    }
+    </script>
+    <div id="container">
+        <div id="stageFreezeDesk"></div>
+        <div id="game"></div>
+    </div>
+    <script type="text/javascript">
+    var stageFreezeDesk;
+    stageFreezeDesk = document.getElementById('stageFreezeDesk');
+    // if (game.stateManager.current === endGameWin) {
     //     stageFreezeDesk.style.opacity = '1';
 
     // };
-
-     game.state.start("Preloader");
-
-
-     // For Sharing Buttons
-     function openDeviceBrowser(externalLinkToOpen) {
-       window.open(externalLinkToOpen, '_system', 'location=no');
-     }
     </script>
-    <div id="container">
-      <div id="stageFreezeDesk"></div>>
-        <div id="game"></div>
-    </div>
 </body>
 
 </html>

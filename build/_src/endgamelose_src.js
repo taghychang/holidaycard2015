@@ -15,6 +15,7 @@ endGameLose.prototype = {
 // End Share Social Function
 
   preload: function() {
+    game.load.image("stageFreezeLost", "images/stageFreeze/stageFreezeLost.jpg");
     game.load.image("replayButton", "images/replay.png");
     game.load.image("shareTwitterButton", "images/shareTwitterButton.png");
     game.load.image("shareFacebookButton", "images/shareFacebookButton.png");
@@ -26,6 +27,10 @@ endGameLose.prototype = {
       game.state.start("PreGame");
     }
 
+
+    //Background Freeze
+
+    var stageFreezeLost = game.add.sprite(0,0, 'stageFreezeLost');
     // Title
     var text = "YOU LOSE";
     var style = { font: "65px Arial", fill: "#0000FF", align: "center" };
@@ -41,16 +46,16 @@ endGameLose.prototype = {
     var shareFacebookButton = game.add.button(game.world.centerX, 700, 'shareFacebookButton', this.shareFacebook);
 
     // Draw solid black screen for fading
-    var width = game.world.width // example;
-    var height = game.world.height // example;
-    var bmd = game.add.bitmapData(width, height);
+    // var width = game.world.width // example;
+    // var height = game.world.height // example;
+    // var bmd = game.add.bitmapData(width, height);
 
-    bmd.ctx.beginPath();
-    bmd.ctx.rect(0, 0, width, height);
-    bmd.ctx.fillStyle = '#000000';
-    bmd.ctx.fill();
-    blackbox= game.add.sprite(game.world.centerX, game.world.centerY, bmd);
-    blackbox.anchor.setTo(0.5, 0.5);
-    fadein();
+    // bmd.ctx.beginPath();
+    // bmd.ctx.rect(0, 0, width, height);
+    // bmd.ctx.fillStyle = '#000000';
+    // bmd.ctx.fill();
+    // blackbox= game.add.sprite(game.world.centerX, game.world.centerY, bmd);
+    // blackbox.anchor.setTo(0.5, 0.5);
+    // fadein();
   }
 };

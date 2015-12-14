@@ -1,0 +1,1 @@
+function powerUpAudioFX(){powerUpAudio=game.add.audio("powerUpFX"),powerUpAudio.allowMultiple=!1,powerUpAudio.play()}function powerDownAudioFX(){powerDownAudio=game.add.audio("powerDownFX"),powerDownAudio.allowMultiple=!1,powerDownAudio.play()}
