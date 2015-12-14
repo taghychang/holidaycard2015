@@ -186,9 +186,9 @@ var movePlayer = {
 
     left: function() {
         if (playerPosition > 0) {
-          // // To test: Marach will remove this
-          // score=-21;
-          // // End Marach will remove this
+           // To test: Marach will remove this
+           score=-21;
+           // End Marach will remove this
       tweenL = game.add.tween(player).to({
                 x: playerPositions[playerPosition - 1]
             }, playerSpeed, Phaser.Easing.Linear.None, true);
@@ -202,9 +202,9 @@ var movePlayer = {
     },
 
     right: function() {
-            // //Marach will remove this
-            // score=21;
-            // // End Marach will remove this
+             //Marach will remove this
+             score=21;
+             // End Marach will remove this
       if (playerPosition < 2) {
             tweenR = game.add.tween(player).to({
                 x: playerPositions[playerPosition + 1]
@@ -388,6 +388,7 @@ playGame.prototype = {
 
         tween_position.onComplete.addOnce(fallDown);
         cupGroup.sort('y', Phaser.Group.SORT_ASCENDING);
+        layerSort();
        
     },
 
