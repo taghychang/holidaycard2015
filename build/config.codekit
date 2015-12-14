@@ -2,6 +2,33 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "19076",
 "files": {
+	"\/_src\/boot_src.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_src\/boot_src.js",
+		"outputAbbreviatedPath": "\/_src\/min\/boot_src-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_src\/css\/styles_src.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_src\/css\/styles_src.scss",
+		"outputAbbreviatedPath": "\/_src\/css\/styles_src.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/_src\/cupGroup_src.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -35,6 +62,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/_src\/powerUpDown_src.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_src\/powerUpDown_src.js",
+		"outputAbbreviatedPath": "\/_src\/min\/powerUpDown_src-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/_src\/pregame_src.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -65,6 +103,28 @@
 		"outputAbbreviatedPath": "\/code\/script-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_src\/soundFx_src.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_src\/soundFx_src.js",
+		"outputAbbreviatedPath": "\/_src\/min\/soundFx_src-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/code\/boot-min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/code\/boot-min.js",
+		"outputAbbreviatedPath": "\/code\/min\/boot-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
@@ -134,6 +194,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/code\/powerUpDown-min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/code\/powerUpDown-min.js",
+		"outputAbbreviatedPath": "\/code\/min\/powerUpDown-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/code\/pregame-min.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -166,6 +237,26 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
+		},
+	"\/code\/soundFx-min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/code\/soundFx-min.js",
+		"outputAbbreviatedPath": "\/code\/min\/soundFx-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/code\/styles-min.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/code\/styles-min.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/images\/barista\/barista.json": {
 		"fileType": 524288,
@@ -211,6 +302,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/loading.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 156,
+		"inputAbbreviatedPath": "\/images\/loading.png",
+		"outputAbbreviatedPath": "\/images\/loading.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -229,6 +331,50 @@
 		"initialSize": 24465,
 		"inputAbbreviatedPath": "\/images\/playerSprite.png",
 		"outputAbbreviatedPath": "\/images\/playerSprite.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/powerDown\/powerDown_snowflake_spriteSheet.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/images\/powerDown\/powerDown_snowflake_spriteSheet.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/images\/powerDown\/powerDown_snowflake_spriteSheet-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/images\/powerDown\/powerDown_snowflake_spriteSheet.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 45950,
+		"inputAbbreviatedPath": "\/images\/powerDown\/powerDown_snowflake_spriteSheet.png",
+		"outputAbbreviatedPath": "\/images\/powerDown\/powerDown_snowflake_spriteSheet.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/powerUp\/powerUp_steam_spriteSheet.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/images\/powerUp\/powerUp_steam_spriteSheet.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/images\/powerUp\/powerUp_steam_spriteSheet-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/images\/powerUp\/powerUp_steam_spriteSheet.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 250974,
+		"inputAbbreviatedPath": "\/images\/powerUp\/powerUp_steam_spriteSheet.png",
+		"outputAbbreviatedPath": "\/images\/powerUp\/powerUp_steam_spriteSheet.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -266,6 +412,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/scoreGauge\/scoreGauge1.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/images\/scoreGauge\/scoreGauge1.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/images\/scoreGauge\/scoreGauge1-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/images\/scoreGauge\/scoreGauge1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 32916,
+		"inputAbbreviatedPath": "\/images\/scoreGauge\/scoreGauge1.png",
+		"outputAbbreviatedPath": "\/images\/scoreGauge\/scoreGauge1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/shareFacebookButton.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -295,6 +463,28 @@
 		"initialSize": 194703,
 		"inputAbbreviatedPath": "\/images\/shop.jpg",
 		"outputAbbreviatedPath": "\/images\/shop.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/shopMobile.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 88781,
+		"inputAbbreviatedPath": "\/images\/shopMobile.jpg",
+		"outputAbbreviatedPath": "\/images\/shopMobile.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/stageFreeze\/shopMobile.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 88781,
+		"inputAbbreviatedPath": "\/images\/stageFreeze\/shopMobile.jpg",
+		"outputAbbreviatedPath": "\/images\/stageFreeze\/shopMobile.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -464,6 +654,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/stageFreeze\/stageFreezeLost.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 41539,
+		"inputAbbreviatedPath": "\/images\/stageFreeze\/stageFreezeLost.jpg",
+		"outputAbbreviatedPath": "\/images\/stageFreeze\/stageFreezeLost.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/stageFreeze\/stageFreezeLost.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 126610,
+		"inputAbbreviatedPath": "\/images\/stageFreeze\/stageFreezeLost.png",
+		"outputAbbreviatedPath": "\/images\/stageFreeze\/stageFreezeLost.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/stageSteam\/stageSteam.json": {
 		"fileType": 524288,
 		"ignore": 1,
@@ -614,6 +826,17 @@
 		"initialSize": 40138,
 		"inputAbbreviatedPath": "\/images\/start_button.jpg",
 		"outputAbbreviatedPath": "\/images\/start_button.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/start_button.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 83597,
+		"inputAbbreviatedPath": "\/images\/start_button.png",
+		"outputAbbreviatedPath": "\/images\/start_button.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
