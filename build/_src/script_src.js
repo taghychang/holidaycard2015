@@ -283,7 +283,7 @@ playGame.prototype = {
 
 
         //CUP SPLASH
-        splash = game.add.sprite(playerPositions[playerPosition], game.height - 110, 'splah');
+        splash = game.add.sprite(playerPositions[playerPosition], game.height - 110, 'splash');
         splash.animations.add('spill' [0,1,2,3])
 
 
