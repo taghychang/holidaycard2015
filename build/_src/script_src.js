@@ -96,14 +96,16 @@ function scoreHandler(cupHit) {
       if (player_condition.isWin == false) {
         stageFreezeDesk.style.opacity = '1';
         // game.add.tween(game.blackbox).to( { alpha: 1 }, 2000, "Linear");
-        game.animateSteam.play('steam', 15);
-        game.animateSteam.events.onAnimationComplete.addOnce(function() {
-          console.log("ENDDDDFUNC");
-          // fadeout = game.add.tween(blackbox).to( {alpha: 1}, 2000, "Linear", true);
-          // fadeout.onComplete.add(winScene, this);
-          winScene();
+        winScene();
           player_condition.isWin = true;
-        });
+        // game.animateSteam.play('steam', 15);
+        // game.animateSteam.events.onAnimationComplete.addOnce(function() {
+        //   console.log("ENDDDDFUNC");
+        //   // fadeout = game.add.tween(blackbox).to( {alpha: 1}, 2000, "Linear", true);
+        //   // fadeout.onComplete.add(winScene, this);
+        //   winScene();
+        //   player_condition.isWin = true;
+        // });
       }
     } else if (score <= 0) {
       if (player_condition.isLose == false) {
@@ -180,7 +182,7 @@ var movePlayer = {
     left: function() {
         if (playerPosition > 0) {
            // To test: Marach will remove this
-           // score=-21;
+           // score=21;
            // End Marach will remove this
       tweenL = game.add.tween(player).to({
                 x: playerPositions[playerPosition - 1]
@@ -278,6 +280,12 @@ playGame.prototype = {
         player.animations.add('right', [5, 6, 7, 8, 4], 10, false);
         player.animations.add('halfLeft', [0, 4], 10, false);
         player.animations.add('halfRight', [5, 4], 10, false);
+
+
+        //CUP SPLASH
+        splash = game.add.sprite(playerPositions[playerPosition], game.height - 110, 'splah');
+        splash.animations.add('spill' [0,1,2,3])
+
 
         cursor = game.input.keyboard.createCursorKeys();
 

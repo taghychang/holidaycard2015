@@ -335,24 +335,24 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/cups\/cups.json": {
+	"\/images\/cups\/splash.json": {
 		"fileType": 524288,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/images\/cups\/cups.json",
+		"inputAbbreviatedPath": "\/images\/cups\/splash.json",
 		"orderOutput": 0,
-		"outputAbbreviatedPath": "\/images\/cups\/cups-min.json",
+		"outputAbbreviatedPath": "\/images\/cups\/splash-min.json",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
-	"\/images\/cups\/cups.png": {
+	"\/images\/cups\/splash.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 57823,
-		"inputAbbreviatedPath": "\/images\/cups\/cups.png",
-		"outputAbbreviatedPath": "\/images\/cups\/cups.png",
+		"initialSize": 6560,
+		"inputAbbreviatedPath": "\/images\/cups\/splash.png",
+		"outputAbbreviatedPath": "\/images\/cups\/splash.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -375,6 +375,28 @@
 		"initialSize": 83597,
 		"inputAbbreviatedPath": "\/images\/logo.png",
 		"outputAbbreviatedPath": "\/images\/logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/losePage\/losePageBgMobile.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 153696,
+		"inputAbbreviatedPath": "\/images\/losePage\/losePageBgMobile.jpg",
+		"outputAbbreviatedPath": "\/images\/losePage\/losePageBgMobile.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/losePage\/tryAgain.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 13220,
+		"inputAbbreviatedPath": "\/images\/losePage\/tryAgain.png",
+		"outputAbbreviatedPath": "\/images\/losePage\/tryAgain.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -892,6 +914,50 @@
 		"initialSize": 38888,
 		"inputAbbreviatedPath": "\/images\/table.png",
 		"outputAbbreviatedPath": "\/images\/table.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/winPage\/replay.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 13709,
+		"inputAbbreviatedPath": "\/images\/winPage\/replay.png",
+		"outputAbbreviatedPath": "\/images\/winPage\/replay.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/winPage\/shareFacebookButton.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6007,
+		"inputAbbreviatedPath": "\/images\/winPage\/shareFacebookButton.png",
+		"outputAbbreviatedPath": "\/images\/winPage\/shareFacebookButton.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/winPage\/shareTwitterButton.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6508,
+		"inputAbbreviatedPath": "\/images\/winPage\/shareTwitterButton.png",
+		"outputAbbreviatedPath": "\/images\/winPage\/shareTwitterButton.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/winPage\/winPageBgMobile.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 230816,
+		"inputAbbreviatedPath": "\/images\/winPage\/winPageBgMobile.jpg",
+		"outputAbbreviatedPath": "\/images\/winPage\/winPageBgMobile.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

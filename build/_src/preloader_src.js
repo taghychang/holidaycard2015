@@ -8,7 +8,7 @@ preloader.prototype = {
     preload: function() {
       
         // PRELOAD ALL ASSET
-        var loadingBar = this.add.sprite(160, 240, "loading");
+        var loadingBar = this.add.sprite(game.world.centerX, game.world.centerY, "loading");
         loadingBar.anchor.setTo(0.5, 0.5);
         this.load.setPreloadSprite(loadingBar);
         //ADD AUDIO
@@ -32,11 +32,19 @@ preloader.prototype = {
         game.load.atlas('barista', 'images/barista/barista.png', 'images/barista/barista.json');
         // ADD CUPS SPRITESHEET
         game.load.atlas('cup', 'images/cups/cups.png', 'images/cups/cups.json');
+        game.load.atlas('splash', 'images/cups/splash.png', 'images/cups/splash.json');
         // ADD STAGEFREEZE SPRITESHEET
         game.load.atlas('stageFreeze', 'images/stageFreeze/stageFreeze.png', 'images/stageFreeze/stageFreeze.json');
         game.load.atlas('scoreGauge', 'images/scoreGauge/scoreGauge.png', 'images/scoreGauge/scoreGauge.json');
         // ADD STEAM SPRITESHEET
-        game.load.atlas('stageSteam', 'images/stageSteam/stageSteam.png', 'images/stageSteam/stageSteam.json'); 
+        game.load.atlas('stageSteam', 'images/stageSteam/stageSteam.png', 'images/stageSteam/stageSteam.json');
+        //WIN PAGE ASSETS
+        game.load.image('winPageBgMobile', 'images/winPage/winPageBgMobile.jpg');
+        game.load.image('losePageBgMobile', 'images/losePage/losePageBgMobile.jpg');
+        game.load.image('shareTwitterButton', 'images/winPage/shareTwitterButton.png'); 
+        game.load.image('shareFacebookButton', 'images/winPage/shareFacebookButton.png'); 
+        game.load.image('playAgain', 'images/winPage/replay.png');
+        game.load.image('tryAgain', 'images/losePage/tryAgain.png');    
 
        
     },

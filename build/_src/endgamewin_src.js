@@ -15,9 +15,8 @@ endGameWin.prototype = {
 // End Share Social Function
 
   preload: function() {
-    game.load.image("replayButton", "images/replay.png");
-    game.load.image("shareTwitterButton", "images/shareTwitterButton.png");
-    game.load.image("shareFacebookButton", "images/shareFacebookButton.png");
+    game.load.image("replayButton", "images/winPage/replay.png");
+
   },
   create: function() {
 
@@ -27,18 +26,22 @@ endGameWin.prototype = {
     }
 
     // Title
-    var text = "YOU WIN";
-    var style = { font: "65px Arial", fill: "#FF0000", align: "center" };
-    var endTitle = game.add.text(game.world.centerX, 130, text, style);
-    endTitle.anchor.set(0.5,0.5);
+    // var text = "YOU WIN";
+    // var style = { font: "65px Arial", fill: "#FF0000", align: "center" };
+    // var endTitle = game.add.text(game.world.centerX, 130, text, style);
+    // endTitle.anchor.set(0.5,0.5);
+
+    // var winPageBgMobile = game.add.
 
     // Start button
-    var replayButton = game.add.button(game.world.centerX, game.world.centerY, "replayButton",nextState);
-    replayButton.anchor.set(0.5,0.5);
+    var winPageBgMobile = game.add.sprite(0,0, 'winPageBgMobile');
+    var replayButton = game.add.button(78, 635, "replayButton",nextState);
 
     // Custom share buttons in Phaser
-    var shareTwitterButton = game.add.button(game.world.centerX, 600, 'shareTwitterButton', this.shareTwitter);
-    var shareFacebookButton = game.add.button(game.world.centerX, 700, 'shareFacebookButton', this.shareFacebook);
+    var shareTwitterButton = game.add.button(209, 848, 'shareTwitterButton', this.shareTwitter);
+    var shareFacebookButton = game.add.button(131, 848, 'shareFacebookButton', this.shareFacebook);
+
+
 
     // Draw solid black screen for fading
     // var width = game.world.width // example;
