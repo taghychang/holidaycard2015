@@ -1,0 +1,1 @@
+function layerSort(){var a=game.add.group(),e=game.add.group();a.add(player),e.add(game.animateFreeze),e.add(game.animateSteam),game.world.bringToTop(a),game.world.bringToTop(e)}

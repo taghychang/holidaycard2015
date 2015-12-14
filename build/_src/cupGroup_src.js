@@ -38,7 +38,6 @@ var CupGroup = function(game, parent) {
   // }
   this.add(this.cupsPlus[game.rnd.integerInRange(0,3)]);
   this.hasScored = false;
- 
 };
 
 CupGroup.prototype = Object.create(Phaser.Group.prototype);

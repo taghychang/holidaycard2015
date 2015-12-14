@@ -4,13 +4,13 @@ function powerDownParticles(){
 
 
     //ATTACH EMITTER TO PLAYER
-    player.addChildAt(powerDown, 0);
+//    player.addChildAt(powerDown, 0);
 
 
 //------- SETTING PARAMS FOR EMITTER ------- //
     //PLACEMENT RELATIVE TO PLAYER
-    powerDown.x = 40;
-    powerDown.y = -130;
+    powerDown.x = player.x+40;
+    powerDown.y = player.y-130;
 
 
     //PARTICLE LIFE/SCALE/SPEED/ROTATION/OPACITY DURING LIFE CYCLE
@@ -24,16 +24,17 @@ function powerDownParticles(){
     powerDown.setAlpha(1, 0, 500);
 
     powerDown.start(true, 100, null, 15);
+    layerSort();
 }
 
 function powerUpParticles(){
     // powerUp = game.add.emitter(game.world.centerX, 200, 200);
     // powerUp.makeParticles('steam', [snowflakeArray]);
 
-    player.addChild(powerUp);
+    //player.addChild(powerUp);
 
-    powerUp.x = 30;
-    powerUp.y = -120;
+    powerUp.x = player.x+30;
+    powerUp.y = player.y-120;
 
     powerUp.maxParticleScale= 0.1;
     powerUp.minParticleScale=0.05;
@@ -43,7 +44,7 @@ function powerUpParticles(){
     powerUp.maxRotation = 60;
     powerUp.gravity = 0;
     powerUp.setAlpha(1, 0, 1200);
-
     powerUp.start(true, 100, null, 15);
+    layerSort();
 }
 
