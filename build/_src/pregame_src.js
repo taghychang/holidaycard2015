@@ -6,14 +6,6 @@ var preGame = function(game) {
 preGame.prototype = {
 
     preload: function() {
-      
-        // game.load.image('shop', 'images/shop.jpg');
-        // game.load.spritesheet('player', 'images/playerSprite.png', 325, 347);
-        // game.load.atlas('stageFreeze', 'images/stageFreeze/stageFreeze.png', 'images/stageFreeze/stageFreeze.json');
-
-        // game.load.image("startButton", "images/start_button.png");
-        // game.load.image('logo', 'images/logo.png');
-
 
     },
     create: function() {
@@ -23,11 +15,8 @@ preGame.prototype = {
             shopLoop.fadeIn(1000);
         });
 
-
         // Change to game stage
-        function nextState() {
-            game.state.start('Demo');
-        }
+        game.state.start('Demo');
 
         // Title
         var text = "test";
@@ -40,12 +29,6 @@ preGame.prototype = {
         gameTitle.anchor.set(0.5, 0.5);
 
         // Start button
-
-        var startButtonMobile = game.add.button(game.world.centerX, game.world.centerY, "startButtonMobile", nextState);
-
-
-        startButtonMobile.anchor.set(0.5, 0.5);
-
 
 
     }

@@ -9,13 +9,13 @@ function powerDownParticles(){
 
 //------- SETTING PARAMS FOR EMITTER ------- //
     //PLACEMENT RELATIVE TO PLAYER
-    powerDown.x = player.x+40;
-    powerDown.y = player.y-130;
+    powerDown.x = player.x +20;
+    powerDown.y = player.y -80;
 
 
     //PARTICLE LIFE/SCALE/SPEED/ROTATION/OPACITY DURING LIFE CYCLE
-    powerDown.maxParticleScale=0.5;
-    powerDown.minParticleScale=0.15;
+    powerDown.maxParticleScale= 0.75;
+    powerDown.minParticleScale= 0.5;
     powerDown.minParticleSpeed.setTo(-600, -600);
     powerDown.maxParticleSpeed.setTo(400, 400);
     powerDown.minRotation = 20;
@@ -23,7 +23,7 @@ function powerDownParticles(){
     powerDown.gravity = 0;
     powerDown.setAlpha(1, 0, 500);
 
-    powerDown.start(true, 100, null, 15);
+    powerDown.start(true, 150, null, 15);
     layerSort();
 }
 
@@ -33,10 +33,10 @@ function powerUpParticles(){
 
     //player.addChild(powerUp);
 
-    powerUp.x = player.x+30;
-    powerUp.y = player.y-120;
+    powerUp.x = player.x +10;
+    powerUp.y = player.y -80;
 
-    powerUp.maxParticleScale= 0.1;
+    powerUp.maxParticleScale= 0.15;
     powerUp.minParticleScale=0.05;
     powerUp.minParticleSpeed.setTo(-600, -600);
     powerUp.maxParticleSpeed.setTo(400, 400);

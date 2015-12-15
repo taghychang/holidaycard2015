@@ -6,10 +6,8 @@ var boot = function(game) {
 
 boot.prototype = {
     preload: function() {
-          game.load.image("loading","images/loading.png"); 
-
-      
-
+    	game.load.image("startButtonMobile", "images/startButtonMobile.png");
+      game.load.image("loading","images/loading2.png"); 
     },
     create: function() {
         game.state.start("Preloader");

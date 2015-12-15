@@ -8,25 +8,25 @@ preloader.prototype = {
     preload: function() {
       
         // PRELOAD ALL ASSET
-        var loadingBar = this.add.sprite(game.world.centerX, game.world.centerY, "loading");
-        loadingBar.anchor.setTo(0.5, 0.5);
-        this.load.setPreloadSprite(loadingBar);
+        var startButtonMobile = game.add.button(game.world.centerX, game.world.centerY, "startButtonMobile", nextState);
+        startButtonMobile.anchor.set(0.5, 0.5);
+
+        var loadingBar = this.add.sprite(game.world.centerX + 23, game.world.centerY -227, "loading");
+        loadingBar.anchor.setTo(0.9);
+        this.load.setPreloadSprite(loadingBar, 1);
         //ADD AUDIO
         game.load.audio('shopLoop', ['sounds/shopLoop.mp3', 'sounds/shopLoop.ogg']);
         game.load.image('shop', 'images/shop.jpg');
         //ADD POWERDOWN POWERUP SPRITESHEET
         game.load.atlas('snowflakes', 'images/powerDown/powerDown_snowflake_spriteSheet.png', 'images/powerDown/powerDown_snowflake_spriteSheet.json');
         game.load.atlas('steam', 'images/powerUp/powerUp_steam_spriteSheet.png', 'images/powerUp/powerUp_steam_spriteSheet.json');
-        
 
         game.load.spritesheet('player', 'images/playerSprite.png', 130, 238);
         game.load.atlas('stageFreeze', 'images/stageFreeze/stageFreeze.png', 'images/stageFreeze/stageFreeze.json');
 
-        game.load.image("startButtonMobile", "images/startButtonMobile.jpg");
         game.load.image("demoPlaceholder", "images/demoPlaceholder.png");
         game.load.image('logo', 'images/logo.png');
-
-           // Audio Files for PowerUp/PowerDown
+        // Audio Files for PowerUp/PowerDown
         game.load.audio('powerUpFX', ['sounds/powerUpAudio.mp3', 'sound/powerUpAudio.ogg']);
         game.load.audio('powerDownFX', ['sounds/powerDownAudio.mp3', 'sound/powerDownAudio.ogg']);
         game.load.image('shopMobile', 'images/shopMobile.jpg');
@@ -45,14 +45,11 @@ preloader.prototype = {
         game.load.image('shareTwitterButton', 'images/winPage/shareTwitterButton.png'); 
         game.load.image('shareFacebookButton', 'images/winPage/shareFacebookButton.png'); 
         game.load.image('playAgain', 'images/winPage/replay.png');
-        game.load.image('tryAgain', 'images/losePage/tryAgain.png');    
-
-       
+        game.load.image('tryAgain', 'images/losePage/tryAgain.png');       
     },
     create: function() {
-        
-
-          // DESKTOP SETTING
+      
+        // DESKTOP SETTING
         if (game.device.desktop) {
             // game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
             // game.scale.pageAlignHorizontally = true;
@@ -61,8 +58,6 @@ preloader.prototype = {
             // game.scale.minHeight = 480;
             // game.scale.maxWidth = 640;
             // game.scale.maxHeight = 960;
-            
-
         } else {
         // MOBILE SETTING
             game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
@@ -75,7 +70,12 @@ preloader.prototype = {
 
         game.scale.setScreenSize(true); 
 
-
-        game.state.start("PreGame");
     }
+
+
 };
+
+function nextState() {
+    game.state.start('PreGame');
+}
+
