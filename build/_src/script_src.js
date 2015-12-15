@@ -64,10 +64,6 @@ function processHandler(player, cupHit) {
 //   game.add.tween(blackbox).to( { alpha: 0}, 2000, "Linear", true);
 // }
 
-function loseScene() {
-  game.state.start("EndGameLose");
-}
-
 function scoreHandler(cupHit) {
 
     if (cupHit.frame === 0 || cupHit.frame === 1) {
@@ -299,7 +295,7 @@ playGame.prototype = {
 
         // PREPARE FREEZE animation when player lose
         game.animateFreeze = game.add.sprite(0,0, 'stageFreeze');
-        game.animateFreeze.animations.add('freeze');
+        game.animateFreeze.animations.add('freeze',[0,1,2,3,4,5,6], 5, false);
         game.animateFreeze.frame = 0;
 
         // PREPARE STEAM animation when player win

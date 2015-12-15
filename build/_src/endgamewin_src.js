@@ -42,10 +42,9 @@ endGameWin.prototype = {
     replayButton.inputEnabled = true;
     replayButton.events.onInputDown.add(toNextState, this);
 
-
     // Custom share buttons in Phaser
-    var shareTwitterButton = game.add.button(209, 848, 'shareTwitterButton', this.shareTwitter);
-    var shareFacebookButton = game.add.button(131, 848, 'shareFacebookButton', this.shareFacebook);
+    var shareTwitterButton = game.add.button(349, 846, 'shareTwitterButton', this.shareTwitter);
+    var shareFacebookButton = game.add.button(289, 846, 'shareFacebookButton', this.shareFacebook);
 
     fadeIn();
   }

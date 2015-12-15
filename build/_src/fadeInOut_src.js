@@ -10,11 +10,11 @@ var fadeIn = function() {
   bmd.ctx.fill();
   game.blackbox= game.add.sprite(game.world.centerX, game.world.centerY, bmd);
   game.blackbox.anchor.setTo(0.5, 0.5);
-  game.add.tween(game.blackbox).to( { alpha: 0}, 500, "Linear", true);
+  game.add.tween(game.blackbox).to( { alpha: 0}, 800, "Linear", true);
 }
 
 var fadeOut = function(nextScene) {
-  fadeout = game.add.tween(game.blackbox).to( {alpha: 1}, 500, "Linear", true);
+  fadeout = game.add.tween(game.blackbox).to( {alpha: 1}, 800, "Linear", true);
   fadeout.onComplete.add(function(){game.state.start(nextScene)}, this);
 }
 

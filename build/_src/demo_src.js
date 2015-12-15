@@ -24,7 +24,12 @@ demo.prototype = {
         demoPlaceholder.inputEnabled = true;
         demoPlaceholder.events.onInputDown.add(toNextState, this);
         demoPlaceholder.anchor.set(0.5, 0.5);
+        function nextState() {
+            game.state.start('PlayGame');
+        }
 
         fadeIn();
     }
 };
+
+// Change to game stage
