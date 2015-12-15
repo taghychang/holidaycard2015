@@ -35,11 +35,11 @@ endGameWin.prototype = {
 
     // Start button
     var winPageBgMobile = game.add.sprite(0,0, 'winPageBgMobile');
-    var replayButton = game.add.button(78, 635, "replayButton",nextState);
+    var replayButton = game.add.button(76, 590, "replayButton",nextState);
 
     // Custom share buttons in Phaser
-    var shareTwitterButton = game.add.button(209, 848, 'shareTwitterButton', this.shareTwitter);
-    var shareFacebookButton = game.add.button(131, 848, 'shareFacebookButton', this.shareFacebook);
+    var shareTwitterButton = game.add.button(349, 846, 'shareTwitterButton', this.shareTwitter);
+    var shareFacebookButton = game.add.button(289, 846, 'shareFacebookButton', this.shareFacebook);
 
 
 

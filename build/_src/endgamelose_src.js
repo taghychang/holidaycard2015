@@ -15,7 +15,7 @@ endGameLose.prototype = {
 // End Share Social Function
 
   preload: function() {
-    game.load.image("stageFreezeLost", "images/stageFreeze/stageFreezeLost.jpg");
+    // game.load.image("stageFreezeLost", "images/stageFreeze/stageFreezeLost.jpg");
     // game.load.image("replayButton", "images/replay.png");
     // game.load.image("shareTwitterButton", "images/shareTwitterButton.png");
     // game.load.image("shareFacebookButton", "images/shareFacebookButton.png");
@@ -27,12 +27,13 @@ endGameLose.prototype = {
       game.state.start("PreGame");
     }
     
-    var losePageBgMobile = game.add.sprite(0, 0, 'stageFreezeLost');
-    var tryAgain = game.add.button(78, 635, "tryAgain", nextState);
+    var losePageBgMobile = game.add.sprite(0, 0, 'losePageBgMobile');
+    var tryAgain = game.add.button(78, 450, "tryAgain", nextState);
 
     // Custom share buttons in Phaser
-    var shareTwitterButton = game.add.button(209, 848, 'shareTwitterButton', this.shareTwitter);
-    var shareFacebookButton = game.add.button(131, 848, 'shareFacebookButton', this.shareFacebook);
+    var shareTwitterButton = game.add.button(349, 846, 'shareTwitterButton', this.shareTwitter);
+    var shareFacebookButton = game.add.button(289, 846, 'shareFacebookButton', this.shareFacebook);
+
 
     //Background Freeze
 

@@ -8,10 +8,13 @@ preloader.prototype = {
     preload: function() {
       
         // PRELOAD ALL ASSET
-        var startButtonMobile = game.add.button(game.world.centerX, game.world.centerY, "startButtonMobile", nextState);
-        startButtonMobile.anchor.set(0.5, 0.5);
+        // var startButtonMobile = game.add.button(game.world.centerX, game.world.centerY, "startButtonMobile", nextState);
+        // startButtonMobile.anchor.set(0.5, 0.5);
 
-        var loadingBar = this.add.sprite(game.world.centerX + 23, game.world.centerY -227, "loading");
+        var loadingBg = game.add.button(game.world.centerX, game.world.centerY, "loadingBg", nextState);
+        loadingBg.anchor.set(0.5, 0.5);
+
+        var loadingBar = this.add.sprite(game.world.centerX + 105, game.world.centerY + 120, "loading");
         loadingBar.anchor.setTo(0.9);
         this.load.setPreloadSprite(loadingBar, 1);
         //ADD AUDIO
@@ -48,6 +51,11 @@ preloader.prototype = {
         game.load.image('tryAgain', 'images/losePage/tryAgain.png');       
     },
     create: function() {
+
+        shopLoop = game.add.audio('shopLoop');
+        shopLoop.loop = true;
+        // shopLoop.play();
+        shopLoop.onDecoded.add(fadeTunesIn, this);
       
         // DESKTOP SETTING
         if (game.device.desktop) {
@@ -75,7 +83,13 @@ preloader.prototype = {
 
 };
 
+function fadeTunesIn() {
+    shopLoop.fadeIn(5000, true);
+}
+
+
 function nextState() {
+    shopLoop.fadeOut();
     game.state.start('PreGame');
 }
 

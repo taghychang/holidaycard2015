@@ -65,11 +65,13 @@ function processHandler(player, cupHit) {
 // }
 
 function winScene() {
-  game.state.start("EndGameWin");
+    shopLoop.fadeOut();
+    game.state.start("EndGameWin");
 }
 
 function loseScene() {
-  game.state.start("EndGameLose");
+    shopLoop.fadeOut();
+    game.state.start("EndGameLose");
 }
 
 function scoreHandler(cupHit) {
@@ -96,6 +98,7 @@ function scoreHandler(cupHit) {
       if (player_condition.isWin == false) {
         stageFreezeDesk.style.opacity = '1';
         // game.add.tween(game.blackbox).to( { alpha: 1 }, 2000, "Linear");
+        
         winScene();
           player_condition.isWin = true;
         // game.animateSteam.play('steam', 15);
@@ -110,8 +113,10 @@ function scoreHandler(cupHit) {
     } else if (score <= 0) {
       if (player_condition.isLose == false) {
         stageFreezeDesk.style.opacity = '1';
+
+        
         // game.add.tween(game.blackbox).to( { alpha: 1 }, 2000, "Linear");
-        game.animateFreeze.play('freeze', 15);
+        game.animateFreeze.play('freeze');
         game.animateFreeze.events.onAnimationComplete.addOnce(function() {
           console.log("ENDDDDFUNC");
           // fadeout = game.add.tween(blackbox).to( {alpha: 1}, 2000, "Linear", true);
@@ -317,9 +322,10 @@ playGame.prototype = {
         this.cupGenerator = this.game.time.events.loop(Phaser.Timer.SECOND * cupGeneratorSpeed, this.generateCups, this);
         this.cupGenerator.timer.start();
 
+
         // PREPARE FREEZE animation when player lose
         game.animateFreeze = game.add.sprite(0,0, 'stageFreeze');
-        game.animateFreeze.animations.add('freeze');
+        game.animateFreeze.animations.add('freeze',[0,1,2,3,4,5,6], 5, false);
         game.animateFreeze.frame = 0;
 
         // PREPARE STEAM animation when player win

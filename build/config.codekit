@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "19102",
+"creatorBuild": "19076",
 "files": {
 	"\/_src\/boot_src.js": {
 		"fileType": 64,
@@ -423,6 +423,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/loading2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3677,
+		"inputAbbreviatedPath": "\/images\/loading2.png",
+		"outputAbbreviatedPath": "\/images\/loading2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/loading3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 41955,
+		"inputAbbreviatedPath": "\/images\/loading3.png",
+		"outputAbbreviatedPath": "\/images\/loading3.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/loadingBg.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 160925,
+		"inputAbbreviatedPath": "\/images\/loadingBg.jpg",
+		"outputAbbreviatedPath": "\/images\/loadingBg.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -610,17 +643,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/stageFreeze\/shopMobile.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 88781,
-		"inputAbbreviatedPath": "\/images\/stageFreeze\/shopMobile.jpg",
-		"outputAbbreviatedPath": "\/images\/stageFreeze\/shopMobile.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/images\/stageFreeze\/stageFreeze.json": {
 		"fileType": 524288,
 		"ignore": 1,
@@ -639,127 +661,6 @@
 		"initialSize": 400859,
 		"inputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze.png",
 		"outputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/stageFreeze\/stageFreeze_00.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 200,
-		"inputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_00.png",
-		"outputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_00.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/stageFreeze\/stageFreeze_01.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 12710,
-		"inputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_01.png",
-		"outputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_01.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/stageFreeze\/stageFreeze_02.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 15436,
-		"inputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_02.png",
-		"outputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_02.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/stageFreeze\/stageFreeze_03.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 18443,
-		"inputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_03.png",
-		"outputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_03.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/stageFreeze\/stageFreeze_04.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 23758,
-		"inputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_04.png",
-		"outputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_04.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/stageFreeze\/stageFreeze_05.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 26005,
-		"inputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_05.png",
-		"outputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_05.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/stageFreeze\/stageFreeze_06.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 27665,
-		"inputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_06.png",
-		"outputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_06.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/stageFreeze\/stageFreeze_07.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 32095,
-		"inputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_07.png",
-		"outputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_07.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/stageFreeze\/stageFreeze_08.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 30669,
-		"inputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_08.png",
-		"outputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_08.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/stageFreeze\/stageFreeze_09.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 33418,
-		"inputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_09.png",
-		"outputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_09.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/stageFreeze\/stageFreeze_10.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 40769,
-		"inputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_10.png",
-		"outputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze_10.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -962,6 +863,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/startButtonMobile.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 737032,
+		"inputAbbreviatedPath": "\/images\/startButtonMobile.png",
+		"outputAbbreviatedPath": "\/images\/startButtonMobile.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/winPage\/replay.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -977,7 +889,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 6007,
+		"initialSize": 5551,
 		"inputAbbreviatedPath": "\/images\/winPage\/shareFacebookButton.png",
 		"outputAbbreviatedPath": "\/images\/winPage\/shareFacebookButton.png",
 		"outputPathIsOutsideProject": 0,
@@ -988,7 +900,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 6508,
+		"initialSize": 5977,
 		"inputAbbreviatedPath": "\/images\/winPage\/shareTwitterButton.png",
 		"outputAbbreviatedPath": "\/images\/winPage\/shareTwitterButton.png",
 		"outputPathIsOutsideProject": 0,
@@ -1018,7 +930,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Marach Treekunprapa",
+"lastSavedByUser": "Rafael Diaz",
 "manualImportLinks": {
 	},
 "projectAttributes": {
@@ -1118,16 +1030,8 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"no_nested_string_interpolation": {
-			"active": 1,
-			"flagValue": -1
-			},
 		"no_plusplus": {
 			"active": 0,
-			"flagValue": -1
-			},
-		"no_private_function_fat_arrows": {
-			"active": 1,
 			"flagValue": -1
 			},
 		"no_stand_alone_at": {
@@ -1136,10 +1040,6 @@
 			},
 		"no_tabs": {
 			"active": 1,
-			"flagValue": -1
-			},
-		"no_this": {
-			"active": 0,
 			"flagValue": -1
 			},
 		"no_throwing_strings": {

@@ -1,1 +1,1 @@
-var demo=function(e){console.log(e)};demo.prototype={preload:function(){},create:function(){function e(){game.state.start("PlayGame")}var o=game.add.button(game.world.centerX,game.world.centerY,"demoPlaceholder",e);o.anchor.set(.5,.5)}};
+var demo=function(e){console.log(e)};demo.prototype={preload:function(){},create:function(){function e(){game.state.start("PlayGame")}shopLoop.fadeIn(1e4,!0);var o=game.add.button(game.world.centerX,game.world.centerY,"demoPlaceholder",e);o.anchor.set(.5,.5)}};

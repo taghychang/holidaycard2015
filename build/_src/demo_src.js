@@ -18,20 +18,22 @@ demo.prototype = {
     },
     create: function() {
 
-        // Change to game stage
-        function nextState() {
-            game.state.start('PlayGame');
-        }
+        shopLoop.fadeIn(10000, true);
+
 
         // Start button
-
         var demoPlaceholder = game.add.button(game.world.centerX, game.world.centerY, "demoPlaceholder", nextState);
 
 
         demoPlaceholder.anchor.set(0.5, 0.5);
+        function nextState() {
+            game.state.start('PlayGame');
+        }
 
 
 
     }
 
 };
+
+// Change to game stage
