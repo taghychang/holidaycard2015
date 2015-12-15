@@ -1,4 +1,7 @@
 /* global console, Phaser: true, game*/
+var text;
+var x = 32;
+var y = 80;
 
 var preloader = function(game) {
     console.log(game);
@@ -14,8 +17,8 @@ preloader.prototype = {
         var loadingBg = game.add.button(game.world.centerX, game.world.centerY, "loadingBg", nextState);
         loadingBg.anchor.set(0.5, 0.5);
 
-        var loadingBar = this.add.sprite(game.world.centerX + 105, game.world.centerY + 120, "loading");
-        loadingBar.anchor.setTo(0.9);
+        var loadingBar = this.add.sprite(game.world.centerX + 15, game.world.centerY + 140, "loading");
+        loadingBar.anchor.setTo(0.5, 1);
         this.load.setPreloadSprite(loadingBar, 1);
         //ADD AUDIO
         game.load.audio('shopLoop', ['sounds/shopLoop.mp3', 'sounds/shopLoop.ogg']);
@@ -53,6 +56,15 @@ preloader.prototype = {
     },
     create: function() {
 
+        // game.load.onLoadStart.add(loadStart);
+        // game.load.onFileComplete.add(fileComplete);
+        // game.load.onLoadComplete.add(loadComplete);
+
+
+        //  Progress report
+        // text = game.add.text(x, y, 'Loading', { fill: '#ffffff' });
+
+
         shopLoop = game.add.audio('shopLoop');
         shopLoop.loop = true;
         // shopLoop.play();
@@ -77,7 +89,7 @@ preloader.prototype = {
 
         }
 
-        game.scale.setScreenSize(true); 
+        game.scale.setScreenSize(true);
 
     }
 
@@ -88,9 +100,13 @@ function fadeTunesIn() {
     shopLoop.fadeIn(5000, true);
 }
 
-
 function nextState() {
     shopLoop.fadeOut();
     game.state.start('PreGame');
 }
+
+
+
+
+
 
