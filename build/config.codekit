@@ -7,9 +7,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_src\/boot_src.js",
-		"outputAbbreviatedPath": "\/_src\/min\/boot_src-min.js",
+		"outputAbbreviatedPath": "\/code\/boot-min.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
@@ -194,7 +194,7 @@
 		},
 	"\/code\/boot-min.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/code\/boot-min.js",
 		"outputAbbreviatedPath": "\/code\/min\/boot-min-min.js",

@@ -10,7 +10,7 @@ endGameLose.prototype = {
     openDeviceBrowser('https://twitter.com/intent/tweet?url=custom_url&text=Custom+Text&via=custom_via&hashtags=custom_hashtag');
   },
   shareFacebook: function() {
-    openDeviceBrowser('https://www.facebook.com/sharer/sharer.php?u=http://www.tagworldwide.com');
+    openDeviceBrowser('https://www.facebook.com/sharer/sharer.php?u=http://tagonline.tagworldwide.com/public/nytdi/holiday2015/index.html');
   },
 // End Share Social Function
 
