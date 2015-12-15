@@ -7,11 +7,20 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_src\/boot_src.js",
-		"outputAbbreviatedPath": "\/code\/boot-min.js",
+		"outputAbbreviatedPath": "\/_src\/min\/boot_src-min.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1,
+		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
+		},
+	"\/_src\/css\/styles_src.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_src\/css\/styles_src.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/_src\/css\/styles_src.scss": {
 		"createSourceMap": 0,
@@ -21,9 +30,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_src\/css\/styles_src.scss",
-		"outputAbbreviatedPath": "\/code\/styles-min.css",
+		"outputAbbreviatedPath": "\/_src\/css\/styles_src.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1,
+		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
@@ -84,6 +93,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/_src\/fadeInOut_src.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_src\/fadeInOut_src.js",
+		"outputAbbreviatedPath": "\/code\/fadeInOut-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/_src\/layer_src.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -95,14 +115,36 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/_src\/min\/boot_src-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_src\/min\/boot_src-min.js",
+		"outputAbbreviatedPath": "\/_src\/min\/min\/boot_src-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_src\/min\/powerUpDown_src-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_src\/min\/powerUpDown_src-min.js",
+		"outputAbbreviatedPath": "\/_src\/min\/min\/powerUpDown_src-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/_src\/powerUpDown_src.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_src\/powerUpDown_src.js",
-		"outputAbbreviatedPath": "\/code\/powerUpDown-min.js",
+		"outputAbbreviatedPath": "\/_src\/min\/powerUpDown_src-min.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1,
+		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
@@ -152,7 +194,7 @@
 		},
 	"\/code\/boot-min.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/code\/boot-min.js",
 		"outputAbbreviatedPath": "\/code\/min\/boot-min-min.js",
@@ -196,7 +238,7 @@
 		},
 	"\/code\/desktop_min.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/code\/desktop_min.js",
 		"outputAbbreviatedPath": "\/code\/min\/desktop_min-min.js",
@@ -238,6 +280,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/code\/fadeInOut-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/code\/fadeInOut-min.js",
+		"outputAbbreviatedPath": "\/code\/min\/fadeInOut-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/code\/layer-min.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -273,7 +326,7 @@
 		},
 	"\/code\/powerUpDown-min.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/code\/powerUpDown-min.js",
 		"outputAbbreviatedPath": "\/code\/min\/powerUpDown-min-min.js",
@@ -328,7 +381,7 @@
 		},
 	"\/code\/styles-min.css": {
 		"fileType": 16,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/code\/styles-min.css",
 		"outputAbbreviatedPath": "No Output Path",
@@ -353,6 +406,61 @@
 		"initialSize": 612844,
 		"inputAbbreviatedPath": "\/images\/barista\/barista.png",
 		"outputAbbreviatedPath": "\/images\/barista\/barista.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/countDown\/countDown.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/images\/countDown\/countDown.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/images\/countDown\/countDown-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/images\/countDown\/countDown.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 95044,
+		"inputAbbreviatedPath": "\/images\/countDown\/countDown.png",
+		"outputAbbreviatedPath": "\/images\/countDown\/countDown.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/countDown\/countDown_00.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 20300,
+		"inputAbbreviatedPath": "\/images\/countDown\/countDown_00.png",
+		"outputAbbreviatedPath": "\/images\/countDown\/countDown_00.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/countDown\/countDown_01.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19363,
+		"inputAbbreviatedPath": "\/images\/countDown\/countDown_01.png",
+		"outputAbbreviatedPath": "\/images\/countDown\/countDown_01.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/countDown\/countDown_02.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 18726,
+		"inputAbbreviatedPath": "\/images\/countDown\/countDown_02.png",
+		"outputAbbreviatedPath": "\/images\/countDown\/countDown_02.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -889,7 +997,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 5551,
+		"initialSize": 6007,
 		"inputAbbreviatedPath": "\/images\/winPage\/shareFacebookButton.png",
 		"outputAbbreviatedPath": "\/images\/winPage\/shareFacebookButton.png",
 		"outputPathIsOutsideProject": 0,

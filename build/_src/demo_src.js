@@ -18,22 +18,18 @@ demo.prototype = {
     },
     create: function() {
 
-        shopLoop.fadeIn(10000, true);
-
-
-        // Start button
-        var demoPlaceholder = game.add.button(game.world.centerX, game.world.centerY, "demoPlaceholder", nextState);
-
-
+        // Create button //
+        demoPlaceholder = game.add.button(game.world.centerX, game.world.centerY, "demoPlaceholder");
+        demoPlaceholder.variable = "PlayGame"; // next state
+        demoPlaceholder.inputEnabled = true;
+        demoPlaceholder.events.onInputDown.add(toNextState, this);
         demoPlaceholder.anchor.set(0.5, 0.5);
         function nextState() {
             game.state.start('PlayGame');
         }
 
-
-
+        fadeIn();
     }
-
 };
 
 // Change to game stage

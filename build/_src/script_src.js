@@ -64,16 +64,6 @@ function processHandler(player, cupHit) {
 //   game.add.tween(blackbox).to( { alpha: 0}, 2000, "Linear", true);
 // }
 
-function winScene() {
-    shopLoop.fadeOut();
-    game.state.start("EndGameWin");
-}
-
-function loseScene() {
-    shopLoop.fadeOut();
-    game.state.start("EndGameLose");
-}
-
 function scoreHandler(cupHit) {
 
     if (cupHit.frame === 0 || cupHit.frame === 1) {
@@ -96,34 +86,20 @@ function scoreHandler(cupHit) {
 
     if (score >= 10)  {
       if (player_condition.isWin == false) {
-        stageFreezeDesk.style.opacity = '1';
-        // game.add.tween(game.blackbox).to( { alpha: 1 }, 2000, "Linear");
-        
-        winScene();
-          player_condition.isWin = true;
-        // game.animateSteam.play('steam', 15);
-        // game.animateSteam.events.onAnimationComplete.addOnce(function() {
-        //   console.log("ENDDDDFUNC");
-        //   // fadeout = game.add.tween(blackbox).to( {alpha: 1}, 2000, "Linear", true);
-        //   // fadeout.onComplete.add(winScene, this);
-        //   winScene();
-        //   player_condition.isWin = true;
-        // });
+        player_condition.isWin = true;
+        fadeOut("EndGameWin");
+        barista.animations.stop(null, true);
+        game.cupGenerator.timer.stop();
       }
     } else if (score <= 0) {
       if (player_condition.isLose == false) {
-        stageFreezeDesk.style.opacity = '1';
-
-        
-        // game.add.tween(game.blackbox).to( { alpha: 1 }, 2000, "Linear");
-        game.animateFreeze.play('freeze');
+        player_condition.isLose = true;
+        game.animateFreeze.play('freeze', 15);
         game.animateFreeze.events.onAnimationComplete.addOnce(function() {
-          console.log("ENDDDDFUNC");
-          // fadeout = game.add.tween(blackbox).to( {alpha: 1}, 2000, "Linear", true);
-          // fadeout.onComplete.add(loseScene, this);
-          loseScene();
-          player_condition.isLose = true;
+          fadeOut("EndGameLose");
         });
+        barista.animations.stop(null, true);
+        game.cupGenerator.timer.stop();
       }
     }
 }
@@ -266,7 +242,6 @@ playGame.prototype = {
         // ADD BARISTA
         barista = game.add.sprite(60, 49, 'barista');
         barista.animations.add('youGotServed', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 12, true);
-        barista.animations.play('youGotServed', true);
         // PLAYER POSITIONS TO SLIDE INTO
         var lane0X = game.width / 2 - 200;
         var lane1X = game.width / 2;
@@ -318,11 +293,6 @@ playGame.prototype = {
         
         game.world.bringToTop(player_layer);
 
-        // SETUP TIMER FOR CUP GENERATOR AND START
-        this.cupGenerator = this.game.time.events.loop(Phaser.Timer.SECOND * cupGeneratorSpeed, this.generateCups, this);
-        this.cupGenerator.timer.start();
-
-
         // PREPARE FREEZE animation when player lose
         game.animateFreeze = game.add.sprite(0,0, 'stageFreeze');
         game.animateFreeze.animations.add('freeze',[0,1,2,3,4,5,6], 5, false);
@@ -337,6 +307,42 @@ playGame.prototype = {
         // reset win and lose condition
         player_condition.isWin = false;
         player_condition.isLose = false;
+
+ 
+  //============================== Countdown =========================//
+
+        // Draw solid black screen for fading
+        var width = game.world.width // example;
+        var height = game.world.height // example;
+        var bmd = game.add.bitmapData(width, height);
+
+        bmd.ctx.beginPath();
+        bmd.ctx.rect(0, 0, width, height);
+        bmd.ctx.fillStyle = '#000000';
+        bmd.ctx.fill();
+        game.blackbox= game.add.sprite(game.world.centerX, game.world.centerY, bmd);
+        game.blackbox.anchor.setTo(0.5, 0.5);
+
+        // Count down position and style
+        blackbox_out = game.add.tween(game.blackbox).to( { alpha: 0}, 500, "Linear", true);
+
+        game.countDown= game.add.sprite(0,0, 'countDown');
+        game.countDown.animations.add('countDown');
+        game.countDown.frame = 0;
+        game.countDown.play('countDown', 1);
+
+        // After countdown do this:
+        game.countDown.animations.currentAnim.onComplete.add(function () {
+          console.log('animation complete');
+          game.add.tween(game.countDown).to( { alpha: 0}, 0, "Linear", true);
+          // SETUP TIMER FOR CUP GENERATOR AND START
+          game.cupGenerator = this.game.time.events.loop(Phaser.Timer.SECOND * cupGeneratorSpeed, this.generateCups, this);
+          game.cupGenerator.timer.start();
+          // Play Barrist Animation
+          barista.animations.play('youGotServed', true);
+        }, this);
+
+  //============================== END ===============================//
     },
     update: function() {
 
