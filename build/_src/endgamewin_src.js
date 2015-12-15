@@ -21,9 +21,9 @@ endGameWin.prototype = {
   create: function() {
 
     // Change to game stage
-    function nextState() {
-      game.state.start("PreGame");
-    }
+//    function nextState() {
+//      fadeOut("PreGame");
+//    }
 
     // Title
     // var text = "YOU WIN";
@@ -34,26 +34,19 @@ endGameWin.prototype = {
     // var winPageBgMobile = game.add.
 
     // Start button
-    var winPageBgMobile = game.add.sprite(0,0, 'winPageBgMobile');
-    var replayButton = game.add.button(78, 635, "replayButton",nextState);
+    var winPageBgMobile = game.add.sprite(0,0,'winPageBgMobile');
+
+    // Create button //
+    replayButton = game.add.button(78, 635, "replayButton");
+    replayButton.variable = "PreGame"; // next state
+    replayButton.inputEnabled = true;
+    replayButton.events.onInputDown.add(toNextState, this);
+
 
     // Custom share buttons in Phaser
     var shareTwitterButton = game.add.button(209, 848, 'shareTwitterButton', this.shareTwitter);
     var shareFacebookButton = game.add.button(131, 848, 'shareFacebookButton', this.shareFacebook);
 
-
-
-    // Draw solid black screen for fading
-    // var width = game.world.width // example;
-    // var height = game.world.height // example;
-    // var bmd = game.add.bitmapData(width, height);
-
-    // bmd.ctx.beginPath();
-    // bmd.ctx.rect(0, 0, width, height);
-    // bmd.ctx.fillStyle = '#000000';
-    // bmd.ctx.fill();
-    // blackbox= game.add.sprite(game.world.centerX, game.world.centerY, bmd);
-    // blackbox.anchor.setTo(0.5, 0.5);
-    // fadein();
+    fadeIn();
   }
 };

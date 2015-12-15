@@ -28,7 +28,12 @@ endGameLose.prototype = {
     }
 
     var losePageBgMobile = game.add.sprite(0,0, 'losePageBgMobile');
-    var tryAgain = game.add.button(78, 635, "tryAgain",nextState);
+
+    // Create button //
+    tryAgain = game.add.button(78, 635, "tryAgain");
+    tryAgain.variable = "PreGame"; // next state
+    tryAgain.inputEnabled = true;
+    tryAgain.events.onInputDown.add(toNextState, this);
 
     // Custom share buttons in Phaser
     var shareTwitterButton = game.add.button(209, 848, 'shareTwitterButton', this.shareTwitter);
@@ -51,17 +56,6 @@ endGameLose.prototype = {
     // var shareTwitterButton = game.add.button(game.world.centerX, 600, 'shareTwitterButton', this.shareTwitter);
     // var shareFacebookButton = game.add.button(game.world.centerX, 700, 'shareFacebookButton', this.shareFacebook);
 
-    // Draw solid black screen for fading
-    // var width = game.world.width // example;
-    // var height = game.world.height // example;
-    // var bmd = game.add.bitmapData(width, height);
-
-    // bmd.ctx.beginPath();
-    // bmd.ctx.rect(0, 0, width, height);
-    // bmd.ctx.fillStyle = '#000000';
-    // bmd.ctx.fill();
-    // blackbox= game.add.sprite(game.world.centerX, game.world.centerY, bmd);
-    // blackbox.anchor.setTo(0.5, 0.5);
-    // fadein();
+    fadeIn();
   }
 };

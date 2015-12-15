@@ -84,6 +84,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/_src\/fadeInOut_src.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_src\/fadeInOut_src.js",
+		"outputAbbreviatedPath": "\/code\/fadeInOut-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/_src\/layer_src.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -238,6 +249,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/code\/fadeInOut-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/code\/fadeInOut-min.js",
+		"outputAbbreviatedPath": "\/code\/min\/fadeInOut-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/code\/layer-min.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -353,6 +375,61 @@
 		"initialSize": 612844,
 		"inputAbbreviatedPath": "\/images\/barista\/barista.png",
 		"outputAbbreviatedPath": "\/images\/barista\/barista.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/countDown\/countDown.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/images\/countDown\/countDown.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/images\/countDown\/countDown-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/images\/countDown\/countDown.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 95044,
+		"inputAbbreviatedPath": "\/images\/countDown\/countDown.png",
+		"outputAbbreviatedPath": "\/images\/countDown\/countDown.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/countDown\/countDown_00.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 20300,
+		"inputAbbreviatedPath": "\/images\/countDown\/countDown_00.png",
+		"outputAbbreviatedPath": "\/images\/countDown\/countDown_00.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/countDown\/countDown_01.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19363,
+		"inputAbbreviatedPath": "\/images\/countDown\/countDown_01.png",
+		"outputAbbreviatedPath": "\/images\/countDown\/countDown_01.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/countDown\/countDown_02.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 18726,
+		"inputAbbreviatedPath": "\/images\/countDown\/countDown_02.png",
+		"outputAbbreviatedPath": "\/images\/countDown\/countDown_02.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

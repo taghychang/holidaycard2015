@@ -36,6 +36,7 @@ preloader.prototype = {
         game.load.atlas('splash', 'images/cups/splash.png', 'images/cups/splash.json');
         // ADD STAGEFREEZE SPRITESHEET
         game.load.atlas('stageFreeze', 'images/stageFreeze/stageFreeze.png', 'images/stageFreeze/stageFreeze.json');
+        game.load.atlas('countDown', 'images/countDown/countDown.png', 'images/countDown/countDown.json');
         game.load.atlas('scoreGauge', 'images/scoreGauge/scoreGauge.png', 'images/scoreGauge/scoreGauge.json');
         // ADD STEAM SPRITESHEET
         game.load.atlas('stageSteam', 'images/stageSteam/stageSteam.png', 'images/stageSteam/stageSteam.json');
