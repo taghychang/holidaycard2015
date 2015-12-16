@@ -97,12 +97,13 @@ preloader.prototype = {
 };
 
 function fadeTunesIn() {
-    shopLoop.fadeIn(5000, true);
+  shopLoop.fadeIn(5000, true);
 }
 
 function nextState() {
-    shopLoop.fadeOut();
-    game.state.start('PreGame');
+  shopLoop.loop = false;
+  shopLoop.fadeOut();
+  shopLoop.onStop.add(function(){game.state.start('PreGame');})
 }
 
 function start() {
