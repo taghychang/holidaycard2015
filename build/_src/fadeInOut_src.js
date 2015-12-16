@@ -14,6 +14,11 @@ var fadeIn = function() {
 }
 
 var fadeOut = function(nextScene) {
+  blackbox_layer = game.add.group();
+  blackbox_layer.add(game.blackbox);
+
+  game.world.bringToTop(blackbox_layer);
+
   fadeout = game.add.tween(game.blackbox).to( {alpha: 1}, 800, "Linear", true);
   fadeout.onComplete.add(function(){game.state.start(nextScene)}, this);
 }
@@ -21,3 +26,4 @@ var fadeOut = function(nextScene) {
 var toNextState = function(item) {
   fadeOut(item.variable);
 }
+

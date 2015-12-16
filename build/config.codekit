@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "19076",
+"creatorBuild": "19102",
 "files": {
 	"\/_src\/boot_src.js": {
 		"fileType": 64,
@@ -487,6 +487,248 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/demoPage\/avoidThese.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6163,
+		"inputAbbreviatedPath": "\/images\/demoPage\/avoidThese.png",
+		"outputAbbreviatedPath": "\/images\/demoPage\/avoidThese.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/demoPage\/avoidThese_cups.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 25061,
+		"inputAbbreviatedPath": "\/images\/demoPage\/avoidThese_cups.png",
+		"outputAbbreviatedPath": "\/images\/demoPage\/avoidThese_cups.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/demoPage\/demoPlaceholder.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 60172,
+		"inputAbbreviatedPath": "\/images\/demoPage\/demoPlaceholder.jpg",
+		"outputAbbreviatedPath": "\/images\/demoPage\/demoPlaceholder.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/demoPage\/dummy_01.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6629,
+		"inputAbbreviatedPath": "\/images\/demoPage\/dummy_01.png",
+		"outputAbbreviatedPath": "\/images\/demoPage\/dummy_01.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/demoPage\/dummy_02.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6654,
+		"inputAbbreviatedPath": "\/images\/demoPage\/dummy_02.png",
+		"outputAbbreviatedPath": "\/images\/demoPage\/dummy_02.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/demoPage\/dummy_03.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6629,
+		"inputAbbreviatedPath": "\/images\/demoPage\/dummy_03.png",
+		"outputAbbreviatedPath": "\/images\/demoPage\/dummy_03.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/demoPage\/dummy_04.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6654,
+		"inputAbbreviatedPath": "\/images\/demoPage\/dummy_04.png",
+		"outputAbbreviatedPath": "\/images\/demoPage\/dummy_04.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/demoPage\/dummy_05.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6629,
+		"inputAbbreviatedPath": "\/images\/demoPage\/dummy_05.png",
+		"outputAbbreviatedPath": "\/images\/demoPage\/dummy_05.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/demoPage\/dummy_06.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6654,
+		"inputAbbreviatedPath": "\/images\/demoPage\/dummy_06.png",
+		"outputAbbreviatedPath": "\/images\/demoPage\/dummy_06.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/demoPage\/dummy_07.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6629,
+		"inputAbbreviatedPath": "\/images\/demoPage\/dummy_07.png",
+		"outputAbbreviatedPath": "\/images\/demoPage\/dummy_07.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/demoPage\/dummy_08.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6654,
+		"inputAbbreviatedPath": "\/images\/demoPage\/dummy_08.png",
+		"outputAbbreviatedPath": "\/images\/demoPage\/dummy_08.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/demoPage\/grabThese.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6344,
+		"inputAbbreviatedPath": "\/images\/demoPage\/grabThese.png",
+		"outputAbbreviatedPath": "\/images\/demoPage\/grabThese.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/demoPage\/grabThese_cups.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 21628,
+		"inputAbbreviatedPath": "\/images\/demoPage\/grabThese_cups.png",
+		"outputAbbreviatedPath": "\/images\/demoPage\/grabThese_cups.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/demoPage\/mitten.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19955,
+		"inputAbbreviatedPath": "\/images\/demoPage\/mitten.png",
+		"outputAbbreviatedPath": "\/images\/demoPage\/mitten.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/demoPage\/nextButton.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2743,
+		"inputAbbreviatedPath": "\/images\/demoPage\/nextButton.png",
+		"outputAbbreviatedPath": "\/images\/demoPage\/nextButton.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/demoPage\/playButton.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2728,
+		"inputAbbreviatedPath": "\/images\/demoPage\/playButton.png",
+		"outputAbbreviatedPath": "\/images\/demoPage\/playButton.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/demoPage\/swipe.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5982,
+		"inputAbbreviatedPath": "\/images\/demoPage\/swipe.png",
+		"outputAbbreviatedPath": "\/images\/demoPage\/swipe.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/demoPage\/thermoCold.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7454,
+		"inputAbbreviatedPath": "\/images\/demoPage\/thermoCold.png",
+		"outputAbbreviatedPath": "\/images\/demoPage\/thermoCold.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/demoPage\/thermoColdText.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8949,
+		"inputAbbreviatedPath": "\/images\/demoPage\/thermoColdText.png",
+		"outputAbbreviatedPath": "\/images\/demoPage\/thermoColdText.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/demoPage\/thermoWarm.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7496,
+		"inputAbbreviatedPath": "\/images\/demoPage\/thermoWarm.png",
+		"outputAbbreviatedPath": "\/images\/demoPage\/thermoWarm.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/demoPage\/thermoWarmText.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9660,
+		"inputAbbreviatedPath": "\/images\/demoPage\/thermoWarmText.png",
+		"outputAbbreviatedPath": "\/images\/demoPage\/thermoWarmText.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/demoPage\/withThis.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4948,
+		"inputAbbreviatedPath": "\/images\/demoPage\/withThis.png",
+		"outputAbbreviatedPath": "\/images\/demoPage\/withThis.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/demoPlaceholder.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -917,7 +1159,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Rafael Diaz",
+"lastSavedByUser": "Marach Treekunprapa",
 "manualImportLinks": {
 	},
 "projectAttributes": {
@@ -1017,8 +1259,16 @@
 			"active": 0,
 			"flagValue": -1
 			},
+		"no_nested_string_interpolation": {
+			"active": 1,
+			"flagValue": -1
+			},
 		"no_plusplus": {
 			"active": 0,
+			"flagValue": -1
+			},
+		"no_private_function_fat_arrows": {
+			"active": 1,
 			"flagValue": -1
 			},
 		"no_stand_alone_at": {
@@ -1027,6 +1277,10 @@
 			},
 		"no_tabs": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"no_this": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"no_throwing_strings": {
