@@ -1,0 +1,1 @@
+function startDemo(){game.state.start("Demo")}var introVideo=function(o){console.log(o)};introVideo.prototype={preload:function(){},create:function(){var o=game.add.video("introVideo");videoSprite=o.addToWorld(game.world.centerX,game.world.centerY,.5,.5),o.play(),o.onComplete.add(startDemo,this),fadeIn()}};

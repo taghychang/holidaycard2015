@@ -77,7 +77,7 @@ function scoreHandler(cupHit) {
     }
 
 
-    scoreGauge.frame = score;
+    scoreGauge.frame = score-1;
 
 
     console.log('time on table(speed) ='+ cup_speed);
@@ -94,7 +94,7 @@ function scoreHandler(cupHit) {
     } else if (score <= 0) {
       if (player_condition.isLose == false) {
         player_condition.isLose = true;
-        game.animateFreeze.play('freeze', 15);
+        game.animateFreeze.play('freeze');
         game.animateFreeze.events.onAnimationComplete.addOnce(function() {
           fadeOut("EndGameLose");
         });
@@ -198,15 +198,7 @@ var movePlayer = {
 
 playGame.prototype = {
     preload: function() {
-        // game.load.image('shopMobile', 'images/shopMobile.jpg');
-        // game.load.atlas('barista', 'images/barista/barista.png', 'images/barista/barista.json');
-        // // ADD CUPS SPRITESHEET
-        // game.load.atlas('cup', 'images/cups/cups.png', 'images/cups/cups.json');
-        // // ADD STAGEFREEZE SPRITESHEET
-        // game.load.atlas('stageFreeze', 'images/stageFreeze/stageFreeze.png', 'images/stageFreeze/stageFreeze.json');
-        // game.load.atlas('scoreGauge', 'images/scoreGauge/scoreGauge.png', 'images/scoreGauge/scoreGauge.json');
-        // // ADD STEAM SPRITESHEET
-        // game.load.atlas('stageSteam', 'images/stageSteam/stageSteam.png', 'images/stageSteam/stageSteam.json'); 
+
     },
     create: function() {
 
@@ -214,21 +206,18 @@ playGame.prototype = {
 
         var shopMobile = game.add.image(0, 0, 'shopMobile');
 
-        cupGeneratorSpeed = 0.7;
-        playerSpeed = 150;
+        cupGeneratorSpeed = 0.65;
+        playerSpeed = 112;
         cupSpeed = 750;
         
         // DEBUG
         // game.add.plugin(Phaser.Plugin.Debug);
 
-        // shop = game.add.sprite(-430, 0, 'shop');
-        // shop.anchor.set(0);
-
         // PLACE STAGE FREEZE ON STAGE & DECLARE INITIAL SCORE 
-        score = 5; // out of 10 
+        score = 4; // out of 10 
 
-        scoreGauge = game.add.sprite(game.width -70, 0, 'scoreGauge');
-        scoreGauge.frame = score;
+        scoreGauge = game.add.sprite(game.width -80, 30, 'scoreGauge');
+        scoreGauge.frame = score -1 ;
 
         stageFreeze = game.add.sprite(0, 0, 'stageFreeze');
         stageFreeze = game.add.sprite(0, 0, 'stageSteam');
@@ -241,7 +230,7 @@ playGame.prototype = {
         powerUp.makeParticles('steam', [snowflakeArray]);
         // ADD BARISTA
         barista = game.add.sprite(20, 6, 'barista');
-        barista.animations.add('youGotServed', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 12, true);
+        barista.animations.add('youGotServed', [0, 1, 2, 3, 4, 5, 6, 7, 8], 16, true);
         // PLAYER POSITIONS TO SLIDE INTO
         var lane0X = game.width / 2 - 200;
         var lane1X = game.width / 2;
@@ -261,11 +250,9 @@ playGame.prototype = {
         player.animations.add('halfLeft', [0, 4], 10, false);
         player.animations.add('halfRight', [5, 4], 10, false);
 
-
         //CUP SPLASH
         splash = game.add.sprite(playerPositions[playerPosition], game.height - 110, 'splash');
         splash.animations.add('spill' [0,1,2,3]);
-
 
         cursor = game.input.keyboard.createCursorKeys();
 
@@ -282,15 +269,12 @@ playGame.prototype = {
         game.physics.enable(player, Phaser.Physics.ARCADE);
 
         // SET HIT AREA ON PLAYER
-        player.body.setSize(10, 10, 0, -20);
+        player.body.setSize(10, 10, 0, -50);
 
         // To position player on the top ================================================
         var player_layer = game.add.group();
-        // var freeze_layer = game.add.group();
-        // player_layer.create(0,0, 'bg');
         player_layer.add(player);
-        // freeze_layer.add(stageFreeze);
-        
+         
         game.world.bringToTop(player_layer);
 
         // PREPARE FREEZE animation when player lose
@@ -326,9 +310,9 @@ playGame.prototype = {
         // Count down position and style
         blackbox_out = game.add.tween(game.blackbox).to( { alpha: 0}, 500, "Linear", true);
 
-        game.countDown= game.add.sprite(0,0, 'countDown');
+        game.countDown = game.add.sprite(0,0, 'countDown');
         game.countDown.animations.add('countDown');
-        game.countDown.frame = 0;
+        game.countDown.frame = -1;
         game.countDown.play('countDown', 1);
 
         // After countdown do this:
@@ -405,9 +389,9 @@ playGame.prototype = {
        
     },
 
-    render: function(){
-        game.debug.body(player);
-        // game.debug.body();
-    }
+    // render: function(){
+    //     game.debug.body(player);
+    //     // game.debug.body();
+    // }
 
 };

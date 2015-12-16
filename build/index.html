@@ -4,17 +4,19 @@
 <head>
     <meta charset="UTF-8" />
     <! -- Facebook custom -- >
-    <meta property="og:url"                content="http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html" />
+    <meta property="og:url"                content="http://www.tagonline.tagworldwide.com/public/nytdi/HOLIDAY_2015/index.html" />
     <meta property="og:type"               content="article" />
-    <meta property="og:title"              content="When Great Minds Don’t Think Alike" />
-    <meta property="og:description"        content="How much does culture influence creative thinking?" />
-    <meta property="og:image"              content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
+    <meta property="og:title"              content="Cappaccino Caper" />
+    <meta property="og:description"        content="&rsquo;TIS THE SEASON TO GET WARM AND TOASTY" />
+    <meta property="og:image"              content="images/social/fb.jpg" />
 
-    <title>Brrr-ista</title>
+    <title>Cappaccino Caper</title>
     <link href="code/styles-min.css" type="text/css" rel="stylesheet"/>
   
-    <script type="text/javascript" src="code/phaser.min.js"></script>
+
+    <script type="text/javascript" src="code/phaser.js"></script>
     <script type="text/javascript" src="code/boot-min.js"></script>
+     <script type="text/javascript" src="code/introVideo-min.js"></script>
     <script type="text/javascript" src="code/layer-min.js"></script>
     <script type="text/javascript" src="code/powerUpDown-min.js"></script>
     <script type="text/javascript" src="code/fadeInOut-min.js"></script>
@@ -45,6 +47,7 @@
     game.state.add('Boot', boot);
     game.state.add('Preloader', preloader);
     game.state.add("PreGame", preGame);
+    game.state.add('IntroVideo', introVideo);
     game.state.add("Demo", demo);
     game.state.add("PlayGame", playGame);
     game.state.add("EndGameWin", endGameWin);
@@ -66,10 +69,7 @@
     <script type="text/javascript">
     var stageFreezeDesk;
     stageFreezeDesk = document.getElementById('stageFreezeDesk');
-    // if (game.stateManager.current === endGameWin) {
-    //     stageFreezeDesk.style.opacity = '1';
 
-    // };
     </script>
 </body>
 
