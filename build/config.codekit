@@ -711,31 +711,9 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 62120,
+		"initialSize": 57895,
 		"inputAbbreviatedPath": "\/images\/scoreGauge\/scoreGauge.png",
 		"outputAbbreviatedPath": "\/images\/scoreGauge\/scoreGauge.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/scoreGauge\/scoreGauge1.json": {
-		"fileType": 524288,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/images\/scoreGauge\/scoreGauge1.json",
-		"orderOutput": 0,
-		"outputAbbreviatedPath": "\/images\/scoreGauge\/scoreGauge1-min.json",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1
-		},
-	"\/images\/scoreGauge\/scoreGauge1.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 32916,
-		"inputAbbreviatedPath": "\/images\/scoreGauge\/scoreGauge1.png",
-		"outputAbbreviatedPath": "\/images\/scoreGauge\/scoreGauge1.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

@@ -77,7 +77,7 @@ function scoreHandler(cupHit) {
     }
 
 
-    scoreGauge.frame = (score -1) /  2;
+    scoreGauge.frame = score  /  2;
 
 
     console.log('time on table(speed) ='+ cup_speed);
@@ -169,9 +169,9 @@ var movePlayer = {
 
     left: function() {
         if (playerPosition > 0) {
-           // To test: Marach will remove this
-           score=-21;
-           // End Marach will remove this
+           // // To test: Marach will remove this
+           // score=-21;
+           // // End Marach will remove this
       tweenL = game.add.tween(player).to({
                 x: playerPositions[playerPosition - 1]
             }, playerSpeed, Phaser.Easing.Linear.None, true);
@@ -185,9 +185,9 @@ var movePlayer = {
     },
 
     right: function() {
-             //Marach will remove this
-             score=21;
-             // End Marach will remove this
+             // //Marach will remove this
+             // score=21;
+             // // End Marach will remove this
       if (playerPosition < 2) {
             tweenR = game.add.tween(player).to({
                 x: playerPositions[playerPosition + 1]
@@ -262,9 +262,6 @@ playGame.prototype = {
         player.animations.add('halfLeft', [0, 4], 10, false);
         player.animations.add('halfRight', [5, 4], 10, false);
 
-        //CUP SPLASH
-        splash = game.add.sprite(playerPositions[playerPosition], game.height - 110, 'splash');
-        splash.animations.add('spill' [0,1,2,3]);
 
         cursor = game.input.keyboard.createCursorKeys();
 
