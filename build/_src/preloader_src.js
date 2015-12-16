@@ -27,10 +27,10 @@ preloader.prototype = {
         game.load.atlas('snowflakes', 'images/powerDown/powerDown_snowflake_spriteSheet.png', 'images/powerDown/powerDown_snowflake_spriteSheet.json');
         game.load.atlas('steam', 'images/powerUp/powerUp_steam_spriteSheet.png', 'images/powerUp/powerUp_steam_spriteSheet.json');
 
-        game.load.spritesheet('player', 'images/playerSprite.png', 130, 238);
+        game.load.atlas('player', 'images/playerSprite.png', 'images/playerSprite.json');
         game.load.atlas('stageFreeze', 'images/stageFreeze/stageFreeze.png', 'images/stageFreeze/stageFreeze.json');
 
-        game.load.image("demoPlaceholder", "images/demoPlaceholder.png");
+        game.load.image("demoPlaceholder", "images/demoPlaceholder.jpg");
         game.load.image('logo', 'images/logo.png');
         // Audio Files for PowerUp/PowerDown
         game.load.audio('powerUpFX', ['sounds/powerUpAudio.mp3', 'sound/powerUpAudio.ogg']);
@@ -105,6 +105,26 @@ function nextState() {
     game.state.start('PreGame');
 }
 
+function start() {
+    game.load.start();
+}
+
+function loadStart() {
+    text.setText("Loading ...");
+}
+
+function fileComplete(success) {
+
+        x = 32;
+        y += 332;
+
+}
+
+function loadComplete() {
+    game.add.text(x, y, 'Loading', { fill: '#ffffff' });
+    // text.setText("Click to Start");
+
+}
 
 
 

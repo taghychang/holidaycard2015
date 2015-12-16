@@ -37,7 +37,7 @@ endGameWin.prototype = {
     var winPageBgMobile = game.add.sprite(0,0,'winPageBgMobile');
 
     // Create button //
-    replayButton = game.add.button(78, 635, "replayButton");
+    replayButton = game.add.button(75, 570, "replayButton");
     replayButton.variable = "PreGame"; // next state
     replayButton.inputEnabled = true;
     replayButton.events.onInputDown.add(toNextState, this);

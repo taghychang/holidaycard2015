@@ -1,84 +1,84 @@
 {"frames": [
 
 {
-	"filename": "5268908_Barista_1-01-01.png",
-	"frame": {"x":1,"y":1,"w":342,"h":406},
+	"filename": "5268908_Barista_Asset_SPRITE_SHEET_V2_1-01.png",
+	"frame": {"x":1,"y":1,"w":342,"h":407},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":23,"y":0,"w":342,"h":406},
-	"sourceSize": {"w":475,"h":406}
+	"spriteSourceSize": {"x":36,"y":43,"w":342,"h":407},
+	"sourceSize": {"w":579,"h":493}
 },
 {
-	"filename": "5268908_Barista_1-02-01.png",
-	"frame": {"x":345,"y":1,"w":331,"h":406},
+	"filename": "5268908_Barista_Asset_SPRITE_SHEET_V2_2-01.png",
+	"frame": {"x":345,"y":1,"w":330,"h":407},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":79,"y":0,"w":331,"h":406},
-	"sourceSize": {"w":475,"h":406}
+	"spriteSourceSize": {"x":46,"y":43,"w":330,"h":407},
+	"sourceSize": {"w":579,"h":493}
 },
 {
-	"filename": "5268908_Barista_1-03-01.png",
-	"frame": {"x":678,"y":1,"w":475,"h":344},
+	"filename": "5268908_Barista_Asset_SPRITE_SHEET_V2_3-01.png",
+	"frame": {"x":677,"y":1,"w":472,"h":344},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":0,"y":0,"w":475,"h":344},
-	"sourceSize": {"w":475,"h":406}
+	"spriteSourceSize": {"x":63,"y":43,"w":472,"h":344},
+	"sourceSize": {"w":579,"h":493}
 },
 {
-	"filename": "5268908_Barista_1-04-01.png",
-	"frame": {"x":1155,"y":1,"w":432,"h":385},
+	"filename": "5268908_Barista_Asset_SPRITE_SHEET_V2_4-01.png",
+	"frame": {"x":1151,"y":1,"w":368,"h":381},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":43,"y":0,"w":432,"h":385},
-	"sourceSize": {"w":475,"h":406}
+	"spriteSourceSize": {"x":182,"y":43,"w":368,"h":381},
+	"sourceSize": {"w":579,"h":493}
 },
 {
-	"filename": "5268908_Barista_1-05-01.png",
-	"frame": {"x":1,"y":409,"w":343,"h":406},
+	"filename": "5268908_Barista_Asset_SPRITE_SHEET_V2_5-01.png",
+	"frame": {"x":1,"y":410,"w":344,"h":407},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":48,"y":0,"w":343,"h":406},
-	"sourceSize": {"w":475,"h":406}
+	"spriteSourceSize": {"x":228,"y":42,"w":344,"h":407},
+	"sourceSize": {"w":579,"h":493}
 },
 {
-	"filename": "5268908_Barista_1-06-01.png",
-	"frame": {"x":346,"y":409,"w":327,"h":405},
+	"filename": "5268908_Barista_Asset_SPRITE_SHEET_V2_6-01.png",
+	"frame": {"x":347,"y":410,"w":325,"h":406},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":85,"y":0,"w":327,"h":405},
-	"sourceSize": {"w":475,"h":406}
+	"spriteSourceSize": {"x":234,"y":42,"w":325,"h":406},
+	"sourceSize": {"w":579,"h":493}
 },
 {
-	"filename": "5268908_Barista_1-07-01.png",
-	"frame": {"x":675,"y":409,"w":475,"h":343},
+	"filename": "5268908_Barista_Asset_SPRITE_SHEET_V2_7-01.png",
+	"frame": {"x":674,"y":410,"w":471,"h":344},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":0,"y":0,"w":475,"h":343},
-	"sourceSize": {"w":475,"h":406}
+	"spriteSourceSize": {"x":70,"y":42,"w":471,"h":344},
+	"sourceSize": {"w":579,"h":493}
 },
 {
-	"filename": "5268908_Barista_1-08-01.png",
-	"frame": {"x":1152,"y":409,"w":372,"h":385},
+	"filename": "5268908_Barista_Asset_SPRITE_SHEET_V2_8-01.png",
+	"frame": {"x":1147,"y":410,"w":368,"h":381},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":38,"y":0,"w":372,"h":385},
-	"sourceSize": {"w":475,"h":406}
+	"spriteSourceSize": {"x":27,"y":43,"w":368,"h":381},
+	"sourceSize": {"w":579,"h":493}
 },
 {
-	"filename": "5268908_Barista_1-09-01.png",
-	"frame": {"x":1526,"y":409,"w":341,"h":406},
+	"filename": "5268908_Barista_Asset_SPRITE_SHEET_V2_9-01.png",
+	"frame": {"x":1517,"y":410,"w":342,"h":407},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":17,"y":0,"w":341,"h":406},
-	"sourceSize": {"w":475,"h":406}
+	"spriteSourceSize": {"x":9,"y":43,"w":342,"h":407},
+	"sourceSize": {"w":579,"h":493}
 }],
 "meta": {
 	"app": "http://www.codeandweb.com/texturepacker",
 	"version": "1.0",
-	"image": "player.png",
+	"image": "dude.png",
 	"format": "RGBA8888",
-	"size": {"w":1868,"h":816},
+	"size": {"w":1860,"h":818},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:64cc8badc42f770741a28abb38867e3d:14fa8f80a1039489a873914fe23f0ef5:86d5339b780aedd87b35e2b7c0a7e11b$"
+	"smartupdate": "$TexturePacker:SmartUpdate:35ded6a574001589c0a50dc246b20309:120a9d9a4f54b3207ae8a96babe9c014:91b0136f103a2ad004f02a846859646f$"
 }
 }

@@ -30,7 +30,7 @@ endGameLose.prototype = {
     var losePageBgMobile = game.add.sprite(0,0, 'losePageBgMobile');
 
     // Create button //
-    tryAgain = game.add.button(78, 635, "tryAgain");
+    tryAgain = game.add.button(78, 500, "tryAgain");
     tryAgain.variable = "PlayGame"; // next state
     tryAgain.inputEnabled = true;
     tryAgain.events.onInputDown.add(toNextState, this);

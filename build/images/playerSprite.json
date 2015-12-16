@@ -1,0 +1,84 @@
+{"frames": [
+
+{
+	"filename": "mittenSprite01.png",
+	"frame": {"x":1,"y":1,"w":157,"h":235},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":3,"w":157,"h":235},
+	"sourceSize": {"w":167,"h":238}
+},
+{
+	"filename": "mittenSprite02.png",
+	"frame": {"x":160,"y":1,"w":167,"h":232},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":6,"w":167,"h":232},
+	"sourceSize": {"w":167,"h":238}
+},
+{
+	"filename": "mittenSprite03.png",
+	"frame": {"x":329,"y":1,"w":149,"h":226},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":12,"w":149,"h":226},
+	"sourceSize": {"w":167,"h":238}
+},
+{
+	"filename": "mittenSprite04.png",
+	"frame": {"x":160,"y":1,"w":167,"h":232},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":6,"w":167,"h":232},
+	"sourceSize": {"w":167,"h":238}
+},
+{
+	"filename": "mittenSprite05.png",
+	"frame": {"x":1,"y":1,"w":157,"h":235},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":3,"w":157,"h":235},
+	"sourceSize": {"w":167,"h":238}
+},
+{
+	"filename": "mittenSprite06.png",
+	"frame": {"x":480,"y":1,"w":155,"h":236},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":12,"y":2,"w":155,"h":236},
+	"sourceSize": {"w":167,"h":238}
+},
+{
+	"filename": "mittenSprite07.png",
+	"frame": {"x":637,"y":1,"w":146,"h":237},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":21,"y":1,"w":146,"h":237},
+	"sourceSize": {"w":167,"h":238}
+},
+{
+	"filename": "mittenSprite08.png",
+	"frame": {"x":785,"y":1,"w":167,"h":236},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":2,"w":167,"h":236},
+	"sourceSize": {"w":167,"h":238}
+},
+{
+	"filename": "mittenSprite09.png",
+	"frame": {"x":954,"y":1,"w":157,"h":234},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":4,"w":157,"h":234},
+	"sourceSize": {"w":167,"h":238}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "player.png",
+	"format": "RGBA8888",
+	"size": {"w":1112,"h":239},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:f116812ac727d75399486afe00123e27:18ee767483131473b766e22f38af48a5:86d5339b780aedd87b35e2b7c0a7e11b$"
+}
+}

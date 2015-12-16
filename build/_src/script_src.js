@@ -215,7 +215,7 @@ playGame.prototype = {
         var shopMobile = game.add.image(0, 0, 'shopMobile');
 
         cupGeneratorSpeed = 0.7;
-        playerSpeed = 200;
+        playerSpeed = 150;
         cupSpeed = 750;
         
         // DEBUG
@@ -240,7 +240,7 @@ playGame.prototype = {
         powerUp = game.add.emitter(game.world.centerX, 200, 200);
         powerUp.makeParticles('steam', [snowflakeArray]);
         // ADD BARISTA
-        barista = game.add.sprite(60, 49, 'barista');
+        barista = game.add.sprite(20, 6, 'barista');
         barista.animations.add('youGotServed', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 12, true);
         // PLAYER POSITIONS TO SLIDE INTO
         var lane0X = game.width / 2 - 200;

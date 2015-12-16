@@ -1,39 +1,36 @@
 {"frames": [
 
 {
-	"filename": "countDown_00.png",
-	"frame": {"x":1,"y":1,"w":580,"h":880},
+	"filename": "03.png",
+	"frame": {"x":1,"y":1,"w":640,"h":960},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":580,"h":880},
-	"sourceSize": {"w":580,"h":880},
-	"pivot": {"x":0.5,"y":0.5}
+	"spriteSourceSize": {"x":0,"y":0,"w":640,"h":960},
+	"sourceSize": {"w":640,"h":960}
 },
 {
-	"filename": "countDown_01.png",
-	"frame": {"x":583,"y":1,"w":580,"h":880},
+	"filename": "02.png",
+	"frame": {"x":643,"y":1,"w":640,"h":960},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":580,"h":880},
-	"sourceSize": {"w":580,"h":880},
-	"pivot": {"x":0.5,"y":0.5}
+	"spriteSourceSize": {"x":0,"y":0,"w":640,"h":960},
+	"sourceSize": {"w":640,"h":960}
 },
 {
-	"filename": "countDown_02.png",
-	"frame": {"x":1165,"y":1,"w":580,"h":880},
+	"filename": "01.png",
+	"frame": {"x":1285,"y":1,"w":640,"h":960},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":580,"h":880},
-	"sourceSize": {"w":580,"h":880},
-	"pivot": {"x":0.5,"y":0.5}
+	"spriteSourceSize": {"x":0,"y":0,"w":640,"h":960},
+	"sourceSize": {"w":640,"h":960}
 }],
 "meta": {
 	"app": "http://www.codeandweb.com/texturepacker",
 	"version": "1.0",
 	"image": "countDown.png",
 	"format": "RGBA8888",
-	"size": {"w":1746,"h":882},
+	"size": {"w":1926,"h":962},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:002640cbaef654fe12937bf3ca472edf:7ead955dd312768f85b2e83ae77d994c:6e973a62a1832971a47d0f696a67a6df$"
+	"smartupdate": "$TexturePacker:SmartUpdate:ed049aa7952e812583ebf111d4633311:b6a696b1c60d437f45ac1b5113753847:6e973a62a1832971a47d0f696a67a6df$"
 }
 }

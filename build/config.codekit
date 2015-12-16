@@ -30,9 +30,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_src\/css\/styles_src.scss",
-		"outputAbbreviatedPath": "\/_src\/css\/styles_src.css",
+		"outputAbbreviatedPath": "\/code\/styles-min.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
@@ -112,28 +112,6 @@
 		"outputAbbreviatedPath": "\/code\/layer-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/_src\/min\/boot_src-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_src\/min\/boot_src-min.js",
-		"outputAbbreviatedPath": "\/_src\/min\/min\/boot_src-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/_src\/min\/powerUpDown_src-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_src\/min\/powerUpDown_src-min.js",
-		"outputAbbreviatedPath": "\/_src\/min\/min\/powerUpDown_src-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
@@ -381,7 +359,7 @@
 		},
 	"\/code\/styles-min.css": {
 		"fileType": 16,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/code\/styles-min.css",
 		"outputAbbreviatedPath": "No Output Path",
@@ -425,42 +403,9 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 95044,
+		"initialSize": 49088,
 		"inputAbbreviatedPath": "\/images\/countDown\/countDown.png",
 		"outputAbbreviatedPath": "\/images\/countDown\/countDown.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/countDown\/countDown_00.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 20300,
-		"inputAbbreviatedPath": "\/images\/countDown\/countDown_00.png",
-		"outputAbbreviatedPath": "\/images\/countDown\/countDown_00.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/countDown\/countDown_01.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 19363,
-		"inputAbbreviatedPath": "\/images\/countDown\/countDown_01.png",
-		"outputAbbreviatedPath": "\/images\/countDown\/countDown_01.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/countDown\/countDown_02.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 18726,
-		"inputAbbreviatedPath": "\/images\/countDown\/countDown_02.png",
-		"outputAbbreviatedPath": "\/images\/countDown\/countDown_02.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -480,7 +425,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 57943,
+		"initialSize": 19243,
 		"inputAbbreviatedPath": "\/images\/cups\/cups.png",
 		"outputAbbreviatedPath": "\/images\/cups\/cups.png",
 		"outputPathIsOutsideProject": 0,
@@ -509,13 +454,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/demoPlaceholder.png": {
-		"fileType": 32768,
+	"\/images\/demoPlaceholder.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 103730,
-		"inputAbbreviatedPath": "\/images\/demoPlaceholder.png",
-		"outputAbbreviatedPath": "\/images\/demoPlaceholder.png",
+		"initialSize": 101279,
+		"inputAbbreviatedPath": "\/images\/demoPlaceholder.jpg",
+		"outputAbbreviatedPath": "\/images\/demoPlaceholder.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -527,17 +472,6 @@
 		"initialSize": 1974,
 		"inputAbbreviatedPath": "\/images\/loading.png",
 		"outputAbbreviatedPath": "\/images\/loading.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/loading2.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 3677,
-		"inputAbbreviatedPath": "\/images\/loading2.png",
-		"outputAbbreviatedPath": "\/images\/loading2.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -564,17 +498,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/logo.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 83597,
-		"inputAbbreviatedPath": "\/images\/logo.png",
-		"outputAbbreviatedPath": "\/images\/logo.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/images\/losePage\/losePageBgMobile.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -597,11 +520,22 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/playerSprite.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/images\/playerSprite.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/images\/playerSprite-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/images\/playerSprite.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 24465,
+		"initialSize": 115513,
 		"inputAbbreviatedPath": "\/images\/playerSprite.png",
 		"outputAbbreviatedPath": "\/images\/playerSprite.png",
 		"outputPathIsOutsideProject": 0,
@@ -652,13 +586,24 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/replay.png": {
+	"\/images\/powerUp\/powerUp_steam_spriteSheet1.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/images\/powerUp\/powerUp_steam_spriteSheet1.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/images\/powerUp\/powerUp_steam_spriteSheet1-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/images\/powerUp\/powerUp_steam_spriteSheet1.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 700,
-		"inputAbbreviatedPath": "\/images\/replay.png",
-		"outputAbbreviatedPath": "\/images\/replay.png",
+		"initialSize": 250974,
+		"inputAbbreviatedPath": "\/images\/powerUp\/powerUp_steam_spriteSheet1.png",
+		"outputAbbreviatedPath": "\/images\/powerUp\/powerUp_steam_spriteSheet1.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -707,33 +652,11 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/shareFacebookButton.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 14098,
-		"inputAbbreviatedPath": "\/images\/shareFacebookButton.png",
-		"outputAbbreviatedPath": "\/images\/shareFacebookButton.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/shareTwitterButton.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 12274,
-		"inputAbbreviatedPath": "\/images\/shareTwitterButton.png",
-		"outputAbbreviatedPath": "\/images\/shareTwitterButton.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/images\/shop.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 194703,
+		"initialSize": 221926,
 		"inputAbbreviatedPath": "\/images\/shop.jpg",
 		"outputAbbreviatedPath": "\/images\/shop.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -744,7 +667,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 88781,
+		"initialSize": 110708,
 		"inputAbbreviatedPath": "\/images\/shopMobile.jpg",
 		"outputAbbreviatedPath": "\/images\/shopMobile.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -997,7 +920,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 6007,
+		"initialSize": 5551,
 		"inputAbbreviatedPath": "\/images\/winPage\/shareFacebookButton.png",
 		"outputAbbreviatedPath": "\/images\/winPage\/shareFacebookButton.png",
 		"outputPathIsOutsideProject": 0,

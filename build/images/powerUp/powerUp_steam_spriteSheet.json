@@ -1,66 +1,66 @@
 {"frames": [
 
 {
-	"filename": "steam_01.png",
-	"frame": {"x":0,"y":0,"w":55,"h":50},
+	"filename": "steamSprite01.png",
+	"frame": {"x":0,"y":0,"w":243,"h":202},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":55,"h":50},
-	"sourceSize": {"w":55,"h":50},
+	"spriteSourceSize": {"x":0,"y":0,"w":243,"h":202},
+	"sourceSize": {"w":243,"h":202},
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "steam_02.png",
-	"frame": {"x":55,"y":0,"w":94,"h":86},
+	"filename": "steamSprite02.png",
+	"frame": {"x":243,"y":0,"w":243,"h":202},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":94,"h":86},
-	"sourceSize": {"w":94,"h":86},
+	"spriteSourceSize": {"x":0,"y":0,"w":243,"h":202},
+	"sourceSize": {"w":243,"h":202},
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "steam_03.png",
-	"frame": {"x":149,"y":0,"w":141,"h":130},
+	"filename": "steamSprite03.png",
+	"frame": {"x":0,"y":202,"w":243,"h":202},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":141,"h":130},
-	"sourceSize": {"w":141,"h":130},
+	"spriteSourceSize": {"x":0,"y":0,"w":243,"h":202},
+	"sourceSize": {"w":243,"h":202},
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "steam_04.png",
-	"frame": {"x":0,"y":130,"w":228,"h":210},
+	"filename": "steamSprite04.png",
+	"frame": {"x":243,"y":202,"w":243,"h":202},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":228,"h":210},
-	"sourceSize": {"w":228,"h":210},
+	"spriteSourceSize": {"x":0,"y":0,"w":243,"h":202},
+	"sourceSize": {"w":243,"h":202},
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "steam_05.png",
-	"frame": {"x":0,"y":340,"w":314,"h":290},
+	"filename": "steamSprite05.png",
+	"frame": {"x":0,"y":404,"w":243,"h":202},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":314,"h":290},
-	"sourceSize": {"w":314,"h":290},
+	"spriteSourceSize": {"x":0,"y":0,"w":243,"h":202},
+	"sourceSize": {"w":243,"h":202},
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "steam_06.png",
-	"frame": {"x":0,"y":630,"w":385,"h":355},
+	"filename": "steamSprite06.png",
+	"frame": {"x":243,"y":404,"w":243,"h":202},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":385,"h":355},
-	"sourceSize": {"w":385,"h":355},
+	"spriteSourceSize": {"x":0,"y":0,"w":243,"h":202},
+	"sourceSize": {"w":243,"h":202},
 	"pivot": {"x":0.5,"y":0.5}
 }],
 "meta": {
 	"app": "http://www.codeandweb.com/texturepacker",
 	"version": "1.0",
-	"image": "powerUp_steam_spriteSheet.png",
+	"image": "steamSprite.png",
 	"format": "RGBA8888",
-	"size": {"w":385,"h":985},
+	"size": {"w":512,"h":1024},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:2a00331124fb4bdd5ff10df1fb218546:10bf6a769cc1f09dd61de05c3accf66b:60a3fc432b992a61febb10017fd605c1$"
+	"smartupdate": "$TexturePacker:SmartUpdate:3ca47d37ebe2a17e2231350f9d2e6f9a:72f783588f54129c90fd51b1013a1da1:f1e7e10dcc5aa17c0bb1175db3b96a86$"
 }
 }
