@@ -19,15 +19,15 @@ boot.prototype = {
 
     	//PAUSE GAME IF IN LANDSCAPE
         window.addEventListener("orientationchange", function(){
-        var pause = game.add.sprite(60, 60, 'rotate'); 
+       
         if(window.orientation !== 0){
+            pauseBox = game.add.sprite(60, 60, 'rotate');
+            // game.world.bringToTop(pause_layer);
             game.paused = true;
-            pause;
         } else if (window.orientation === 0){
             console.log("KILLLLL")
-            pause.destroy();
-            game.world.remove('pause');
-            game.paused = false;                 
+            game.world.remove(pauseBox);
+            game.paused = false;
 
 
             }
