@@ -57,6 +57,8 @@ endGameLose.prototype = {
     // var shareTwitterButton = game.add.button(game.world.centerX, 600, 'shareTwitterButton', this.shareTwitter);
     // var shareFacebookButton = game.add.button(game.world.centerX, 700, 'shareFacebookButton', this.shareFacebook);
 
+    // fade bg music
+    shopLoop.fadeTo(2000, 0.2);
     fadeIn();
   }
 };

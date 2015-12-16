@@ -27,6 +27,12 @@ preloader.prototype = {
         loadSteam.anchor.setTo(0.5);
         //ADD AUDIO
         game.load.audio('shopLoop', ['sounds/shopLoop.mp3', 'sounds/shopLoop.ogg']);
+        game.load.audio('cupOnMove', ['sounds/cupOnMove.mp3', 'sounds/cupOnMove.ogg']);
+        game.load.audio('loseScene', ['sounds/loseScene.mp3', 'sounds/loseScene.ogg']);
+        game.load.audio('winScene', ['sounds/winScene.mp3', 'sounds/winScene.ogg']);
+        game.load.audio('cupOnMove', ['sounds/cupOnMove.mp3', 'sounds/cupOnMove.ogg']);
+        game.load.audio('noiseLoop', ['sounds/shop.mp3', 'sounds/shop.ogg']);
+
         game.load.image('shop', 'images/shop.jpg');
         //ADD POWERDOWN POWERUP SPRITESHEET
         game.load.atlas('snowflakes', 'images/powerDown/powerDown_snowflake_spriteSheet.png', 'images/powerDown/powerDown_snowflake_spriteSheet.json');
@@ -73,8 +79,8 @@ function loadStart() {
 
 function loadComplete() {
     //SKIP FOR DEV
-    game.state.start('PlayGame');
-    // game.state.start('PreGame');
+    //game.state.start('PlayGame');
+    game.state.start('Demo');
 }
 
 

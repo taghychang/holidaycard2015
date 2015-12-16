@@ -14,8 +14,10 @@ demo.prototype = {
         // Create button //
         shopLoop = game.add.audio('shopLoop');
         shopLoop.loop = true;
-        // shopLoop.play();
-        shopLoop.onDecoded.add(fadeTunesIn, this);
+        shopLoop.volume = 0.7;
+        shopLoop.play();
+//        shopLoop.onDecoded.add(fadeTunesIn, this);
+
 
         demoPlaceholder = game.add.button(game.world.centerX, game.world.centerY, "demoPlaceholder");
         demoPlaceholder.variable = "PlayGame"; // next state

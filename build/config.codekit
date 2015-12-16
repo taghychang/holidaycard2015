@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "19076",
+"creatorBuild": "19102",
 "files": {
 	"\/_src\/boot_src.js": {
 		"fileType": 64,
@@ -54,9 +54,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_src\/demo_src.js",
-		"outputAbbreviatedPath": "\/_src\/min\/demo_src-min.js",
+		"outputAbbreviatedPath": "\/code\/demo-min.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
@@ -76,9 +76,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_src\/endgamelose_src.js",
-		"outputAbbreviatedPath": "\/_src\/min\/endgamelose_src-min.js",
+		"outputAbbreviatedPath": "\/code\/endgamelose-min.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
@@ -87,9 +87,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_src\/endgamewin_src.js",
-		"outputAbbreviatedPath": "\/_src\/min\/endgamewin_src-min.js",
+		"outputAbbreviatedPath": "\/code\/endgamewin-min.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
@@ -121,17 +121,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_src\/layer_src.js",
 		"outputAbbreviatedPath": "\/_src\/min\/layer_src-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/_src\/min\/preloader_src-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_src\/min\/preloader_src-min.js",
-		"outputAbbreviatedPath": "\/_src\/min\/min\/preloader_src-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -175,9 +164,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_src\/script_src.js",
-		"outputAbbreviatedPath": "\/_src\/min\/script_src-min.js",
+		"outputAbbreviatedPath": "\/code\/script-min.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
@@ -186,9 +175,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_src\/soundFx_src.js",
-		"outputAbbreviatedPath": "\/_src\/min\/soundFx_src-min.js",
+		"outputAbbreviatedPath": "\/code\/soundFx-min.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
@@ -216,7 +205,7 @@
 		},
 	"\/code\/demo-min.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/code\/demo-min.js",
 		"outputAbbreviatedPath": "\/code\/min\/demo-min-min.js",
@@ -260,7 +249,7 @@
 		},
 	"\/code\/endgamelose-min.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/code\/endgamelose-min.js",
 		"outputAbbreviatedPath": "\/code\/min\/endgamelose-min-min.js",
@@ -271,7 +260,7 @@
 		},
 	"\/code\/endgamewin-min.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/code\/endgamewin-min.js",
 		"outputAbbreviatedPath": "\/code\/min\/endgamewin-min-min.js",
@@ -403,7 +392,7 @@
 		},
 	"\/code\/script-min.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/code\/script-min.js",
 		"outputAbbreviatedPath": "\/code\/min\/script-min-min.js",
@@ -414,7 +403,7 @@
 		},
 	"\/code\/soundFx-min.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/code\/soundFx-min.js",
 		"outputAbbreviatedPath": "\/code\/min\/soundFx-min-min.js",
@@ -1071,7 +1060,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Rafael Diaz",
+"lastSavedByUser": "Marach Treekunprapa",
 "manualImportLinks": {
 	},
 "projectAttributes": {
@@ -1171,8 +1160,16 @@
 			"active": 0,
 			"flagValue": -1
 			},
+		"no_nested_string_interpolation": {
+			"active": 1,
+			"flagValue": -1
+			},
 		"no_plusplus": {
 			"active": 0,
+			"flagValue": -1
+			},
+		"no_private_function_fat_arrows": {
+			"active": 1,
 			"flagValue": -1
 			},
 		"no_stand_alone_at": {
@@ -1181,6 +1178,10 @@
 			},
 		"no_tabs": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"no_this": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"no_throwing_strings": {
