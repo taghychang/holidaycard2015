@@ -6,13 +6,13 @@ var boot = function(game) {
 
 boot.prototype = {
     preload: function() {
-    	game.load.image("startButtonMobile", "images/startButtonMobile.png");
-    	game.load.image("loadMask","images/loadMask.jpg");
+      game.load.image("startButtonMobile", "images/startButtonMobile.png");
+      game.load.image("loadMask","images/loadMask.jpg");
 
-      	game.load.image("loading","images/loading.png");
-      	game.load.image("loadingBg", "images/loadingBg.png");
-      	game.load.image("loadSteam", "images/loadSteam.png");
-            game.load.image('rotate', 'images/rotate.jpg');
+      game.load.image("loading","images/loading.png");
+      game.load.image("loadingBg", "images/loadingBg.png");
+      game.load.image("loadSteam", "images/loadSteam.png");
+      game.load.image('rotate', 'images/rotate.png');
       
     },
     create: function() {
@@ -22,7 +22,6 @@ boot.prototype = {
        
         if(window.orientation !== 0){
             pauseBox = game.add.sprite(60, 60, 'rotate');
-            // game.world.bringToTop(pause_layer);
             game.paused = true;
         } else if (window.orientation === 0){
             console.log("KILLLLL")
