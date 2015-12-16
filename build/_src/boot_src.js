@@ -12,24 +12,26 @@ boot.prototype = {
       	game.load.image("loading","images/loading.png");
       	game.load.image("loadingBg", "images/loadingBg.png");
       	game.load.image("loadSteam", "images/loadSteam.png");
-            game.load.image('rotate', 'images/rotate.jpg');
+        game.load.image('rotate', 'images/rotate.png');
+        game.load.image('playBtn', 'images/playBtn.png');
       
     },
     create: function() {
 
     	//PAUSE GAME IF IN LANDSCAPE
         window.addEventListener("orientationchange", function(){
-        var pause = game.add.sprite(60, 60, 'rotate'); 
+        
         if(window.orientation !== 0){
             game.paused = true;
-            pause;
-        } else if (window.orientation === 0){
+            document.getElementById("orientation").style.display = "block";
+        } else if (window.orientation === 0) {
             console.log("KILLLLL")
-            pause.destroy();
-            game.world.remove('pause');
+            document.getElementById("orientation").style.display = "none";
+            
             game.paused = false;                 
 
-
+            } else {
+                
             }
         }, false);
 

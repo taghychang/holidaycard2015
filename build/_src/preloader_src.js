@@ -33,7 +33,6 @@ preloader.prototype = {
         game.load.atlas('steam', 'images/powerUp/powerUp_steam_spriteSheet.png', 'images/powerUp/powerUp_steam_spriteSheet.json');
 
         game.load.atlas('player', 'images/playerSprite.png', 'images/playerSprite.json');
-        game.load.atlas('stageFreeze', 'images/stageFreeze/stageFreeze.png', 'images/stageFreeze/stageFreeze.json');
 
         game.load.image("demoPlaceholder", "images/demoPlaceholder.jpg");
         // Audio Files for PowerUp/PowerDown
@@ -43,9 +42,9 @@ preloader.prototype = {
         game.load.atlas('barista', 'images/barista/barista.png', 'images/barista/barista.json');
         // ADD CUPS SPRITESHEET
         game.load.atlas('cup', 'images/cups/cups.png', 'images/cups/cups.json');
-        game.load.atlas('splash', 'images/cups/splash.png', 'images/cups/splash.json');
         // ADD STAGEFREEZE SPRITESHEET
         game.load.atlas('stageFreeze', 'images/stageFreeze/stageFreeze.png', 'images/stageFreeze/stageFreeze.json');
+         game.load.atlas('stageSteam', 'images/stageSteam/stageSteam.png', 'images/stageSteam/stageSteam.json');
         game.load.atlas('countDown', 'images/countDown/countDown.png', 'images/countDown/countDown.json');
         game.load.atlas('scoreGauge', 'images/scoreGauge/scoreGauge.png', 'images/scoreGauge/scoreGauge.json');
         // ADD STEAM SPRITESHEET

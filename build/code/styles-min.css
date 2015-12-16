@@ -21,3 +21,14 @@ body {
 
 #stageFreezeDesk {
   display: none; }
+
+#orientation {
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  width: 200px;
+  height: 100px;
+  display: none;
+  background-image: url(../../images/rotate.png);
+  background-repeat: none;
+  z-index: 10000; }

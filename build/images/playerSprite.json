@@ -2,83 +2,83 @@
 
 {
 	"filename": "mittenSprite01.png",
-	"frame": {"x":1,"y":1,"w":157,"h":235},
+	"frame": {"x":1,"y":1,"w":160,"h":236},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":4,"y":3,"w":157,"h":235},
+	"spriteSourceSize": {"x":2,"y":2,"w":160,"h":236},
 	"sourceSize": {"w":167,"h":238}
 },
 {
 	"filename": "mittenSprite02.png",
-	"frame": {"x":160,"y":1,"w":167,"h":232},
+	"frame": {"x":163,"y":1,"w":152,"h":233},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":0,"y":6,"w":167,"h":232},
+	"spriteSourceSize": {"x":0,"y":5,"w":152,"h":233},
 	"sourceSize": {"w":167,"h":238}
 },
 {
 	"filename": "mittenSprite03.png",
-	"frame": {"x":329,"y":1,"w":149,"h":226},
+	"frame": {"x":317,"y":1,"w":151,"h":228},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":0,"y":12,"w":149,"h":226},
+	"spriteSourceSize": {"x":0,"y":10,"w":151,"h":228},
 	"sourceSize": {"w":167,"h":238}
 },
 {
 	"filename": "mittenSprite04.png",
-	"frame": {"x":160,"y":1,"w":167,"h":232},
+	"frame": {"x":163,"y":1,"w":152,"h":233},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":0,"y":6,"w":167,"h":232},
+	"spriteSourceSize": {"x":0,"y":5,"w":152,"h":233},
 	"sourceSize": {"w":167,"h":238}
 },
 {
 	"filename": "mittenSprite05.png",
-	"frame": {"x":1,"y":1,"w":157,"h":235},
+	"frame": {"x":1,"y":1,"w":160,"h":236},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":4,"y":3,"w":157,"h":235},
+	"spriteSourceSize": {"x":2,"y":2,"w":160,"h":236},
 	"sourceSize": {"w":167,"h":238}
 },
 {
 	"filename": "mittenSprite06.png",
-	"frame": {"x":480,"y":1,"w":155,"h":236},
+	"frame": {"x":470,"y":1,"w":156,"h":238},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":12,"y":2,"w":155,"h":236},
+	"spriteSourceSize": {"x":11,"y":0,"w":156,"h":238},
 	"sourceSize": {"w":167,"h":238}
 },
 {
 	"filename": "mittenSprite07.png",
-	"frame": {"x":637,"y":1,"w":146,"h":237},
+	"frame": {"x":628,"y":1,"w":151,"h":238},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":21,"y":1,"w":146,"h":237},
+	"spriteSourceSize": {"x":16,"y":0,"w":151,"h":238},
 	"sourceSize": {"w":167,"h":238}
 },
 {
 	"filename": "mittenSprite08.png",
-	"frame": {"x":785,"y":1,"w":167,"h":236},
+	"frame": {"x":470,"y":1,"w":156,"h":238},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":0,"y":2,"w":167,"h":236},
+	"spriteSourceSize": {"x":11,"y":0,"w":156,"h":238},
 	"sourceSize": {"w":167,"h":238}
 },
 {
 	"filename": "mittenSprite09.png",
-	"frame": {"x":954,"y":1,"w":157,"h":234},
+	"frame": {"x":1,"y":1,"w":160,"h":236},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":4,"y":4,"w":157,"h":234},
+	"spriteSourceSize": {"x":2,"y":2,"w":160,"h":236},
 	"sourceSize": {"w":167,"h":238}
 }],
 "meta": {
 	"app": "http://www.codeandweb.com/texturepacker",
 	"version": "1.0",
-	"image": "player.png",
+	"image": "playerSprite.png",
 	"format": "RGBA8888",
-	"size": {"w":1112,"h":239},
+	"size": {"w":780,"h":240},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:f116812ac727d75399486afe00123e27:18ee767483131473b766e22f38af48a5:86d5339b780aedd87b35e2b7c0a7e11b$"
+	"smartupdate": "$TexturePacker:SmartUpdate:2afea6b4df2a66b2502f199fb2f81aaa:9a6e38d4c91a7d1ad14080dfcf8f47a8:f9c8e98306cf06c4b24a258414c7bd4e$"
 }
 }

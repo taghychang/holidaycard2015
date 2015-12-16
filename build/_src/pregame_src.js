@@ -29,7 +29,7 @@ preGame.prototype = {
         startButtonMobile.anchor.set(0.5, 0.5);
 
              // Title
-        playBtn = game.add.text(300, 850, 'PLAY', { fill: '#ffffff' });
+        playBtn = game.add.image(223, 810, 'playBtn');
 
 
         playBtn.alpha = 0;

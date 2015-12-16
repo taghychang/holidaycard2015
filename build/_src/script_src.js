@@ -87,7 +87,10 @@ function scoreHandler(cupHit) {
     if (score >= 20)  {
       if (player_condition.isWin == false) {
         player_condition.isWin = true;
-        fadeOut("EndGameWin");
+         game.animateSteam.play('steam');
+        game.animateSteam.events.onAnimationComplete.addOnce(function() {
+          fadeOut("EndGameWin");
+        });
         barista.animations.stop(null, true);
         game.cupGenerator.timer.stop();
       }
@@ -216,7 +219,7 @@ playGame.prototype = {
         // PLACE STAGE FREEZE ON STAGE & DECLARE INITIAL SCORE 
         score = 4; // out of 10 
 
-        scoreGauge = game.add.sprite(game.width -80, 30, 'scoreGauge');
+        scoreGauge = game.add.sprite(game.width -80, 27, 'scoreGauge');
         scoreGauge.frame = score -1 ;
 
         stageFreeze = game.add.sprite(0, 0, 'stageFreeze');
@@ -284,7 +287,7 @@ playGame.prototype = {
 
         // PREPARE STEAM animation when player win
         game.animateSteam = game.add.sprite(0,0, 'stageSteam');
-        game.animateSteam.animations.add('steam');
+        game.animateSteam.animations.add('steam',[0,1,2,3,4,5,6], 4.5, false);
         game.animateSteam.frame = 0;
 
 

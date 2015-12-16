@@ -1,5 +1,5 @@
 body {
-  background: #cccccc;
+  background-color: #cccccc;
   padding: 0px;
   margin: 0px; }
 
@@ -8,7 +8,7 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  background: #00000; }
+  background-color: #000; }
 
 #game {
   width: auto;
@@ -21,3 +21,10 @@ body {
 
 #stageFreezeDesk {
   display: none; }
+
+#orientation {
+  width: 200px;
+  height: 100px;
+  display: none;
+  background-image: url(../../images/rotate.jpg);
+  background-repeat: none; }
