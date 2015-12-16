@@ -104,12 +104,34 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/_src\/introVideo_src.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_src\/introVideo_src.js",
+		"outputAbbreviatedPath": "\/_src\/min\/introVideo_src-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/_src\/layer_src.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_src\/layer_src.js",
 		"outputAbbreviatedPath": "\/_src\/min\/layer_src-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_src\/min\/preloader_src-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_src\/min\/preloader_src-min.js",
+		"outputAbbreviatedPath": "\/_src\/min\/min\/preloader_src-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -142,9 +164,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_src\/preloader_src.js",
-		"outputAbbreviatedPath": "\/_src\/min\/preloader_src-min.js",
+		"outputAbbreviatedPath": "\/code\/preloader-min.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
@@ -269,6 +291,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/code\/introVideo-min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/code\/introVideo-min.js",
+		"outputAbbreviatedPath": "\/code\/min\/introVideo-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/code\/layer-min.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -359,7 +392,7 @@
 		},
 	"\/code\/preloader-min.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/code\/preloader-min.js",
 		"outputAbbreviatedPath": "\/code\/min\/preloader-min-min.js",
@@ -740,6 +773,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/social\/fb.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 101604,
+		"inputAbbreviatedPath": "\/images\/social\/fb.jpg",
+		"outputAbbreviatedPath": "\/images\/social\/fb.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/stageFreeze\/stageFreeze.json": {
 		"fileType": 524288,
 		"ignore": 1,
@@ -755,7 +799,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 400859,
+		"initialSize": 399902,
 		"inputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze.png",
 		"outputAbbreviatedPath": "\/images\/stageFreeze\/stageFreeze.png",
 		"outputPathIsOutsideProject": 0,

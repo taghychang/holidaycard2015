@@ -73,8 +73,8 @@ function loadStart() {
 
 function loadComplete() {
     //SKIP FOR DEV
-    // game.state.start('PlayGame');
-    game.state.start('PreGame');
+    game.state.start('PlayGame');
+    // game.state.start('PreGame');
 }
 
 
