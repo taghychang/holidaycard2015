@@ -16,7 +16,14 @@ preGame.prototype = {
 
         // Create button //
         startButtonMobile = game.add.button(game.world.centerX, game.world.centerY, "startButtonMobile");
-        startButtonMobile.variable = "IntroVideo"; // next state
+
+        if (game.device.desktop) {
+             startButtonMobile.variable = "Demo";
+        } else {
+             startButtonMobile.variable = "Demo";
+        }
+    
+        // startButtonMobile.variable = "IntroVideo"; // next state
         startButtonMobile.inputEnabled = true;
         startButtonMobile.events.onInputDown.add(toNextState, this);
         startButtonMobile.anchor.set(0.5, 0.5);

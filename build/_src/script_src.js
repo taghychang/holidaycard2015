@@ -77,14 +77,14 @@ function scoreHandler(cupHit) {
     }
 
 
-    scoreGauge.frame = score-1;
+    scoreGauge.frame = (score -1) /  2;
 
 
     console.log('time on table(speed) ='+ cup_speed);
 
 // Check for win or lose condition
 
-    if (score >= 10)  {
+    if (score >= 20)  {
       if (player_condition.isWin == false) {
         winAudioFX();
         player_condition.isWin = true;

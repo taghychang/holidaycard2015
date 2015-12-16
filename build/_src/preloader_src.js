@@ -65,6 +65,9 @@ preloader.prototype = {
         game.load.image('tryAgain', 'images/losePage/tryAgain.png');
         // INTRO VIDEO
         game.load.video('introVideo', 'video/intro.mp4');
+
+
+    
     },
     create: function() {
 
@@ -78,9 +81,7 @@ function loadStart() {
 }
 
 function loadComplete() {
-    //SKIP FOR DEV
-    //game.state.start('PlayGame');
-    game.state.start('Demo');
+    game.state.start('PreGame');
 }
 
 
