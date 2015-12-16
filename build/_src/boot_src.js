@@ -6,29 +6,32 @@ var boot = function(game) {
 
 boot.prototype = {
     preload: function() {
-    	game.load.image("startButtonMobile", "images/startButtonMobile.png");
-    	game.load.image("loadMask","images/loadMask.jpg");
+      game.load.image("startButtonMobile", "images/startButtonMobile.png");
+      game.load.image("loadMask","images/loadMask.jpg");
+
 
       	game.load.image("loading","images/loading.png");
       	game.load.image("loadingBg", "images/loadingBg.png");
       	game.load.image("loadSteam", "images/loadSteam.png");
         game.load.image('rotate', 'images/rotate.png');
         game.load.image('playBtn', 'images/playBtn.png');
+
       
     },
     create: function() {
 
     	//PAUSE GAME IF IN LANDSCAPE
         window.addEventListener("orientationchange", function(){
-        
+
         if(window.orientation !== 0){
+            pauseBox = game.add.sprite(60, 60, 'rotate');
             game.paused = true;
-            document.getElementById("orientation").style.display = "block";
-        } else if (window.orientation === 0) {
+
+        } else if (window.orientation === 0){
             console.log("KILLLLL")
-            document.getElementById("orientation").style.display = "none";
-            
-            game.paused = false;                 
+            game.world.remove(pauseBox);
+            game.paused = false;
+
 
             } else {
                 

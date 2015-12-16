@@ -15,3 +15,22 @@ function powerDownAudioFX(){
 
   powerDownAudio.play();
 }
+
+function winAudioFX(){
+  winSceneAudio = game.add.audio('winScene');
+  winSceneAudio.volume = 1.8;
+  winSceneAudio.play();
+}
+
+function loseAudioFX(){
+  loseSceneAudio = game.add.audio('loseScene');
+  loseSceneAudio.allowMultiple = false;
+  loseSceneAudio.volume = 1.8;
+  loseSceneAudio.play();
+}
+
+function cupMoveAudioFX(){
+  cupOnMoveAudio = game.add.audio('cupOnMove');
+  cupOnMoveAudio.allowMultiple = false;
+  cupOnMoveAudio.play();
+}

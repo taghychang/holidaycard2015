@@ -86,6 +86,7 @@ function scoreHandler(cupHit) {
 
     if (score >= 20)  {
       if (player_condition.isWin == false) {
+        winAudioFX();
         player_condition.isWin = true;
          game.animateSteam.play('steam');
         game.animateSteam.events.onAnimationComplete.addOnce(function() {
@@ -93,9 +94,11 @@ function scoreHandler(cupHit) {
         });
         barista.animations.stop(null, true);
         game.cupGenerator.timer.stop();
+        noiseLoop.stop();
       }
     } else if (score <= 0) {
       if (player_condition.isLose == false) {
+        loseAudioFX();
         player_condition.isLose = true;
         game.animateFreeze.play('freeze');
         game.animateFreeze.events.onAnimationComplete.addOnce(function() {
@@ -103,6 +106,7 @@ function scoreHandler(cupHit) {
         });
         barista.animations.stop(null, true);
         game.cupGenerator.timer.stop();
+        noiseLoop.stop();
       }
     }
 }
@@ -166,7 +170,7 @@ var movePlayer = {
     left: function() {
         if (playerPosition > 0) {
            // To test: Marach will remove this
-           // score=21;
+           score=-21;
            // End Marach will remove this
       tweenL = game.add.tween(player).to({
                 x: playerPositions[playerPosition - 1]
@@ -182,7 +186,7 @@ var movePlayer = {
 
     right: function() {
              //Marach will remove this
-             // score=21;
+             score=21;
              // End Marach will remove this
       if (playerPosition < 2) {
             tweenR = game.add.tween(player).to({
@@ -205,9 +209,14 @@ playGame.prototype = {
     },
     create: function() {
 
-        game.physics.startSystem(Phaser.Physics.ARCADE);
+        noiseLoop = game.add.audio('noiseLoop');
+        noiseLoop.loop = true;
+        noiseLoop.volume = 0.8;
+        noiseLoop.allowMultiple = false;
+        noiseLoop.play();
 
         var shopMobile = game.add.image(0, 0, 'shopMobile');
+        shopLoop.fadeTo(2000,0.7)
 
         cupGeneratorSpeed = 0.65;
         playerSpeed = 112;
@@ -340,6 +349,7 @@ playGame.prototype = {
     }, 
 
     generateCups: function() { 
+      cupMoveAudioFX();
 
         var tableEnd = 782;
         var lanesYstart = 395;
