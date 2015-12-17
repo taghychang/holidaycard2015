@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "19102",
+"creatorBuild": "19076",
 "files": {
 	"\/_src\/boot_src.js": {
 		"fileType": 64,
@@ -520,94 +520,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/demoPage\/dummy_01.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 6629,
-		"inputAbbreviatedPath": "\/images\/demoPage\/dummy_01.png",
-		"outputAbbreviatedPath": "\/images\/demoPage\/dummy_01.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/demoPage\/dummy_02.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 6654,
-		"inputAbbreviatedPath": "\/images\/demoPage\/dummy_02.png",
-		"outputAbbreviatedPath": "\/images\/demoPage\/dummy_02.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/demoPage\/dummy_03.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 6629,
-		"inputAbbreviatedPath": "\/images\/demoPage\/dummy_03.png",
-		"outputAbbreviatedPath": "\/images\/demoPage\/dummy_03.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/demoPage\/dummy_04.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 6654,
-		"inputAbbreviatedPath": "\/images\/demoPage\/dummy_04.png",
-		"outputAbbreviatedPath": "\/images\/demoPage\/dummy_04.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/demoPage\/dummy_05.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 6629,
-		"inputAbbreviatedPath": "\/images\/demoPage\/dummy_05.png",
-		"outputAbbreviatedPath": "\/images\/demoPage\/dummy_05.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/demoPage\/dummy_06.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 6654,
-		"inputAbbreviatedPath": "\/images\/demoPage\/dummy_06.png",
-		"outputAbbreviatedPath": "\/images\/demoPage\/dummy_06.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/demoPage\/dummy_07.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 6629,
-		"inputAbbreviatedPath": "\/images\/demoPage\/dummy_07.png",
-		"outputAbbreviatedPath": "\/images\/demoPage\/dummy_07.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/demoPage\/dummy_08.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 6654,
-		"inputAbbreviatedPath": "\/images\/demoPage\/dummy_08.png",
-		"outputAbbreviatedPath": "\/images\/demoPage\/dummy_08.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/images\/demoPage\/grabThese.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -637,6 +549,17 @@
 		"initialSize": 19955,
 		"inputAbbreviatedPath": "\/images\/demoPage\/mitten.png",
 		"outputAbbreviatedPath": "\/images\/demoPage\/mitten.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/demoPage\/nextBtn.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5435,
+		"inputAbbreviatedPath": "\/images\/demoPage\/nextBtn.png",
+		"outputAbbreviatedPath": "\/images\/demoPage\/nextBtn.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1159,7 +1082,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Marach Treekunprapa",
+"lastSavedByUser": "Rafael Diaz",
 "manualImportLinks": {
 	},
 "projectAttributes": {
@@ -1259,16 +1182,8 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"no_nested_string_interpolation": {
-			"active": 1,
-			"flagValue": -1
-			},
 		"no_plusplus": {
 			"active": 0,
-			"flagValue": -1
-			},
-		"no_private_function_fat_arrows": {
-			"active": 1,
 			"flagValue": -1
 			},
 		"no_stand_alone_at": {
@@ -1277,10 +1192,6 @@
 			},
 		"no_tabs": {
 			"active": 1,
-			"flagValue": -1
-			},
-		"no_this": {
-			"active": 0,
 			"flagValue": -1
 			},
 		"no_throwing_strings": {
