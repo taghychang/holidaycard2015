@@ -71,7 +71,8 @@
     </div>
 
     <style>
-        #video_fallback { display: none; width: 100%; height: 100%; }
+      #video_fallback { display: none; width: 100%; height: 100%; }
+      video::-webkit-media-controls { opacity:0 !important; }
     </style>
     <video id="video_fallback" poster="images/video_poster.jpg" controls="controls" preload="auto"> </video>
 
