@@ -21,11 +21,17 @@ preGame.prototype = {
         } else {
             
             // Add source to video tag & display 
+            var video_button = document.getElementById("video_button");
             var video_fallback = document.getElementById("video_fallback");
             var video_source = document.createElement("source");
             video_source.setAttribute("src", "video/intro.mp4");
             video_fallback.appendChild(video_source);
-            video_fallback.style.display = "block";
+            video_button.style.display = "block";
+
+            video_button.addEventListener("click", function(){
+                video_fallback.style.display = "block";
+                video_fallback.play();
+            });
 
             // Hide canvas as it is created on the top most layer
             var game_canvas = document.getElementsByTagName("canvas")[0];
