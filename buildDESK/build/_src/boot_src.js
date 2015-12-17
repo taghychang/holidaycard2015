@@ -23,26 +23,14 @@ boot.prototype = {
 
 
 
-        // DESKTOP SETTING
-        if (game.device.desktop) {
-            // game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
-            // game.scale.pageAlignHorizontally = true;
-
-            // game.scale.minWidth = 320;
-            // game.scale.minHeight = 480;
-            // game.scale.maxWidth = 640;
-            // game.scale.maxHeight = 960;
-        } else {
-        // MOBILE SETTING
-
             game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
             game.scale.pageAlignHorizontally = true;
-            game.scale.minWidth = 320;
-            game.scale.minHeight = 480;
-            game.scale.maxWidth = 980;
-            game.scale.maxHeight = 1470;
+            game.scale.minWidth = 760;
+            game.scale.minHeight = 486;
+            game.scale.maxWidth = 1500;
+            game.scale.maxHeight = 960;
 
-        }
+
 
         // game.scale.setScreenSize(true);
         game.state.start("Preloader");
