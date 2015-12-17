@@ -33,8 +33,7 @@ demo.prototype = {
         demoPlaceholder.anchor.set(0.5, 0.5);
 
         //NEXT AND PLAY! BUTTONS
-        var nextButton = game.add.button(960,910,'nextButton',nextSequence);
-        
+        var nextButton = game.add.button(game.world.centerX+180,780,'nextButton',nextSequence);
         // var nextButton = game.add.sprite(0,0,'nextButton');
 
         // ------- ASSET SPRITES ------- //
@@ -93,48 +92,52 @@ demo.prototype = {
         demoAsset_09.alpha = 0;
         demoAsset_10.alpha = 0;
 
-        //ANIMATE ASSETS WITH CHAINED TWEENS
-        var tween1 = game.add.tween(demoAsset_01).to({alpha: 1}, 600, "Quart.easeOut", true, 1500);
-        var tween2 = game.add.tween(demoAsset_02).to({alpha: 1}, 600);
-        var tween3 = game.add.tween(demoAsset_03).to({alpha: 1}, 600);
-        var tween4 = game.add.tween(demoAsset_04).to({alpha: 1}, 600);
-        var tween5 = game.add.tween(demoAsset_05).to({alpha: 1}, 600);
-        var tween6 = game.add.tween(demoAsset_06).to({alpha: 1}, 600);
-        var tweenSwipe = game.add.tween(demoAsset_swipe).to({alpha: 1}, 600);
-        var tweenNext = game.add.tween(nextButton).to({alpha: 1}, 800);
-
-        var tweenFadeOut = game.add.tween(sequence1).to({alpha: 0}, 600);
-
-        var tween7 = game.add.tween(demoAsset_07).to({alpha: 1}, 600);
-        var tween8 = game.add.tween(demoAsset_08).to({alpha: 1}, 600);
-        var tween9 = game.add.tween(demoAsset_09).to({alpha: 1}, 600);
-        var tween10 = game.add.tween(demoAsset_10).to({alpha: 1}, 600);
-
-        tween1.chain(tween2);
-        tween2.chain(tween3);
-        tween3.chain(tween4);
-        tween4.chain(tween5);
-        tween5.chain(tween6);
-        tween6.chain(tweenSwipe);
-        tweenSwipe.chain(tweenNext);
-
-        //NEXT BUTTON
-        function nextSequence() {
-        var playButton = game.add.button(960,910,'playButton');
-        playButton.variable = "PlayGame"; // next state
-        playButton.inputEnabled = true;
-        playButton.events.onInputDown.add(toNextState, this);
-        playButton.alpha = 0;
-        playButton.anchor.set(0.5, 0.5);
-        var tween11 = game.add.tween(playButton).to({alpha: 1}, 600);
-        tweenFadeOut.chain(tween7);
-        tween7.chain(tween8);
-        tween8.chain(tween9);
-        tween9.chain(tween10);
-        tween10.chain(tween11);
-        tweenFadeOut.start();
-        }
-
+        //DEMO_ASSET RESIZES FOR BOUNCE
+demoAsset_02.scale.setTo(0.25,0.25);
+demoAsset_04.scale.setTo(0.25,0.25);
+demoAsset_08.scale.setTo(0.25,0.25);
+demoAsset_10.scale.setTo(0.25,0.25);
+//ANIMATE ASSETS WITH CHAINED TWEENS
+var tween1 = game.add.tween(demoAsset_01).to({alpha: 1}, 600, "Quart.easeOut", true, 1500);
+var tween2 = game.add.tween(demoAsset_02).to({alpha: 1}, 600);
+game.add.tween(demoAsset_02.scale).to({ x:1, y:1 }, 3200, Phaser.Easing.Bounce.InOut, true, 100);
+var tween3 = game.add.tween(demoAsset_03).to({alpha: 1}, 600);
+var tween4 = game.add.tween(demoAsset_04).to({alpha: 1}, 600);
+game.add.tween(demoAsset_04.scale).to({ x:1, y:1 }, 3400, Phaser.Easing.Bounce.InOut, true, 1200);
+var tween5 = game.add.tween(demoAsset_05).to({alpha: 1}, 600);
+var tween6 = game.add.tween(demoAsset_06).to({alpha: 1}, 600);
+var tweenSwipe = game.add.tween(demoAsset_swipe).to({alpha: 1}, 600);
+var tweenNext = game.add.tween(nextButton).to({alpha: 1}, 800);
+var tweenFadeOut = game.add.tween(sequence1).to({alpha: 0}, 600);
+var tween7 = game.add.tween(demoAsset_07).to({alpha: 1}, 600);
+var tween8 = game.add.tween(demoAsset_08).to({alpha: 1}, 600);    
+var tween9 = game.add.tween(demoAsset_09).to({alpha: 1}, 600);
+var tween10 = game.add.tween(demoAsset_10).to({alpha: 1}, 600);
+tween1.chain(tween2);
+tween2.chain(tween3);
+tween3.chain(tween4);
+tween4.chain(tween5);
+tween5.chain(tween6);
+tween6.chain(tweenSwipe);
+tweenSwipe.chain(tweenNext);
+//NEXT BUTTON
+function nextSequence() {
+var playButton = game.add.button(game.world.centerX, 730,'playButton');
+playButton.variable = "PlayGame"; // next state
+playButton.inputEnabled = true;
+playButton.events.onInputDown.add(toNextState, this);
+playButton.alpha = 0;
+playButton.anchor.set(0.5, 0.5);
+var tween11 = game.add.tween(playButton).to({alpha: 1}, 600);
+tweenFadeOut.chain(tween7);
+tween7.chain(tween8);
+game.add.tween(demoAsset_08.scale).to({ x:1, y:1 }, 2200, Phaser.Easing.Bounce.InOut, true, 100);
+tween8.chain(tween9);
+tween9.chain(tween10);
+tween10.chain(tween11);
+game.add.tween(demoAsset_10.scale).to({ x:1, y:1 }, 2200, Phaser.Easing.Bounce.InOut, true, 1300); 
+tweenFadeOut.start();
+} 
         
 
         //tweenNext.chain(tweenFadeOut)

@@ -1,30 +1,23 @@
-body {
-  background-color: #cccccc;
-  padding: 0px;
-  margin: 0px; }
+* {
+  margin: 0;
+  padding: 0;
+  outline: none; }
 
-/* define mobile specific styles come here */
+body {
+  background-color: #000000;
+  height: 100%; }
+
 #container {
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: #000; }
+  background-color: #000;
+  background: url(images/snowflakepattern.jpg) repeat; }
 
 #game {
-  width: auto;
-  height: auto;
-  margin: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0; }
-
-#stageFreezeDesk {
-  display: none; }
-
-#orientation {
-  width: 200px;
-  height: 100px;
-  display: none;
-  background-image: url(../../images/rotate.jpg);
-  background-repeat: none; }
+  width: 1500px;
+  height: 960px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto; }

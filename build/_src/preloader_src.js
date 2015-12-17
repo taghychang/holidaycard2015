@@ -80,7 +80,7 @@ function loadStart() {
 }
 
 function loadComplete() {
-    game.state.start('PreGame');
+    game.state.start('Demo');
 }
 
 
