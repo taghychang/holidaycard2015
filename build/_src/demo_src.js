@@ -28,7 +28,7 @@ demo.prototype = {
         demoPlaceholder.anchor.set(0.5, 0.5);
 
         //NEXT AND PLAY! BUTTONS
-        var nextButton = game.add.button(530,910,'nextButton',nextSequence);
+        var nextButton = game.add.button(530,870,'nextButton', nextSequence);
         
         // var nextButton = game.add.sprite(0,0,'nextButton');
 
