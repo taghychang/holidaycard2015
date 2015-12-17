@@ -28,7 +28,7 @@ demo.prototype = {
         demoPlaceholder.anchor.set(0.5, 0.5);
 
         //NEXT AND PLAY! BUTTONS
-        var nextButton = game.add.button(530,910,'nextButton',nextSequence);
+        var nextButton = game.add.button(510,780,'nextButton',nextSequence);
         
         // var nextButton = game.add.sprite(0,0,'nextButton');
 
@@ -115,7 +115,7 @@ demo.prototype = {
 
         //NEXT BUTTON
         function nextSequence() {
-        var playButton = game.add.button(530,910,'playButton');
+        var playButton = game.add.button(game.world.centerX, 730,'playButton');
         playButton.variable = "PlayGame"; // next state
         playButton.inputEnabled = true;
         playButton.events.onInputDown.add(toNextState, this);

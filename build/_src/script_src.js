@@ -219,7 +219,7 @@ playGame.prototype = {
         shopLoop.fadeTo(2000,0.7)
 
         cupGeneratorSpeed = 0.65;
-        playerSpeed = 112;
+        playerSpeed = 65;
         cupSpeed = 750;
         
         // DEBUG

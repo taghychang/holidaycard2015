@@ -509,17 +509,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/demoPage\/demoPlaceholder.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 60172,
-		"inputAbbreviatedPath": "\/images\/demoPage\/demoPlaceholder.jpg",
-		"outputAbbreviatedPath": "\/images\/demoPage\/demoPlaceholder.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/images\/demoPage\/grabThese.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -648,17 +637,6 @@
 		"initialSize": 4948,
 		"inputAbbreviatedPath": "\/images\/demoPage\/withThis.png",
 		"outputAbbreviatedPath": "\/images\/demoPage\/withThis.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/demoPlaceholder.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 94738,
-		"inputAbbreviatedPath": "\/images\/demoPlaceholder.jpg",
-		"outputAbbreviatedPath": "\/images\/demoPlaceholder.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1022,6 +1000,17 @@
 		"initialSize": 737032,
 		"inputAbbreviatedPath": "\/images\/startButtonMobile.png",
 		"outputAbbreviatedPath": "\/images\/startButtonMobile.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/video_poster.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 160827,
+		"inputAbbreviatedPath": "\/images\/video_poster.jpg",
+		"outputAbbreviatedPath": "\/images\/video_poster.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

@@ -17,7 +17,7 @@ preGame.prototype = {
         startButtonMobile = game.add.button(game.world.centerX, game.world.centerY, "startButtonMobile");
 
         if (game.device.desktop) {
-             startButtonMobile.variable = "IntroVideo";
+             startButtonMobile.variable = "Demo";
         } else {
             
             // Add source to video tag & display 
