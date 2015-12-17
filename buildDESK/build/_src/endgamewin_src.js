@@ -7,14 +7,14 @@ endGameWin.prototype = {
 
 // Share Social Function
   shareTwitter: function() {
-    openDeviceBrowser('https://twitter.com/intent/tweet?url=http://www.tagworldwide.com&text=Custom+Text&via=custom_via&hashtags=custom_hashtag');
+    openDeviceBrowser('https://twitter.com/intent/tweet?url=http://cappcaper.tdiny.com&text=Custom+Text&via=custom_via&hashtags=custom_hashtag');
   },
   shareFacebook: function() {
-    openDeviceBrowser('https://www.facebook.com/sharer/sharer.php?u=http://tagonline.tagworldwide.com/public/nytdi/holiday2015/index.html');
+    openDeviceBrowser('https://www.facebook.com/sharer/sharer.php?u=http://cappcaper.tdiny.com');
   },
-   shareLinkedIn: function() {
+    shareLinkedIn: function() {
     openDeviceBrowser('https://www.linkedin.com/shareArticle?mini=true&url=http://cappcaper.tdiny.com&title=CAPPCAPER&summary=My%20favorite%20developer%20program&source=LinkedIn');
-  }, 
+  },
 // End Share Social Function
 
   preload: function() {
