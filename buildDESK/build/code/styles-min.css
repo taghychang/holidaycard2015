@@ -1,9 +1,12 @@
-body {
-  background-color: #cccccc;
-  padding: 0px;
-  margin: 0px; }
+* {
+  margin: 0;
+  padding: 0;
+  outline: none; }
 
-/* define mobile specific styles come here */
+body {
+  background-color: #000000;
+  height: 100%; }
+
 #container {
   position: relative;
   width: 100%;
@@ -11,13 +14,12 @@ body {
   background-color: #000; }
 
 #game {
-  width: auto;
-  height: auto;
-  margin: 0;
+  width: 1500px;
+  height: 960px;
   position: absolute;
   top: 0;
+  bottom: 0;
   left: 0;
-  right: 0; }
-
-#stageFreezeDesk {
-  display: none; }
+  right: 0;
+  margin: auto;
+  border: solid 1px #ffffff; }
