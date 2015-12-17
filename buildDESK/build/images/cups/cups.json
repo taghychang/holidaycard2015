@@ -1,0 +1,44 @@
+{"frames": [
+
+{
+	"filename": "1.png",
+	"frame": {"x":1,"y":1,"w":145,"h":259},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":145,"h":259},
+	"sourceSize": {"w":145,"h":259}
+},
+{
+	"filename": "4.png",
+	"frame": {"x":1,"y":262,"w":157,"h":254},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":157,"h":254},
+	"sourceSize": {"w":157,"h":254}
+},
+{
+	"filename": "6.png",
+	"frame": {"x":1,"y":518,"w":181,"h":147},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":181,"h":147},
+	"sourceSize": {"w":181,"h":147}
+},
+{
+	"filename": "9.png",
+	"frame": {"x":1,"y":667,"w":131,"h":219},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":0,"w":131,"h":219},
+	"sourceSize": {"w":133,"h":219}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "cups.png",
+	"format": "RGBA8888",
+	"size": {"w":183,"h":887},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:68f00b8826892e207cc44dfa918f0000:b4673157e3a366161a8ff99e95fb3811:d1750d3af0d6b493997d08f6c6ce639e$"
+}
+}

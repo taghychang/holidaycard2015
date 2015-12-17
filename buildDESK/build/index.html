@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <! -- Facebook custom -- >
+    <meta property="og:url"                content="http://www.tagonline.tagworldwide.com/public/nytdi/HOLIDAY_2015/index.html" />
+    <meta property="og:type"               content="article" />
+    <meta property="og:title"              content="Cappaccino Caper" />
+    <meta property="og:description"        content="&rsquo;TIS THE SEASON TO GET WARM AND TOASTY" />
+    <meta property="og:image"              content="images/social/fb.jpg" />
+
+    <title>Cappaccino Caper</title>
+    <link href="code/styles-min.css" type="text/css" rel="stylesheet"/>
+  
+
+    <script type="text/javascript" src="code/phaser.js"></script>
+    <script type="text/javascript" src="code/boot-min.js"></script>
+     <script type="text/javascript" src="code/introVideo-min.js"></script>
+    <script type="text/javascript" src="code/layer-min.js"></script>
+    <script type="text/javascript" src="code/powerUpDown-min.js"></script>
+    <script type="text/javascript" src="code/fadeInOut-min.js"></script>
+    <script type="text/javascript" src="code/script-min.js"></script>
+    <script type="text/javascript" src="code/pregame-min.js"></script>
+    <script type="text/javascript" src="code/demo-min.js"></script>
+    <script type="text/javascript" src="code/preloader-min.js"></script>
+    <script type="text/javascript" src="code/endgamewin-min.js"></script>
+    <script type="text/javascript" src="code/endgamelose-min.js"></script>
+    <script type="text/javascript" src="code/phaser-debug.js"></script>
+    <script type="text/javascript" src="code/cupGroup-min.js"></script>
+    <script type="text/javascript" src="code/soundFx-min.js"></script>
+  
+</head>
+
+<body>
+    <script type="text/javascript">
+    // Create Game Canvas
+
+    var game;
+    var gameWidth;
+    var gameHeight;
+
+    gameWidth = 1500;
+    gameHeight = 960;
+
+    game = new Phaser.Game(gameWidth, gameHeight, Phaser.AUTO, "game", null, true);
+    game.state.add('Boot', boot);
+    game.state.add('Preloader', preloader);
+    game.state.add("PreGame", preGame);
+    game.state.add('IntroVideo', introVideo);
+    game.state.add("Demo", demo);
+    game.state.add("PlayGame", playGame);
+    game.state.add("EndGameWin", endGameWin);
+    game.state.add("EndGameLose", endGameLose);
+
+
+    game.state.start("Boot");
+
+
+    // For Sharing Buttons
+    function openDeviceBrowser(externalLinkToOpen) {
+        window.open(externalLinkToOpen, '_system', 'location=no');
+    }
+    </script>
+    <div id="container">
+        <div id="stageFreezeDesk"></div>
+        <div id="orientation">
+            
+        </div>
+        <div id="game"></div>
+    </div>
+    <script type="text/javascript">
+    var stageFreezeDesk;
+    stageFreezeDesk = document.getElementById('stageFreezeDesk');
+
+    </script>
+</body>
+
+</html>

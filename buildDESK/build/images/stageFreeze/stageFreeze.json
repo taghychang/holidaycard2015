@@ -1,0 +1,68 @@
+{"frames": [
+
+{
+	"filename": "0.png",
+	"frame": {"x":1,"y":1,"w":3,"h":3},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":3,"h":3},
+	"sourceSize": {"w":1500,"h":960}
+},
+{
+	"filename": "1.png",
+	"frame": {"x":6,"y":1,"w":1500,"h":960},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1500,"h":960},
+	"sourceSize": {"w":1500,"h":960}
+},
+{
+	"filename": "2.png",
+	"frame": {"x":1508,"y":1,"w":1500,"h":960},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1500,"h":960},
+	"sourceSize": {"w":1500,"h":960}
+},
+{
+	"filename": "3.png",
+	"frame": {"x":1,"y":963,"w":1500,"h":960},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1500,"h":960},
+	"sourceSize": {"w":1500,"h":960}
+},
+{
+	"filename": "4.png",
+	"frame": {"x":1503,"y":963,"w":1500,"h":960},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1500,"h":960},
+	"sourceSize": {"w":1500,"h":960}
+},
+{
+	"filename": "5.png",
+	"frame": {"x":1,"y":1925,"w":1500,"h":960},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1500,"h":960},
+	"sourceSize": {"w":1500,"h":960}
+},
+{
+	"filename": "6.png",
+	"frame": {"x":1503,"y":1925,"w":1500,"h":960},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1500,"h":960},
+	"sourceSize": {"w":1500,"h":960}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "stageFreeze.png",
+	"format": "RGBA8888",
+	"size": {"w":3009,"h":2886},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:527bfabadf184f7b0ba3927c273547fd:e5025bdce87c994aab4e13f1ac8abe90:a1b8d4ba006814aa1b22d01f32cb6032$"
+}
+}

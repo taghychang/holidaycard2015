@@ -1,0 +1,68 @@
+{"frames": [
+
+{
+	"filename": "0.png",
+	"frame": {"x":1,"y":1,"w":3,"h":3},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":3,"h":3},
+	"sourceSize": {"w":1500,"h":960}
+},
+{
+	"filename": "1.png",
+	"frame": {"x":6,"y":1,"w":1500,"h":953},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":7,"w":1500,"h":953},
+	"sourceSize": {"w":1500,"h":960}
+},
+{
+	"filename": "2.png",
+	"frame": {"x":1508,"y":1,"w":1500,"h":960},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1500,"h":960},
+	"sourceSize": {"w":1500,"h":960}
+},
+{
+	"filename": "3.png",
+	"frame": {"x":1,"y":963,"w":1500,"h":960},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1500,"h":960},
+	"sourceSize": {"w":1500,"h":960}
+},
+{
+	"filename": "4.png",
+	"frame": {"x":1503,"y":963,"w":1500,"h":960},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1500,"h":960},
+	"sourceSize": {"w":1500,"h":960}
+},
+{
+	"filename": "5.png",
+	"frame": {"x":1,"y":1925,"w":1500,"h":960},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1500,"h":960},
+	"sourceSize": {"w":1500,"h":960}
+},
+{
+	"filename": "6.png",
+	"frame": {"x":1503,"y":1925,"w":1500,"h":960},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1500,"h":960},
+	"sourceSize": {"w":1500,"h":960}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "stageSteam.png",
+	"format": "RGBA8888",
+	"size": {"w":3009,"h":2886},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:8e9ce8f9b7dcd289336f286d54337ff7:953944f1803ea5d4c231168357667abf:f61427ff8b44e7105f0a6040b6c6f4bd$"
+}
+}

@@ -1,0 +1,100 @@
+{"frames": [
+
+{
+	"filename": "00.png",
+	"frame": {"x":1,"y":1,"w":67,"h":211},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":67,"h":211},
+	"sourceSize": {"w":67,"h":211}
+},
+{
+	"filename": "01.png",
+	"frame": {"x":70,"y":1,"w":67,"h":211},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":67,"h":211},
+	"sourceSize": {"w":67,"h":211}
+},
+{
+	"filename": "02.png",
+	"frame": {"x":139,"y":1,"w":67,"h":211},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":67,"h":211},
+	"sourceSize": {"w":67,"h":211}
+},
+{
+	"filename": "03.png",
+	"frame": {"x":208,"y":1,"w":67,"h":211},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":67,"h":211},
+	"sourceSize": {"w":67,"h":211}
+},
+{
+	"filename": "04.png",
+	"frame": {"x":277,"y":1,"w":67,"h":211},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":67,"h":211},
+	"sourceSize": {"w":67,"h":211}
+},
+{
+	"filename": "05.png",
+	"frame": {"x":346,"y":1,"w":67,"h":211},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":67,"h":211},
+	"sourceSize": {"w":67,"h":211}
+},
+{
+	"filename": "06.png",
+	"frame": {"x":415,"y":1,"w":67,"h":211},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":67,"h":211},
+	"sourceSize": {"w":67,"h":211}
+},
+{
+	"filename": "07.png",
+	"frame": {"x":484,"y":1,"w":67,"h":211},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":67,"h":211},
+	"sourceSize": {"w":67,"h":211}
+},
+{
+	"filename": "08.png",
+	"frame": {"x":553,"y":1,"w":67,"h":211},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":67,"h":211},
+	"sourceSize": {"w":67,"h":211}
+},
+{
+	"filename": "09.png",
+	"frame": {"x":622,"y":1,"w":67,"h":211},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":67,"h":211},
+	"sourceSize": {"w":67,"h":211}
+},
+{
+	"filename": "10.png",
+	"frame": {"x":691,"y":1,"w":67,"h":211},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":67,"h":211},
+	"sourceSize": {"w":67,"h":211}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "scoreGauge.png",
+	"format": "RGBA8888",
+	"size": {"w":759,"h":213},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:8da24b0e3cc92403af7fbeeb1355968a:4ff82a4237b0ebc6bfa0172df90aa8f9:bffb8f0f5309cf756f97badfcc4cdd90$"
+}
+}
