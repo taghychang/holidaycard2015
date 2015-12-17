@@ -122,7 +122,7 @@ tween6.chain(tweenSwipe);
 tweenSwipe.chain(tweenNext);
 //NEXT BUTTON
 function nextSequence() {
-var playButton = game.add.button(game.world.centerX, 730,'playButton');
+var playButton = game.add.button(game.world.centerX+180, 780,'playButton');
 playButton.variable = "PlayGame"; // next state
 playButton.inputEnabled = true;
 playButton.events.onInputDown.add(toNextState, this);

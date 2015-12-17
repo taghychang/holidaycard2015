@@ -62,6 +62,8 @@ preloader.prototype = {
         game.load.image('losePageBg', 'images/losePage/losePageBg.jpg');
         game.load.image('shareTwitterButton', 'images/winPage/shareTwitterButton.png'); 
         game.load.image('shareFacebookButton', 'images/winPage/shareFacebookButton.png'); 
+        game.load.image('shareFacebookButton', 'images/winPage/shareFacebookButton.png'); 
+        game.load.image('shareLinkedInButton', 'images/winPage/shareLinkedInButton.png');
         game.load.image('playAgain', 'images/winPage/replay.png');
         game.load.image('tryAgain', 'images/losePage/tryAgain.png');
         // INTRO VIDEO

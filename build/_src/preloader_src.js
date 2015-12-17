@@ -60,6 +60,7 @@ preloader.prototype = {
         game.load.image('losePageBgMobile', 'images/losePage/losePageBgMobile.jpg');
         game.load.image('shareTwitterButton', 'images/winPage/shareTwitterButton.png'); 
         game.load.image('shareFacebookButton', 'images/winPage/shareFacebookButton.png'); 
+        game.load.image('shareLinkedInButton', 'images/winPage/shareLinkedInButton.png'); 
         game.load.image('playAgain', 'images/winPage/replay.png');
         game.load.image('tryAgain', 'images/losePage/tryAgain.png');
         // INTRO VIDEO
@@ -80,7 +81,7 @@ function loadStart() {
 }
 
 function loadComplete() {
-    game.state.start('Demo');
+    game.state.start('PreGame');
 }
 
 

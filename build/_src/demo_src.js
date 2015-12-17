@@ -28,7 +28,7 @@ demo.prototype = {
         demoPlaceholder.anchor.set(0.5, 0.5);
 
         //NEXT AND PLAY! BUTTONS
-        var nextButton = game.add.button(505,780,'nextButton', nextSequence);
+        var nextButton = game.add.button(510,780,'nextButton', nextSequence);
         
         // var nextButton = game.add.sprite(0,0,'nextButton');
 
@@ -96,6 +96,11 @@ demo.prototype = {
         demoAsset_04.scale.setTo(0.25,0.25);
         demoAsset_08.scale.setTo(0.25,0.25);
         demoAsset_10.scale.setTo(0.25,0.25);
+        //DEMO_ASSET RESIZES FOR BOUNCE
+        demoAsset_02.scale.setTo(0.25,0.25);
+        demoAsset_04.scale.setTo(0.25,0.25);
+        demoAsset_08.scale.setTo(0.25,0.25);
+        demoAsset_10.scale.setTo(0.25,0.25);
         //ANIMATE ASSETS WITH CHAINED TWEENS
         var tween1 = game.add.tween(demoAsset_01).to({alpha: 1}, 600, "Quart.easeOut", true, 1500);
         var tween2 = game.add.tween(demoAsset_02).to({alpha: 1}, 600);
@@ -121,7 +126,7 @@ demo.prototype = {
         tweenSwipe.chain(tweenNext);
         //NEXT BUTTON
         function nextSequence() {
-          var playButton = game.add.button(530,910,'playButton');
+          var playButton = game.add.button(510,780,'playButton');
           playButton.variable = "PlayGame"; // next state
           playButton.inputEnabled = true;
           playButton.events.onInputDown.add(toNextState, this);
@@ -137,7 +142,6 @@ demo.prototype = {
           game.add.tween(demoAsset_10.scale).to({ x:1, y:1 }, 2200, Phaser.Easing.Bounce.InOut, true, 1300); 
           tweenFadeOut.start();
         } 
-
         //tweenNext.chain(tweenFadeOut)
 
         tween1.start();

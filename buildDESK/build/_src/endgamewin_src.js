@@ -12,6 +12,9 @@ endGameWin.prototype = {
   shareFacebook: function() {
     openDeviceBrowser('https://www.facebook.com/sharer/sharer.php?u=http://tagonline.tagworldwide.com/public/nytdi/holiday2015/index.html');
   },
+   shareLinkedIn: function() {
+    openDeviceBrowser('https://www.linkedin.com/shareArticle?mini=true&url=http://cappcaper.tdiny.com&title=CAPPCAPER&summary=My%20favorite%20developer%20program&source=LinkedIn');
+  }, 
 // End Share Social Function
 
   preload: function() {
@@ -43,8 +46,9 @@ endGameWin.prototype = {
     replayButton.events.onInputDown.add(toNextState, this);
 
     // Custom share buttons in Phaser
-    var shareTwitterButton = game.add.button(game.world.centerX + 65, 846, 'shareTwitterButton', this.shareTwitter);
-    var shareFacebookButton = game.add.button(game.world.centerX , 846, 'shareFacebookButton', this.shareFacebook);
+    var shareTwitterButton = game.add.button(291+420, 846, 'shareTwitterButton', this.shareTwitter);
+    var shareFacebookButton = game.add.button(354+420, 846, 'shareFacebookButton', this.shareFacebook);
+    var shareLinkedInButton = game.add.button(418+420, 846, 'shareLinkedInButton', this.shareLinkedIn);
 
     fadeIn();
   }

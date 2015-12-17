@@ -142,9 +142,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_src\/pregame_src.js",
-		"outputAbbreviatedPath": "\/_src\/min\/pregame_src-min.js",
+		"outputAbbreviatedPath": "\/code\/pregame-min.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
@@ -370,7 +370,7 @@
 		},
 	"\/code\/pregame-min.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/code\/pregame-min.js",
 		"outputAbbreviatedPath": "\/code\/min\/pregame-min-min.js",
@@ -1015,6 +1015,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/video_poster.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 160827,
+		"inputAbbreviatedPath": "\/images\/video_poster.jpg",
+		"outputAbbreviatedPath": "\/images\/video_poster.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/winPage\/replay.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -1033,6 +1044,17 @@
 		"initialSize": 5667,
 		"inputAbbreviatedPath": "\/images\/winPage\/shareFacebookButton.png",
 		"outputAbbreviatedPath": "\/images\/winPage\/shareFacebookButton.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/winPage\/shareLinkedInButton.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6513,
+		"inputAbbreviatedPath": "\/images\/winPage\/shareLinkedInButton.png",
+		"outputAbbreviatedPath": "\/images\/winPage\/shareLinkedInButton.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

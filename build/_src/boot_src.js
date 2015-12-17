@@ -55,8 +55,8 @@ boot.prototype = {
             game.scale.pageAlignHorizontally = true;
             game.scale.minWidth = 320;
             game.scale.minHeight = 480;
-            game.scale.maxWidth = 980;
-            game.scale.maxHeight = 1470;
+            game.scale.maxWidth = window.innerWidth;
+            game.scale.maxHeight = window.innerHeight;
 
         }
 
