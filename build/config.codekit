@@ -509,6 +509,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/demoPage\/demoPlaceholder.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 57465,
+		"inputAbbreviatedPath": "\/images\/demoPage\/demoPlaceholder.jpg",
+		"outputAbbreviatedPath": "\/images\/demoPage\/demoPlaceholder.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/demoPage\/grabThese.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -637,6 +648,17 @@
 		"initialSize": 4948,
 		"inputAbbreviatedPath": "\/images\/demoPage\/withThis.png",
 		"outputAbbreviatedPath": "\/images\/demoPage\/withThis.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/demoPlaceholder.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 57465,
+		"inputAbbreviatedPath": "\/images\/demoPlaceholder.jpg",
+		"outputAbbreviatedPath": "\/images\/demoPlaceholder.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
