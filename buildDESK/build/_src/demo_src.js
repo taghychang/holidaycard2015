@@ -46,10 +46,10 @@ demo.prototype = {
         var demoAsset_06 = game.add.sprite(790,830,'img_06');
         var demoAsset_swipe = game.add.sprite(610,780,'img_swipe');
         //SECOND SEQUENCE
-        var demoAsset_07 = game.add.sprite(810,240,'img_07');
-        var demoAsset_08 = game.add.sprite(620,270,'img_08');
-        var demoAsset_09 = game.add.sprite(750,540,'img_09');
-        var demoAsset_10 = game.add.sprite(890,460,'img_10');
+        var demoAsset_07 = game.add.sprite(810,300,'img_07');
+        var demoAsset_08 = game.add.sprite(620,340,'img_08');
+        var demoAsset_09 = game.add.sprite(750,600,'img_09');
+        var demoAsset_10 = game.add.sprite(890,520,'img_10');
 
         //SPRITE GROUP FOR FIRST SEQUENCE
         var sequence1 = game.add.group();
